@@ -1,0 +1,67 @@
+* {
+	padding: 0;
+	margin: 0
+}
+
+
+body {
+	font-family: "Times New Roman";
+	font-size: 110%;
+	background-color: #eeeeee;
+}
+.wrapper {
+	width: 413px;
+	background-color: #FFF;
+	margin: 5px auto 45px auto; 
+	padding: 50px 50px 65px;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
+}
+
+/*Header style*/
+.header {
+	text-align: center;
+}
+
+h1 {
+	font-size: 120%
+}
+
+div img {
+	width: 145px;
+	margin: 6px;
+}
+
+/*Content Style*/
+p {
+	margin-left: 13px;
+	line-height: 1.2;
+}
+
+.block {
+	line-height: 1.4;
+}
+
+ul li {
+	margin-top: 10px;
+	margin-bottom: 8px;
+	margin-left: 36px;
+	line-height: 0.9;
+}
+
+hr {
+	margin-bottom: 25px;
+}
+
+.firsthr, .thirdhr {
+	margin-top: 15px;
+}
+
+.secondhr 	{
+	margin-top: 21px;
+}
+
+#profile {
+	margin-top: 27px;
+}
