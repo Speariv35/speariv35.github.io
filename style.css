@@ -119,9 +119,54 @@ h3 {
 	margin-right: 17px;
 }
 
+.left div {
+	opacity: 0;
+	transition: opacity 2s linear;
+ 
+}
+.left:hover  div{
+	opacity:1;
+	position: absolute;
+    background-image: url(img/lamp.png);
+    top: 200px;
+    left: 370px;
+    width: 133px;
+    height: 130px;
+}
+
 .homework_img_c {
 	margin-left: 5px;
 	margin-right: 5px;
+}
+
+.center div {
+	opacity: 0;
+	transition: opacity 2s linear;
+ 
+}
+.center:hover  div{
+	opacity:1;
+	position: absolute;
+    background-image: url(img/lamp.png);
+    top: 200px;
+    left: 605px;
+    width: 133px;
+    height: 130px;
+}
+
+.right div {
+	opacity: 0;
+	transition: opacity 2s linear;
+ 
+}
+.right:hover  div{
+	opacity:1;
+	position: absolute;
+    background-image: url(img/lamp.png);
+    top: 200px;
+    left: 845px;
+    width: 133px;
+    height: 130px;
 }
 
 .homework_img_r {
@@ -139,6 +184,7 @@ h3 {
 .number a {
 	text-decoration: none;
 	color: #6a6a6a;
+	
 
 }
 
@@ -148,12 +194,15 @@ h3 {
 
 }
 
-
-
 .homework_img_l:hover, .homework_img_c:hover ,.homework_img_r:hover {
 	border: 2px solid rgba(240, 121, 1, .5);
 }
+
 /* Footer Style*/
+
 .footer {
 	background-color: #dbdbdb;
 }
+
+
+
