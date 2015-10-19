@@ -119,6 +119,14 @@ h3 {
 	margin-right: 17px;
 }
 
+
+.homework_img_c {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+ /*
+
 .left div {
 	opacity: 0;
 	transition: opacity 2s linear;
@@ -129,17 +137,12 @@ h3 {
 	position: absolute;
     background-image: url(img/lamp.png);
     top: 200px;
-    left: 370px;
+    left: 35%;
     width: 133px;
     height: 130px;
 }
 
-.homework_img_c {
-	margin-left: 5px;
-	margin-right: 5px;
-}
-
-.center div {
+ .center div {
 	opacity: 0;
 	transition: opacity 2s linear;
  
@@ -149,7 +152,7 @@ h3 {
 	position: absolute;
     background-image: url(img/lamp.png);
     top: 200px;
-    left: 605px;
+    left: 50%;
     width: 133px;
     height: 130px;
 }
@@ -164,10 +167,10 @@ h3 {
 	position: absolute;
     background-image: url(img/lamp.png);
     top: 200px;
-    left: 845px;
+    left: 75%;
     width: 133px;
     height: 130px;
-}
+} */
 
 .homework_img_r {
 	margin-left: 17px;
@@ -184,6 +187,7 @@ h3 {
 .number a {
 	text-decoration: none;
 	color: #6a6a6a;
+	transition: color 0.5s linear;
 	
 
 }
