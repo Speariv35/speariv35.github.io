@@ -104,37 +104,29 @@ h3 {
 	width: 257px;
 }
 
-.homework_img_l {
+.placeholders img {
 	-webkit-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
 	-moz-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
 	box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
-	margin-left: 40px;
-	margin-right: 17px;
 	margin-top: 10px;
 	border-radius: 5px;
 	border: 2px solid #f07901;
+}
+
+
+.homework_img_l {
+	margin-left: 40px;
+	margin-right: 17px;
 }
 
 .homework_img_c {
-	-webkit-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
-	-moz-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
-	box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
-	margin-top: 10px;
 	margin-left: 5px;
 	margin-right: 5px;
-	border-radius: 5px;
-	border: 2px solid #f07901;
 }
 
 .homework_img_r {
-	-webkit-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
-	-moz-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
-	box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
 	margin-left: 17px;
 	margin-right: 40px;
-	margin-top: 10px;
-	border-radius: 5px;
-	border: 2px solid #f07901;
 }
 
 .number {
