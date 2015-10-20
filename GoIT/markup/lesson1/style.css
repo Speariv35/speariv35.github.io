@@ -1,14 +1,57 @@
+@keyframes home-anim {
+    0%   {left:-150px; top:50px;}
+    100% {left:50px; top:50px;}
+}
+
+
 * {
 	padding: 0;
 	margin: 0
 }
-
 
 body {
 	font-family: "Times New Roman";
 	font-size: 18px;
 	background-color: #eeeeee;
 }
+
+/* Home Button Style*/
+
+
+.home {
+	position: absolute;
+    background-color: #909090;
+    border-radius: 10px;
+    top: 50px;
+    left: 50px;
+    width: 100px;
+    height: 30px;
+    animation-name: home-anim;
+    animation-duration: 3s;
+}
+
+.home:hover {
+	background-color: #ff7601;
+	transition: background-color 2s ease;
+}
+
+.home a {
+	margin: 0px;
+	display: block;
+	line-height: 20px;
+	text-decoration: none;
+	color: white;
+	padding: 6px 22px;
+}
+
+.home a:hover {
+	text-decoration: underline;
+	color: black;
+	transition: color 2s ease;
+}
+
+
+
 .wrapper {
 	width: 413px;
 	background-color: #FFF;
