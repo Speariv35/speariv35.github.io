@@ -105,6 +105,7 @@ box-shadow: 0px 4px 11px -4px rgba(0,0,0,1);
 	padding-left: 35px;
 	color: #2c2c2c;
 	background-color: #f9f9f9;
+	transition: padding-left 1s ease;
 }
 
 .product {
@@ -120,12 +121,10 @@ box-shadow: 0px 4px 11px -4px rgba(0,0,0,1);
 	margin-bottom: 58px;
 }
 
-
 .product-img {
 	border: 1px solid #c8c8c8;
 	padding: 45px 0px 45px 90px;
 	margin-bottom: 31px;
-
 }
 
 
