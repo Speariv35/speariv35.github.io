@@ -45,6 +45,15 @@ p {
 	line-height: 1.4;
 }
 
+ul {
+	margin-top: 32px;
+}
+
+a {
+	display: block;
+	margin-top: 5px;
+}
+
 ul li {
 	margin-top: 10px;
 	margin-bottom: 8px;
@@ -57,7 +66,7 @@ hr {
 }
 
 .firsthr, .thirdhr {
-	margin-top: 15px;
+	margin-top: 16px;
 }
 
 .secondhr 	{
