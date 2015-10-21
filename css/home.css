@@ -1,5 +1,9 @@
 /* Home Button Style*/
 
+@keyframes home-anim {
+    0%   {left:-150px; top:50px;}
+    100% {left:50px; top:50px;}
+}
 
 .home {
 	position: absolute;

@@ -1,0 +1,22 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+.contacts {
+	overflow: hidden;
+	background-color: #f0f2f4;
+	padding-right: 12.5%;
+	
+}
+
+.contacts div, p {
+	 position: relative;
+  	 top: 50%;
+     transform: translateY(-50%);
+	 float: right;
+}
+
+.header {	
+	padding: 40px 0px 40px 12.5%;
+}
