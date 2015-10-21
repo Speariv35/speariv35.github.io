@@ -27,29 +27,35 @@ body {
 	border-radius: 3px;
 }
 
+p {
+	text-align: left;
+	margin-left: 13px;
+	line-height: 1.2;
+}
+
 /*Header style*/
 .header {
 	text-align: center;
+	border-bottom: 1px solid #7a7a7a;
+	padding-bottom: 17px;
 }
 
 h1 {
 	font-size: 21px;
 }
 
-div img {
+img {
 	width: 145px;
-	margin: 6px;
+	margin: 5px;
 	border-radius: 12px;
 }
 
-/*Content Style*/
-p {
-	margin-left: 13px;
-	line-height: 1.2;
-}
+/*List Style*/
 
-.block {
-	line-height: 1.4;
+.list {
+	margin-top: 25px;
+	border-bottom: 1px solid #7a7a7a;
+	padding-bottom: 14px;
 }
 
 ul {
@@ -68,18 +74,27 @@ ul li {
 	line-height: 0.9;
 }
 
-hr {
-	margin-bottom: 25px;
+/*Info Style*/
+
+.info  {/*Info Style*/
+	margin-top: 23px;
+	border-bottom: 1px solid #7a7a7a;
+	padding-bottom: 14px;
+}
+.info p {
+	line-height: 1.4;
 }
 
-.firsthr, .thirdhr {
-	margin-top: 16px;
+.link {
+	margin-top: 26px;
 }
 
-.secondhr 	{
+/*Footer Style*/
+
+.footer {
 	margin-top: 21px;
 }
 
-#profile {
-	margin-top: 27px;
+.footer p {
+	line-height: 1.5;
 }
