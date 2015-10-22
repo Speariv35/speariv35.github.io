@@ -8,11 +8,9 @@
 	src:url(../fonts/OpenSans-Regular.ttf);
 }
 
-body, html {
-	height: 100%;
+body {
 	font-family: OpenSans,Tahoma, Arial;
 	background: #f9f9f9;
-
 }
 
 /*    WRAPPER    */
