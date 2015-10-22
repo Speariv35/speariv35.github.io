@@ -27,7 +27,7 @@ body {
 
 .header	{
 	overflow: hidden;
-	background: url(img/header_bg.png);
+	background: url(../img/header_bg.png);
 }
 
 .logo {
@@ -63,18 +63,9 @@ h2 {
 	height: 67px;
 }
 
-.left_wall {
-
-	background-color: #e7e7e7;
-	width: 145px;
-}
-
-.right_wall {
-	background-color: #e7e7e7;
-	width: 141px;
-}
 .content {
-	width: 771px;
+	width: 765px;
+	overflow: hidden;
 	background: rgba(241,241,241,1);
     background: -moz-linear-gradient(top, rgba(241,241,241,1) 0%, rgba(199,199,199,1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,241,241,1)), color-stop(100%, rgba(199,199,199,1)));
@@ -82,29 +73,41 @@ h2 {
     background: -o-linear-gradient(top, rgba(241,241,241,1) 0%, rgba(199,199,199,1) 100%);
     background: -ms-linear-gradient(top, rgba(241,241,241,1) 0%, rgba(199,199,199,1) 100%);
     background: linear-gradient(to bottom, rgba(241,241,241,1) 0%, rgba(199,199,199,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#c7c7c7', GradientType=0 );
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#c7c7c7', GradientType=0 );
 }
 
-table {
-	 border-collapse:collapse;
+.content div {
+	float: left;
+}
+
+.centralblock {
+	overflow: hidden;
+	background-color: #e7e7e7;
+}	
+
+.left_wall, 
+.content, 
+.right_wall {
+	float: left;
+}
+
+.left_wall {
+	width: 145px;
 }
 
 .homework {
+	width: 100%;
+	text-align:center;
 }
 
 h3 {
-
 	text-align: center;
 	color: #6a6a6a;
 	font-size: 50px;
 	font-weight: 300;
 }
 
-.placeholders {
-	width: 257px;
-}
-
-.placeholders img {
+.content img {
 	-webkit-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
 	-moz-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
 	box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
@@ -113,9 +116,8 @@ h3 {
 	border: 2px solid #f07901;
 }
 
-
 .homework_img_l {
-	margin-left: 40px;
+	margin-left: 39px;
 	margin-right: 17px;
 }
 
@@ -125,80 +127,49 @@ h3 {
 	margin-right: 5px;
 }
 
- /*
-
-.left div {
-	opacity: 0;
-	transition: opacity 2s linear;
- 
-}
-.left:hover  div{
-	opacity:1;
-	position: absolute;
-    background-image: url(img/lamp.png);
-    top: 200px;
-    left: 35%;
-    width: 133px;
-    height: 130px;
-}
-
- .center div {
-	opacity: 0;
-	transition: opacity 2s linear;
- 
-}
-.center:hover  div{
-	opacity:1;
-	position: absolute;
-    background-image: url(img/lamp.png);
-    top: 200px;
-    left: 50%;
-    width: 133px;
-    height: 130px;
-}
-
-.right div {
-	opacity: 0;
-	transition: opacity 2s linear;
- 
-}
-.right:hover  div{
-	opacity:1;
-	position: absolute;
-    background-image: url(img/lamp.png);
-    top: 200px;
-    left: 75%;
-    width: 133px;
-    height: 130px;
-} */
-
 .homework_img_r {
 	margin-left: 17px;
-	margin-right: 40px;
+	margin-right: 39px;
 }
 
-.number {
+.rowtitle div {
 	text-align: center;
 	font-size: 18px;
 	font-weight: bold;
-	margin: 10px 0;
+	
 }
 
-.number a {
+.title-left  {
+	width: 210px;
+	margin: 10px 0px 10px 42px ;
+}
+
+.title-center  {
+	width: 210px;
+	margin: 10px 20px 10px 20px;
+}
+
+.title-right  {
+	width: 210px;
+	margin: 10px 42px 10px 10px ;
+}
+
+
+.title-left a, 
+.title-center a, 
+.title-right a {
 	text-decoration: none;
 	color: #6a6a6a;
 	transition: color 0.5s linear;
-	
-
 }
 
-.number a:hover {
+.rowtitle div a:hover {
 	text-decoration: none;
 	color: #f07901;
 
 }
 
-.homework_img_l:hover, .homework_img_c:hover ,.homework_img_r:hover {
+.rowphoto div a img:hover {
 	border: 2px solid rgba(240, 121, 1, .5);
 }
 
