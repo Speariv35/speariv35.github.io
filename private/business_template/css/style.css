@@ -3,6 +3,19 @@
 	margin: 0px;
 }
 
+@font-face {
+	font-family:Helvetica;
+	src:url(\fonts\helvetica\HelveticaNeueCyr-Roman.otf);
+}
+
+body {
+	font-family: Helvetica;
+}
+
+.wrapper {
+	width: 1400px;
+	margin: 0 auto;
+}
 .contacts {
 	overflow: hidden;
 	background-color: #f0f2f4;
@@ -10,13 +23,118 @@
 	
 }
 
-.contacts div, p {
-	 position: relative;
-  	 top: 50%;
-     transform: translateY(-50%);
+.contacts div {
 	 float: right;
 }
 
+
+/*   HEADER    */
+
 .header {	
-	padding: 40px 0px 40px 12.5%;
+	overflow: hidden;
+	padding: 41px 12.5% 30px 190px;
+}
+
+.logo {
+	float: left;
+}
+
+.logotext {
+
+	float: left;
+	font-size: 15px;
+
+}
+
+.bold {
+	vertical-align: top;
+	font-size: 37px;
+	font-weight: bold;
+}
+
+.top-menu {
+	overflow: hidden;
+	padding-left: 200px;
+}
+
+.top-menu li  {
+	float: left;
+	list-style: none;
+	
+}
+.top-menu a {
+	text-decoration: none;
+}
+.consult {
+	background-color: #de2b24;
+}
+
+/*   BLOCK1   */
+
+.block1 {
+	background: url(../img/bg_image.png);
+	height: 590px;
+}
+
+
+
+.block1_button {
+	margin: 0 auto;
+	width: 200px;
+	background-color: #f8cd53;
+	border-radius: 5px;
+	color: white;
+}
+
+/*   BLOCK2   */
+
+.block2 {
+	height: 540px;
+}
+
+.service {
+	float: left;
+	width: 300px;
+}
+
+
+
+
+/*  BLOCK3   */
+
+.block3 {
+	height: 1405px;
+	background-color: #f3f3f3;
+}
+
+
+/*   BLOCK4   */
+
+.block4 {
+	height: 865px;
+	background-color: #de2b24;
+}
+
+/*   BLOCK5   */
+
+.block5 {
+	height: 845px;
+	background-color: #1287bf;
+}
+
+
+/*   BLOCK6   */
+
+.block5 {
+	height: 490px;
+	background-color: #2a2a2a;
+}
+
+
+
+/*   FOOTER   */
+
+.footer {
+	height: 65px;
+	background-color: #515151;
 }
