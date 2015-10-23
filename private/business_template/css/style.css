@@ -32,41 +32,86 @@ body {
 
 .header {	
 	overflow: hidden;
-	padding: 41px 12.5% 30px 190px;
+	padding: 41px 0px 36px 190px;
 }
 
-.logo {
+.header__logo {
 	float: left;
 }
 
-.logotext {
-
+.header__text {
 	float: left;
 	font-size: 15px;
 
 }
 
-.bold {
+.text__bold span {
+	display: block;
+	margin-top: -9px;
+	margin-bottom: -2px;
+	padding-left: 8px;
 	vertical-align: top;
 	font-size: 37px;
 	font-weight: bold;
 }
 
-.top-menu {
-	overflow: hidden;
-	padding-left: 200px;
+.text__normal {
+padding-left: 10px;
 }
 
-.top-menu li  {
+.header__top-menu {
+	overflow: hidden;
+	padding-left: 192px;
+}
+
+.header__top-menu ul {
+	padding-top: 15px;
+}
+
+.top-menu__dot {
+	float: left;
+	border-radius: 50%;
+	width: 5px;
+	height: 5px;
+	margin-top: 8px;
+	margin-right: 15px;
+	background-color: #424242;
+}
+
+
+.header__top-menu li  {
 	float: left;
 	list-style: none;
+	margin-right: 12px;
 	
 }
-.top-menu a {
+
+
+.header__top-menu a {
 	text-decoration: none;
+	color: #424242;
+	font-weight: bold;
 }
-.consult {
+
+.header__top-menu a:hover {
+	color: #de2b24;
+}
+
+
+
+.header__button {
+	height: 36px;
+	border-radius: 4px;
+	padding: 0px 14px 0px 21px;
+	margin: -8px 0px 2px 10px;
 	background-color: #de2b24;
+}
+
+.header__button a {
+	padding-top: 8px;
+	display: block;
+	vertical-align: middle;
+	color: #ffffff;
 }
 
 /*   BLOCK1   */
@@ -74,22 +119,65 @@ body {
 .block1 {
 	background: url(../img/bg_image.png);
 	height: 590px;
+	text-align: center;
+	color: #fff;
 }
 
+.block1__header {
+	padding-top: 164px;
+	font-size: 24px;
+}
 
+.block1__text h2 {
+	margin-top: -6px;
+	font-weight: 100;
+	font-size: 34px;
 
-.block1_button {
-	margin: 0 auto;
-	width: 200px;
+}
+
+.block1__button {
+	margin: 30px auto;
+	width:100px;
+	height: 70px;
+	width: 330px;
 	background-color: #f8cd53;
-	border-radius: 5px;
+	border-radius: 7px;
 	color: white;
 }
+.block1__button:hover {
+	background-color: #f6bb12;
+}
+
+.block1__button span {
+	display: block;
+	padding-top: 21px;
+	text-transform: uppercase;
+	font-size: 23px;
+	font-weight: bold;
+}
+
 
 /*   BLOCK2   */
 
+
 .block2 {
 	height: 540px;
+}
+
+.block-header {
+
+}
+
+.text-header {
+
+}
+
+.text-secondary {
+
+}
+
+.divider {
+
 }
 
 .service {
