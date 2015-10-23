@@ -181,3 +181,36 @@ h3 {
 
 
 
+/*    LAMP ON HOVER  */
+
+.img-left div,
+.img-center div,
+.img-right div {
+	opacity: 0;
+	transition: opacity 2s linear;
+ 
+}
+
+.img-left:hover  div,
+.img-center:hover  div,
+.img-right:hover  div {
+
+	opacity:1;
+	position: absolute;
+	float: none;
+    background-image: url(../img/lamp.png);
+    background-repeat: no-repeat;
+    top: 215px;
+    width: 215px;
+    height: 130px;
+}
+
+.img-left:hover  div {
+	background-position: left 75px top 0px;
+}
+.img-center:hover  div {
+	background-position: left 45px top 0px;
+}
+.img-right:hover  div {
+	background-position: left 55px top 0px;
+}
