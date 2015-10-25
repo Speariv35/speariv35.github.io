@@ -21,13 +21,18 @@ src: url(../fonts/HelveticaNeueCyr-Light.otf);
 }
 
 body {
+	background-color: #919191;
 	font-family: Helvetica;
 	
 }
 
 .wrapper {
+	background-color: #fff;
 	width: 1400px;
 	margin: 0 auto;
+	-webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
+	-moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.30);
 }
 
 .contacts {
@@ -155,7 +160,7 @@ padding-left: 10px;
 /*   BLOCK1   */
 
 .block1 {
-	background: url(../img/bg_image.png);
+	background: url(../img/bg_image.jpg);
 	height: 590px;
 	text-align: center;
 	color: #fff;
