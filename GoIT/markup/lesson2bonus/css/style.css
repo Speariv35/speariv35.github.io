@@ -1,0 +1,144 @@
+
+body {
+	position: relative;
+	z-index: -3;
+	font-family: Tahoma;
+	background-color: #404040;
+	color: #e6e6e6;
+	font-size: 12px;
+}
+
+.wrapper {
+	position: relative;
+	z-index: -10;
+	background-size: 100%;
+	height: 875px;
+	width: 815px;
+	margin: 0 auto;
+	-webkit-box-shadow: -1px 4px 30px 5px rgba(0,0,0,0.75);
+	-moz-box-shadow: -1px 4px 30px 5px rgba(0,0,0,0.75);
+	box-shadow: -1px 4px 30px 5px rgba(0,0,0,0.75);
+	padding: 0px 74px 0px 74px;
+	z-index: -3;
+	background: url(../img/background.jpg);
+}
+
+
+
+/* HEADER */
+
+.header {
+	overflow: hidden;
+}
+
+.header__logo {
+	height: 75px;
+	text-align: center;
+	background: url(../img/palm_tree.png) no-repeat;
+	background-position: left 140px top 57px;
+	float: left;
+	padding-top: 132px;
+	
+}
+
+@keyframes logo-animation {
+	0% {-webkit-transform: rotateX(0deg); /* Safari */
+    	transform: rotateX(0deg);}
+
+	100%	{-webkit-transform: rotateX(360deg); /* Safari */
+    	transform: rotateX(360deg);}
+}
+
+h1:hover {
+	animation-name: logo-animation;
+	 animation-duration: 2s;
+}
+
+.header__title {
+	margin-top: 5px;
+	font-weight: bold;
+}
+.header__contacts {
+	float: right;
+	margin-top: 152px;
+	margin-right: 21px;
+}
+
+.bold {
+	font-weight: bold;
+	font-size: 9px;
+}
+
+.text {
+	font-size: 8px;
+	margin-top: 6px;
+}
+
+
+/* CONTENT  */
+
+
+.content {
+	text-align: center;
+}
+
+.content__row {
+	overflow: hidden;
+	margin-left: -12px;
+	margin-bottom: 50px;
+	}	
+
+.content__row>div {
+	float: left;
+	margin-left: 11px;
+}
+
+.country {
+	font-size: 16px;
+	margin-top: 1px;
+}
+
+.country:hover {
+	text-decoration: underline;
+}
+
+.row__country img {
+	margin-bottom: -1px;
+}
+
+.shadow {
+	border:2px solid #aaaaaa;
+	border-radius: 2px;
+  display: inline-block;
+  position: relative;
+	-webkit-box-shadow: inset 0px 0px 1px 2px rgba(0,0,0,0.6);
+	-moz-box-shadow: inset 0px 0px 1px 2px rgba(0,0,0,0.6);
+	box-shadow: inset 0px 0px 1px 2px rgba(0,0,0,0.6);
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+
+}
+
+.shadow:hover {
+	border-color: #fff;
+  -webkit-box-shadow: inset 0px 0px 30px 5px rgba(0,0,0,0.49);
+	-moz-box-shadow: inset 0px 0px 30px 5px rgba(0,0,0,0.49);
+	box-shadow: inset 0px 0px 30px 5px rgba(0,0,0,0.49);
+}
+
+.row__country img {
+  max-width: 100%;
+  position: relative;
+  z-index: -1;
+
+}
+
+/* FOOTER  */
+
+.footer {
+	color: #E6E6EB;
+	text-align: center;
+	font-size: 10px;
+	margin-top: 184px;
+}
