@@ -562,6 +562,7 @@ textarea {
 }
 .footer ul li {
 	display: inline;
+	margin: 15px auto;
 }
 
 .footer ul {
