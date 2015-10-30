@@ -12,6 +12,15 @@ body {
 	width: 100%
 }
 
+.clearfix:after {
+	content:"";
+	clear: both;
+	display: block;
+}
+
+.fl-left {
+	float: left;
+}
 
 
 /*   WELCOME */
@@ -480,6 +489,24 @@ text-decoration: none;
 	color: #fff;
 	background-color: #d74680;
 }
+
+.testemonials__row{
+	display: flex;
+    justify-content: center;
+}
+
+.block__img--small img {
+	height: 80px;
+	 width: 80px;
+	 border-radius: 50%;
+}
+
+
+
+
+
+
+
 
 /* IN TOUCH */
 
