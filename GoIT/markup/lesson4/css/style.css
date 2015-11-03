@@ -127,15 +127,15 @@ margin-bottom: -2px;
     padding: 0px 30px;
 }
 
+.nav>ul>li>ul {
+	border-top: 1px solid #000;
+}
+
 .nav ul li {
 	position:relative;
 	float:left;
 	margin:0;
 	padding:0
-}
-
-.nav ul li.current-menu-item {
-	background:#ddd
 }
 
 .nav ul ul li:hover {
@@ -176,14 +176,11 @@ margin-bottom: -2px;
 .triangle {
 	width: 6px;
 	height: 6px;
-	margin:10px 10px 10px 10px;
-	background: url(../img/triangle-right.png) no-repeat;
+	margin:10px;
+	background: url(../img/triangle-down.png) no-repeat;
 	float: right;
 }
 
-.sub:hover .triangle {
-	background: url(../img/triangle-down.png) no-repeat;
-}
 
 /*  CONTENT */
 
