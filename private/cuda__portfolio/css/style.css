@@ -1,4 +1,9 @@
 
+html {
+	position: relative;
+	z-index: -7;
+}
+
 body {
 	text-align: center;
 	position: relative;
@@ -8,7 +13,7 @@ body {
 
 .wrapper {
 	position: relative;
-	z-index: -5;
+	z-index: -4;
 	width: 100%
 }
 
@@ -230,9 +235,6 @@ text-decoration: none;
 	animation-timing-function: ease-in;
 }
 
-
-
-
 .block {
 	float: left;
 	width: 252px;
@@ -310,7 +312,7 @@ text-decoration: none;
 .block__position {
 	color: #30bae7;
 	margin-top: 11px;
-	font-weight: 600;;;;;;
+	font-weight: 600;
 	
 }
 
