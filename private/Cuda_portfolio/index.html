@@ -8,12 +8,18 @@
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web' rel='stylesheet' type='text/css'>
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/circle.css">
+	<link rel="stylesheet" href="/css/animate.css">
+	<script src="/js/wow.js"></script>
+	<script>
+ 		new WOW().init();
+	</script>
 </head>
 <body>
+
 	<div class="wrapper">
 		<div class="welcome">
 			<div class="welcome__line">
-				<div class="logo">
+				<div class="logo animated bounceIn">
 					<h1><img src="img/logo.png"  alt="Logo"></h1>
 				</div>
 				<div class="menu">
@@ -39,13 +45,13 @@
 			</a>
 		</div>
 		<div class="service">
-			<div class="block-header--services">
-				<div class="title--service"><h1>Service we provide</h1></div>
+			<div class="block-header--services wow fadeIn">
+				<div class="title--service "><h1>Service we provide</h1></div>
 				<div class="divider"></div>
 				<p class="text--medium">We are working with both individuals and businesses from all over the globe</p>
 				<p class="text--medium">to create awesome websites and applications.</p>
 			</div>
-			<div class="service__blocks">
+			<div class="service__blocks wow fadeIn">
 				<div class="block">
 					<div class="block__img">
 						<img class="flag" src="img/flag.png"  alt="Flag">
@@ -93,12 +99,12 @@
 			</div>
 		</div>
 		<div class="team">
-			<div class="block-header--team">
+			<div class="block-header--team wow fadeInUp">
 				<div class="title--team"><h1>Meet our beautiful team</h1></div>
 				<div class="divider"></div>
 				<p class="text--medium">We are a small team of designers and developers, who help brands with big ideas.</p>
 			</div>
-			<div class="team__blocks">
+			<div class="team__blocks wow fadeInRight">
 				<div class="block">
 					<a href="#">
 						<div class="block__img--round">
@@ -189,13 +195,13 @@
 			</div>
 		</div>
 		<div class="skills">
-			<div class="block-header--skills">
+			<div class="block-header--skills wow fadeInUp">
 				<div class="title--team"><h1>We got skills!</h1></div>
 				<div class="divider"></div>
 				<p class="text--medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
 				<p class="text--medium">tempor incididunt ut labore et dolore magna aliqua.</p>
 			</div>
-			<div class="service__blocks">
+			<div class="service__blocks wow fadeInLeft">
 				<div class="block">
 					<div class="block__percents">
 						<div class="c100 p90 big lightblue">
@@ -255,7 +261,7 @@
 			</div>
 		</div>
 		<div class="portfolio">
-			<div class="block-header--portfolio">
+			<div class="block-header--portfolio wow fadeIn">
 				<div class="title--portfolio"><h1>Our Portfolio</h1></div>
 				<div class="divider"></div>
 				<p class="text--medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod</p>
@@ -270,7 +276,7 @@
 				</ul>
 			</div>
 			<div >
-				<div class="portfolio-row">
+				<div class="portfolio-row wow fadeInLeft">
 					<div class="row__element">
 						<div class="element__img">
 							<a href="#">
@@ -292,7 +298,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="portfolio-row">
+				<div class="portfolio-row wow fadeInRight">
 					<div class="row__element">
 						<div class="element__img">
 							<a href="#">
@@ -322,27 +328,82 @@
 			</a>
 		</div>
 		<div class="testimonials">
-			<div class="block-header">
+			<div class="block-header wow bounceInUp">
 				<div class="title--portfolio"><h1>What people say about us</h1></div>
 				<div class="divider"></div>
 				<p class="text--medium">Our clients love us!</p>
 			</div>
-			<div class="testemonials__row clearfix">
+			<div class="testemonials__row clearfix wow bounceInLeft">
 				<div class="testemonials__block clearfix">
 					<div class="block__img--small fl-left">
 						<img src="img/designer.jpg">
 					</div>
-					<div class="block__text fl-left">
-						
+					<div class="testemonials__text fl-left">
+						<div class="text--italic">
+							“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+						</div>
+						<div class="testimonials-name">
+							Channel Iman
+						</div>
+						<div class="testimonials-title">
+							CEO of Pinterest
+						</div>
 					</div>
 				</div>
-				
+				<div class="testemonials__block clearfix">
+					<div class="block__img--small fl-left">
+						<img src="img/designer.jpg">
+					</div>
+					<div class="testemonials__text fl-left">
+						<div class="text--italic">
+							“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+						</div>
+						<div class="testimonials-name">
+							Channel Iman
+						</div>
+						<div class="testimonials-title">
+							CEO of Pinterest
+						</div>
+					</div>
+				</div>
 			</div>
-
-
+			<div class="testemonials__row clearfix wow bounceInRight">
+				<div class="testemonials__block clearfix">
+					<div class="block__img--small fl-left">
+						<img src="img/designer.jpg">
+					</div>
+					<div class="testemonials__text fl-left">
+						<div class="text--italic">
+							“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+						</div>
+						<div class="testimonials-name">
+							Channel Iman
+						</div>
+						<div class="testimonials-title">
+							CEO of Pinterest
+						</div>
+					</div>
+				</div>
+				<div class="testemonials__block clearfix">
+					<div class="block__img--small fl-left">
+						<img src="img/designer.jpg">
+					</div>
+					<div class="testemonials__text fl-left">
+						<div class="text--italic">
+							“Nullam dapibus blandit orci, viverra gravida dui lobortis eget. Maecenas fringilla urna eu nisl scelerisque.”
+						</div>
+						<div class="testimonials-name">
+							Channel Iman
+						</div>
+						<div class="testimonials-title">
+							CEO of Pinterest
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 		<div class="in-touch">
-			<div class="block-header">
+			<div class="block-header wow fadeInUp">
 				<div class="title--portfolio"><h1>Get in touch</h1></div>
 				<div class="divider"></div>
 				<p class="text--medium">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
