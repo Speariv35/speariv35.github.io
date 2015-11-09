@@ -1,0 +1,34 @@
+
+
+/* SPRITE */
+
+.brodgstone-logo, .toyo-logo, .avon-logo, .continental-logo, .dunlop-logo, 
+.firelli-logo, .gooper-logo, .roerns-logo, .phone-ico, .catalog, 
+.round, .cart, .map, .user-ico, .home, .mail
+{ display: inline-block; background: url('../img/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.brodgstone-logo { background-position: -2px -0px; width: 97px; height: 14px; }
+.toyo-logo { background-position: -2px -16px; width: 83px; height: 21px; }
+.avon-logo { background-position: -2px -39px; width: 77px; height: 13px; }
+.continental-logo { background-position: -2px -54px; width: 77px; height: 21px; }
+.dunlop-logo { background-position: -2px -77px; width: 72px; height: 13px; }
+.firelli-logo { background-position: -2px -92px; width: 61px; height: 14px; }
+.gooper-logo { background-position: -2px -108px; width: 59px; height: 21px; }
+.roerns-logo { background-position: -2px -131px; width: 57px; height: 27px; }
+.phone-ico { background-position: -65px -92px; width: 22px; height: 21px; }
+.catalog { background-position: -63px -115px; width: 22px; height: 21px; }
+.round { background-position: -61px -138px; width: 22px; height: 23px; }
+.cart { background-position: -2px -160px; width: 21px; height: 17px; }
+.map { background-position: -81px -39px; width: 14px; height: 10px; }
+.user-ico { background-position: -81px -51px; width: 14px; height: 18px; }
+.home { background-position: -81px -71px; width: 12px; height: 11px; }
+.mail { background-position: -85px -138px; width: 12px; height: 9px; }
+
+/* MAIN */
+
+body {
+	background-color: #fff;
+}
+.wrapper {
+	
+}

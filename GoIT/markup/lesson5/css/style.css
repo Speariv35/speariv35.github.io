@@ -10,15 +10,18 @@
 }
 
 body {
+	min-width: 800px;
 	text-align: center;
 	color: #fff;
 	font-family: Tahoma;
 	font-size: 14px;
-	background: url(../img/bg.jpg) no-repeat;
-	-webkit-background-size: cover;
+	background: url(../img/bg.jpg) no-repeat; 
 	background-size: cover;
 }
 
+.space {
+	height: 213px;
+}
 
 /* HEADER */
 
@@ -37,6 +40,15 @@ body {
 	margin: 0 auto;
 	width: 65%;
 	float: none;
+}
+
+@media only screen and (max-width: 1150px) {
+	.header .header__wrapper {
+		margin: 0 auto;
+		width: 95%;
+		margin-right: 15%;
+		float: none;
+	}
 }
 
 .header ul {
@@ -102,7 +114,7 @@ body {
 /* LOGIN */
 
 .login {
-	margin: 213px auto 80px auto;
+	margin: 0px auto 80px auto;
 	width: 560px;
 }
 
