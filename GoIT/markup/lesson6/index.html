@@ -2,14 +2,61 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
-	<title>Document</title>
+	<title>Zazor.com.ua</title>
 </head>
 <body>
 	<div class="wrapper">
 		<header>
-			
+			<div class="contacts clearfix">
+				<div class="phone float_l">
+					<div class="phone-ico"></div> <span>(044)123-45-67 (044)567-89-10</span>
+				</div>
+				<div class="login_wrapper shadow float_l ">
+					<div class="user-ico float_l"></div>
+					<form class="login__form float_l" action="#">
+						<input class="login" type="text" name="login" placeholder="логин">
+						<input class="pass" type="password" name="password" placeholder="пароль">
+						<input class="submit" type="submit" value="вход">
+					</form>
+					<span class="divider float_l" >|</span>
+					<a class="reg float_l" href="#">регистрация</a>
+					<a class="forget float_l" href="#">забыли пароль?</a>
+				</div>
+				<div class="site-map float_r">
+					<a href="#"><div class="home"></div></a>
+					<a href="#"><div class="map"></div></a>
+					<a href="#"><div class="mail"></div></a>
+				</div>
+			</div>
+			<div class="logo-bg clearfix">
+				<img class="logo" src="img/zazor.jpg" alt="Zazor.com.ua">
+			</div>
+			<nav class="main-menu-wrapper shadow clearfix">
+				<ul class="main-menu float_l clearfix">
+					<li><a href="#">О компани</a></li>
+					<li><a href="#">Оплата</a></li>
+					<li><a href="#">Доставка</a></li>
+					<li><a href="#">Статьи</a></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+				<span class="total-price float_r">0,00 грн.</span>
+				<span class="total-price-title float_r">на сумму:</span>
+				<span class="goods-num float_r">0</span>
+				<span class="goods-num-title float_r">товаров:</span>
+				<div class="cart float_r"></div>
+			</nav>
 		</header>
+		<section class="search clearfix">
+			<form class="car-search float_l shadow">
+				<div сlass="clearfix">
+					<p class="header-small left float_l">Диски:</p>
+					<p class="header-big float_l">Поиск по автомобилю</p>
+					<p class="header-small right float_r">Шины:</p>
+				</div>
+			</form>
+		</section>
 	</div>
 </body>
 </html>

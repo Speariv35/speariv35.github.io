@@ -15,20 +15,301 @@
 .firelli-logo { background-position: -2px -92px; width: 61px; height: 14px; }
 .gooper-logo { background-position: -2px -108px; width: 59px; height: 21px; }
 .roerns-logo { background-position: -2px -131px; width: 57px; height: 27px; }
-.phone-ico { background-position: -65px -92px; width: 22px; height: 21px; }
+.phone-ico { background-position: -65px -92px; width: 22px; height: 21px; margin-left: 8px; margin-top: 5px; }
 .catalog { background-position: -63px -115px; width: 22px; height: 21px; }
 .round { background-position: -61px -138px; width: 22px; height: 23px; }
-.cart { background-position: -2px -160px; width: 21px; height: 17px; }
+.cart { background-position: -2px -160px; width: 21px; height: 17px; margin-top: 8px; }
 .map { background-position: -81px -39px; width: 14px; height: 10px; }
-.user-ico { background-position: -81px -51px; width: 14px; height: 18px; }
+.user-ico { background-position: -81px -51px; width: 14px; height: 18px; margin-left: 7px; margin-top: 5px; }
 .home { background-position: -81px -71px; width: 12px; height: 11px; }
 .mail { background-position: -85px -138px; width: 12px; height: 9px; }
 
 /* MAIN */
 
+@font-face {
+    font-family: 'Lucida Sans';
+    src: url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.eot);
+    src: url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff2) format('woff2'),
+         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff) format('woff'),
+         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.float_l {
+	float: left;
+	display: block;
+}
+
+.float_r {
+	float: right;
+	display: block;
+}
+
+.shadow {
+	-webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
+	-moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
+	box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.4);
+}
+
 body {
 	background-color: #fff;
+	font-family: Arial, "Lucida Sans";
 }
 .wrapper {
+	width: 912px;
+	margin: 0 auto;
 	
+}
+
+
+/* HEADER */
+
+
+
+.phone {
+	color: #5e696d;
+	padding-left: 
+;
+	font-size: 
+18px;}
+
+phone
+
+
+.contacts {
+	margin-top: 17px
+}
+
+.login_wrapper {
+	margin-left: 19px;
+	height: 27px;
+	border-radius: 3px;
+	color: #fff;
+	background: rgba(32,105,136,1);
+	background: -moz-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(12,50,86,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,105,136,1)), color-stop(100%, rgba(12,50,86,1)));
+	background: -webkit-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(12,50,86,1) 100%);
+	background: -o-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(12,50,86,1) 100%);
+	background: -ms-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(12,50,86,1) 100%);
+	background: linear-gradient(to bottom, rgba(32,105,136,1) 0%, rgba(12,50,86,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256', GradientType=0 );
+}
+
+.login,
+.pass {
+	width: 108px;
+	height: 11px;
+	padding-left: 3px;
+}
+
+.phone span { vertical-align: top; line-height: 32px; letter-spacing: 0.3px;;;;
+}
+
+ .contacts
+{ margin-top: 17px; }
+
+.login__form {
+	margin-top: 4px;
+	margin-left: 3px;
+}
+
+.submit {
+	background: transparent;
+	border: none;
+	color: #fff;
+	margin-left: -2px;
+	font-size: 11px;
+	letter-spacing: 0.1px;
+}
+
+.submit:hover,
+.reg:hover {
+	text-decoration: underline;
+}
+
+.reg, 
+.forget {
+	line-height: 26px;
+	font-size: 11px;
+	color: #fff;
+	letter-spacing: 0.3px;
+}
+
+.divider {
+	margin: 8px -1px;
+	font-size: 11px;
+}
+
+.reg {
+	text-decoration: none;
+	margin-left: 6px;
+}
+
+.forget {
+	margin-left: 19px;
+	font-size: 12px;
+	line-height: 28px;
+	letter-spacing: 0.3px;
+	color: #bfbfbf;
+	margin-right: 8px;
+}
+
+.forget:hover {
+	color: #dbd9d9;
+}
+
+.site-map {
+	border: 1px solid #bdc4c7;
+	border-radius: 10px;
+	margin-top: 2px;
+	height: 19px;
+	margin-right: 8px;
+	-webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+	-moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+	box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+
+}
+
+.home {
+	margin-left: 8px;
+}
+
+.map {
+	margin-left: 4px;
+}
+
+.mail {
+	margin-left: 5px;
+	margin-right: 11px;
+}
+
+.logo-bg {
+	background: url(../img/bg_image.jpg) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	margin: 5px 2px;
+}
+
+.logo {
+	float: left; 
+	margin-top: 50px;
+	margin-bottom: 67px; 
+}
+
+.main-menu-wrapper {
+	height: 34px;
+	margin-top: 6px;
+	border-radius: 5px;
+	background: rgba(87,96,104,1);
+	background: -moz-linear-gradient(top, rgba(87,96,104,1) 0%, rgba(23,23,23,1) 26%, rgba(0,0,0,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(87,96,104,1)), color-stop(26%, rgba(23,23,23,1)), color-stop(100%, rgba(0,0,0,1)));
+	background: -webkit-linear-gradient(top, rgba(87,96,104,1) 0%, rgba(23,23,23,1) 26%, rgba(0,0,0,1) 100%);
+	background: -o-linear-gradient(top, rgba(87,96,104,1) 0%, rgba(23,23,23,1) 26%, rgba(0,0,0,1) 100%);
+	background: -ms-linear-gradient(top, rgba(87,96,104,1) 0%, rgba(23,23,23,1) 26%, rgba(0,0,0,1) 100%);
+	background: linear-gradient(to bottom, rgba(87,96,104,1) 0%, rgba(23,23,23,1) 26%, rgba(0,0,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#576068', endColorstr='#000000', GradientType=0 );
+	padding-right: 17px;
+
+}
+.main-menu {
+margin-left: 127px;
+}
+
+.main-menu li {
+	float: left;
+}
+
+.main-menu li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 13.5px;
+	font-family: "Lucida Sans";
+	color: #fff;
+	display: block;
+	margin-top: 5px;
+	padding: 6px 20px;
+	border-radius: 14px;
+
+}
+
+.main-menu li a:hover {
+	background: rgba(32,105,136,1);
+	background: -moz-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,105,136,1)), color-stop(56%, rgba(17,65,101,1)), color-stop(100%, rgba(12,50,86,1)));
+	background: -webkit-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	background: -o-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	background: -ms-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	background: linear-gradient(to bottom, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256', GradientType=0 );	
+}
+
+.total-price,
+.goods-num {
+	font-size: 12px;
+	color: #0d5a8f;
+	margin-top: 11px;
+}
+
+.total-price-title {
+	color: #8a9296; 
+	font-size: 11px;
+	margin-top: 11px;
+	margin-right: 12px;
+	margin-left: 15px;
+}
+
+.goods-num-title {
+	color: #8a9296; 
+	font-size: 11px;
+	margin-top: 11px;
+	margin-right: 4px;
+	margin-left: 8px;
+}
+
+
+
+/* SEARCH */
+
+.search {
+	margin-top: 12px;
+	margin-left: 5px;
+}
+
+
+.car-search {
+	color: #154468;
+	border: 1px solid #9c9c9d;
+	border-radius: 20px;
+	height: 132px;
+	width: 413px;;
+
+}
+
+.header-small {
+	margin-top: 4px;
+	color: #154467;
+	font-size: 10px;
+	font-weight: 900;
+
+}
+
+.left {
+	margin-left: 21px;
+}
+
+.right {
+	margin-right: 21px;
+}
+.header-big {
+	color: #154467;
+	font-size: 12px;
+	font-weight: 900;
 }
