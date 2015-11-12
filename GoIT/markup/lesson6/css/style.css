@@ -3,21 +3,21 @@
 /* SPRITE */
 
 .brodgstone-logo, .toyo-logo, .avon-logo, .continental-logo, .dunlop-logo, 
-.firelli-logo, .gooper-logo, .roerns-logo, .phone-ico, .catalog, 
+.firelli-logo, .gooper-logo, .roerns-logo, .phone-ico, .cat, 
 .round, .cart, .map, .user-ico, .home, .mail
 { display: inline-block; background: url('../img/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
  
-.brodgstone-logo { background-position: -2px -0px; width: 97px; height: 14px; }
+.brodgstone-logo { background-position: -2px -0px; width: 97px; height: 14px; margin-bottom: 7px; margin-left: 8px; }
 .toyo-logo { background-position: -2px -16px; width: 83px; height: 21px; }
-.avon-logo { background-position: -2px -39px; width: 77px; height: 13px; }
-.continental-logo { background-position: -2px -54px; width: 77px; height: 21px; }
-.dunlop-logo { background-position: -2px -77px; width: 72px; height: 13px; }
-.firelli-logo { background-position: -2px -92px; width: 61px; height: 14px; }
-.gooper-logo { background-position: -2px -108px; width: 59px; height: 21px; }
-.roerns-logo { background-position: -2px -131px; width: 57px; height: 27px; }
+.avon-logo { background-position: -2px -39px; width: 77px; height: 13px; margin-bottom: 6px; margin-left: 7px; }
+.continental-logo { background-position: -2px -54px; width: 77px; height: 21px; margin-left: 10px; }
+.dunlop-logo { background-position: -2px -77px; width: 72px; height: 13px; margin-left: 10px; margin-bottom: 7px; }
+.firelli-logo { background-position: -2px -92px; width: 61px; height: 14px; margin-left: 9px; margin-bottom: 5px; }
+.gooper-logo { background-position: -2px -108px; width: 59px; height: 21px; margin-left: 10px; }
+.roerns-logo { background-position: -2px -131px; width: 57px; height: 27px; margin-left: 9px;;; }
 .phone-ico { background-position: -65px -92px; width: 22px; height: 21px; margin-left: 8px; margin-top: 5px; }
-.catalog { background-position: -63px -115px; width: 22px; height: 21px; }
-.round { background-position: -61px -138px; width: 22px; height: 23px; }
+.cat { background-position: -63px -115px; width: 22px; height: 21px; margin-left: 3px; margin-top: 1px;; }
+.round { background-position: -61px -138px; width: 22px; height: 23px; margin-left: 4px; }
 .cart { background-position: -2px -160px; width: 21px; height: 17px; margin-top: 8px; }
 .map { background-position: -81px -39px; width: 14px; height: 10px; }
 .user-ico { background-position: -81px -51px; width: 14px; height: 18px; margin-left: 7px; margin-top: 5px; }
@@ -29,9 +29,9 @@
 @font-face {
     font-family: 'Lucida Sans';
     src: url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.eot);
-    src: url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.eot?#iefix) format('embedded-opentype'),
-         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff2) format('woff2'),
-         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff) format('woff'),
+    src: url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.eot?#iefix) format('embedded-opentype'),
+         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff2) format('woff2'),
+         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff) format('woff'),
          url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -281,6 +281,7 @@ margin-left: 127px;
 .search {
 	margin-top: 12px;
 	margin-left: 5px;
+	font-size: 10px;
 }
 
 
@@ -289,7 +290,7 @@ margin-left: 127px;
 	border: 1px solid #9c9c9d;
 	border-radius: 20px;
 	height: 132px;
-	width: 413px;;
+	width: 413px;
 
 }
 
@@ -307,9 +308,387 @@ margin-left: 127px;
 
 .right {
 	margin-right: 21px;
+	margin-top: 2px;
 }
 .header-big {
 	color: #154467;
 	font-size: 12px;
 	font-weight: 900;
+	margin-left: 67px;
+	letter-spacing: 0.3px;
+	margin-top: 1px;
+}
+
+.car-search__header {
+	margin-bottom: 6px;
+}
+
+.car-search__block select {
+	width: 100px;
+	float: right;
+	height: 18px;
+}
+
+.discs {
+	width: 178px;
+	float: left;
+	margin-top: 1px;
+	margin-left: 17px;
+}
+
+.discs ul{
+	clear: both;
+	font-size: 10px;
+}
+.discs  li {
+	height: 22px;
+}
+.discs li>p:nth-child(1){
+	margin-top: 4px;
+}
+
+.two-line{
+	margin-top: -2px;
+}
+
+.discs select{
+	width: 102px;
+	height: 17px;
+	float: right;
+}
+
+.discs .year{
+	width: 60px;
+	margin-right: 43px;
+}
+
+.small_text{
+	font-size: 9px;
+	color: #8d999d;
+}
+
+.block-left{
+	float: left;
+	clear: both;
+}
+
+.margin {
+	margin-left: 27px;
+	margin-top: -2px;
+}
+
+.search-but {
+	float: right;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: 14px;
+	color: #154467;
+	background: none;
+	border: none;
+	margin-right: 14px;
+}
+
+.tire-search {
+	color: #154468;
+	border: 1px solid #9c9c9d;
+	border-radius: 16px;
+	height: 132px;
+	width: 191px;
+	margin-left: 14px;
+}
+
+.tire-search .header-big { 
+	margin-left: 9px;
+	margin-bottom: 2px; 
+}
+
+.tire-search header {
+	margin-bottom: -2px;
+}
+
+.tire-search select{
+	width: 51px;
+	height: 17px;
+	float: right;
+	
+}
+
+.tire-size {
+	height: 17px;
+	margin-top: 6px;
+	padding-right: 15px;
+}
+
+.tire-size p {
+	float: left;
+	margin-left: 13px;
+	padding-top: 9px;
+}
+
+.tire-size span{
+	font-size: 14px;
+	line-height: 10px;
+	margin-left: 6px;
+	margin-right: 6px;
+	padding-top: 6px;
+}
+
+.tire-radius {
+margin-top: 7px;
+padding-right: 87px;
+}
+
+.tire-radius p {
+	float: left;
+	font-size: 11px;
+	margin-left: 45px;
+	padding-top: 5px;
+	color: #000;
+}
+
+.tire-radius select {
+	width:45px;
+}
+
+.tire-season input {
+}
+
+
+
+
+
+
+.discs-search {
+	color: #154468;
+	border: 1px solid #9c9c9d;
+	border-radius: 16px;
+	height: 132px;
+	width: 266px;
+	margin-left: 10px;
+}
+
+.discs-search .header-big {
+	margin-left: 5px;
+}
+
+
+/* LEFT NAVIGATION */
+
+.nav-block {
+	font-size: 13px;
+	color: #114165;
+}
+
+.nav-block span {
+	text-transform: uppercase;
+	vertical-align: top;
+	margin-top: 6px;
+	display: inline-block;
+	margin-left: -2px;
+}
+
+.nav-block li li {
+	list-style-type: circle;
+	margin: 
+7px 10px 12px 53px;}
+
+.category {
+	border: 1px solid #79878d;
+    border-radius: 15px;
+    webkit-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    box-shadow: 2px 1px 5px 1px rgba(0,0,0,0.1);
+    width: 148px;
+    margin-left: 2px;
+    height: 25px;
+    margin-top: 14px;
+}
+
+.round	{
+	margin-left: 5px;
+}
+
+.main	{
+	height: 25px;
+	width: 181px;
+	margin-top: 19px;
+	margin-left: 0px;
+}
+
+.catalog>li>li {
+	
+}
+
+.catalog>li a {
+	font-family: "Lucida Sans";
+	color: #465961;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+
+.catalog>li a:hover {
+	color: #0c3256;
+	text-decoration: underline;
+	font-style: italic;
+	font-weight: 900;
+	font-size: 13px;
+}
+
+.tires {
+	margin-top: -6px;
+}
+.bolts {
+	margin-top: -8px;
+}
+
+
+/* CONTENT */
+
+.content {
+	width: 526px;
+	background: rgba(201,207,209,1);
+	background: -moz-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(147,167,176,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(201,207,209,1)), color-stop(100%, rgba(147,167,176,1)));
+	background: -webkit-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(147,167,176,1) 100%);
+	background: -o-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(147,167,176,1) 100%);
+	background: -ms-linear-gradient(top, rgba(201,207,209,1) 0%, rgba(147,167,176,1) 100%);
+	background: linear-gradient(to bottom, rgba(201,207,209,1) 0%, rgba(147,167,176,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9cfd1', endColorstr='#93a7b0', GradientType=0 );
+	margin-top: 16px;
+	margin-left: 10px;
+	padding-bottom: 25px;
+	border-radius: 4px;
+}
+.content .goods {
+	float: left;
+	text-align: center;
+	margin: 15px 9px 9px 20px;
+}
+
+
+.goods {
+	width: 140px;
+}
+
+.goods__firm { 
+	font-family: "Lucida Sans"; 
+	color: #206988; 
+	font-weight: 900; 
+	font-size: 15px;
+}
+
+.goods__title { 
+	font-family: "Lucida Sans"; 
+	font-size: 13px;
+}
+
+.goods__img { 
+	width: 131px; 
+	background-color: #fff; 
+	border-radius: 7px; 
+	border: 1px solid #a4aeb1; 
+	padding: 3px;
+
+}
+
+.goods__price { 
+	font-size: 16px;
+	color: #114165;
+	font-weight: 700;
+	margin-top: 4px;
+	font-family: Arial;
+	font-style: italic;
+}
+
+.goods__currency { 
+	font-size: 12px; 
+	margin-left: 5px;
+	font-weight: 700;
+}
+
+/* RIGHT NAVIGATION */
+
+.right-nav {
+	margin-top: -2px;
+	margin-left: 8px;
+}
+
+.right-nav li li {
+	margin-left: 13px;
+	list-style-type: none;
+}
+
+.tire-r {
+	width: 135px;
+}
+
+.line	{
+	margin-top: 5px;
+	margin-left: 8px;
+}
+
+.right-but {
+	background: rgba(32,105,136,1);
+	background: -moz-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(32,105,136,1)), color-stop(56%, rgba(17,65,101,1)), color-stop(100%, rgba(12,50,86,1)));
+	background: -webkit-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	background: -o-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	background: -ms-linear-gradient(top, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	background: linear-gradient(to bottom, rgba(32,105,136,1) 0%, rgba(17,65,101,1) 56%, rgba(12,50,86,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#206988', endColorstr='#0c3256', GradientType=0 );
+	margin-left: 25px;
+	border: none;
+	border-radius: 13px;
+	color: #fff;
+	height: 26px;
+	margin-top: 12px;
+	width: 80px;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+/* LOGOS */
+
+
+.logos { 
+	margin-top: 36px; 
+	margin-left: 117px; 
+	margin-bottom: 24px;;
+}
+
+/* FOOTER  */
+
+footer {
+	text-align: center;
+	background-color: #213a4d;
+	height: 100px;
+}
+
+footer div {
+	color: #bec6c9;
+	font-size: 12px;
+	padding-top: 10px;
+	margin: 0 auto;
+	width: 294px;
+	padding-bottom: 16px;
+}
+
+footer a {
+	text-decoration: none;
+	color: #bec6c9;
+	font-size: 13px;
+}
+
+footer a:hover {
+	color: #52abcb;
+}
+
+footer span {
+	margin: 0px 7px; 
+}
+
+.copy  {
+	color: #7f4740;
+	font-size: 10px;
 }

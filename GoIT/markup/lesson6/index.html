@@ -48,15 +48,308 @@
 				<div class="cart float_r"></div>
 			</nav>
 		</header>
-		<section class="search clearfix">
-			<form class="car-search float_l shadow">
-				<div сlass="clearfix">
-					<p class="header-small left float_l">Диски:</p>
-					<p class="header-big float_l">Поиск по автомобилю</p>
-					<p class="header-small right float_r">Шины:</p>
+			<div class="search clearfix">
+				<form action="#" class="car-search float_l shadow">
+					<div class="car-search__header clearfix">
+						<p class="header-small left float_l">Диски:</p>
+						<p class="header-big float_l">Поиск по автомобилю</p>
+						<p class="header-small right float_r">Шины:</p>
+					</div>
+						<div class = "discs">
+							<ul>
+								<li>
+									<p class="block-left">Марка <span class="text-small">авто:</span></p>
+									<select>
+										<option>Audi</option>
+										<option>Ford</option>
+									</select>
+								</li>
+								<li>
+									<div class="block-left two-line">
+										<p>Модель</p>
+										<p class ="text-small">автомобиля:</p>
+									</div>
+									<select>
+										<option>Auris</option>
+										<option>Polo</option>
+									</select>
+								</li>
+								<li>
+									<div class="block-left two-line">
+										<p>Год выпуска:</p>
+										<p class="text-small">автомобиля:</p>
+									</div>
+									<select class="year">
+										<option>1999</option>
+										<option>3000</option>
+									</select>
+								</li>
+								<li>
+									<p class="block-left">Комплектация:</p>
+									<select>
+										<option>Full</option>
+										<option>Semi</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+						<div class = "discs margin">
+							<ul>
+								<li>
+									<p class="block-left">Марка <span class="text-small">авто:</span></p>
+									<select>
+										<option>Audi</option>
+										<option>Ford</option>
+									</select>
+								</li>
+								<li>
+									<div class="block-left two-line">
+										<p>Модель</p>
+										<p class ="text-small">автомобиля:</p>
+									</div>
+									<select>
+										<option>Auris</option>
+										<option>Polo</option>
+									</select>
+								</li>
+								<li>
+									<div class="block-left two-line">
+										<p>Год выпуска:</p>
+										<p class="text-small">автомобиля:</p>
+									</div>
+									<select class="year">
+										<option>1999</option>
+										<option>3000</option>
+									</select>
+								</li>
+								<li>
+									<p class="block-left">Комплектация:</p>
+									<select>
+										<option>Full</option>
+										<option>Semi</option>
+									</select>
+								</li>
+							</ul>
+						</div>
+						<input class="search-but" type="submit" value="поиск...">
+				</form>
+				<form action="#" class="tire-search float_l shadow clearfix">
+					<div class="clearfix">
+						<p class="header-big float_l">поиск шин</p>
+					</div>
+						<div class = "tire-size clearfix">
+							<p>Размер:</p>
+							<select>
+								<option>133</option>
+								<option>221</option>
+							</select>
+							<span class="float_r">/</span>
+							<select >
+								<option>167</option>
+								<option>321</option>
+							</select>
+						</div>
+						<div class = "tire-radius clearfix">
+							<p>R</p>
+							<select >
+								<option>17</option>
+								<option>15</option>
+							</select>
+						</div>
+						<div class = "tire-season clearfix">
+								<p>Сезон:</p>
+								<input type="checkbox" id = "summer">
+								<label for="summer">лето</label>
+								<input type="checkbox" id = "winter">
+								<label for="winter">зима</label>
+								<input type="checkbox" id = "allseason">
+								<label for="allseason">все сезоны</label>
+						</div> 
+					<input class="search-but" type="submit" value="поиск...">
+				</form>
+				<form action="#" class="discs-search float_l shadow clearfix">
+					<div class="clearfix">
+						<p class="header-big float_l">поиск дисков</p>
+					</div>
+
+
+
+
+					<input class="search-but" type="submit" value="поиск...">
+				</form>
+			</div>
+		<div class="content-wrapper clearfix">
+			<div class="nav-block float_l">
+				<ul class="catalog">
+					<div class="category main">
+						<div class="cat"></div> <span>Каталог продукции:</span>
+					</div>
+					<li>
+						<ul>
+							<div class="category">
+								<div class="round"></div> <span>Шины</span>
+							</div>
+							<li><a href="#">Наименование 1</a></li>
+							<li><a href="#">Наименование 2</a></li>
+							<li><a href="#">Наименование 3</a></li>
+							<li><a href="#">Наименование 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul >
+							<div class="category tires ">
+							<div class="round"></div> <span >Диски</span>
+							</div>
+							<li><a href="#">Наименование 1</a></li>
+							<li><a href="#">Наименование 2</a></li>
+							<li><a href="#">Наименование 3</a></li>
+							<li><a href="#">Наименование 4</a></li>
+						</ul>
+					</li>
+					<li>
+						<ul>
+							<div class="category bolts">
+								<div class="round"></div> <span>Болты</span>
+							</div>
+							<li><a href="#">Наименование 1</a></li>
+							<li><a href="#">Наименование 2</a></li>
+							<li><a href="#">Наименование 3</a></li>
+							<li><a href="#">Наименование 4</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="content float_l clearfix">
+				<div class="goods">
+					<div class="goods__firm">Goodyear</div>
+					<div class="goods__title">Ultra Grip Extreme</div>
+					<div class="goods__img"> <img src="img/goodyearl.jpg" alt="Goodyear"></div>
+					<div class="goods__price">90.00<span class="goods__currency">грн.</span></div>
 				</div>
-			</form>
-		</section>
+					<div class="goods">
+					<div class="goods__firm">Nokian</div>
+					<div class="goods__title">Hakkapeliitta R</div>
+					<div class="goods__img"> <img src="img/nokian.jpg"  alt="Goodyear"></div>
+					<div class="goods__price">115.00<span class="goods__currency">грн.</span></div>
+				</div>
+					<div class="goods">
+					<div class="goods__firm">Hankook</div>
+					<div class="goods__title">K 708 155/65 R14t</div>
+					<div class="goods__img"> <img src="img/hankook.jpg"  alt="Goodyear"></div>
+					<div class="goods__price">393.00<span class="goods__currency">грн.</span></div>
+				</div>
+				<div class="goods">
+					<div class="goods__firm">Goodyear</div>
+					<div class="goods__title">Ultra Grip Extreme</div>
+					<div class="goods__img"> <img src="img/goodyearl.jpg" alt="Goodyear"></div>
+					<div class="goods__price">90.00<span class="goods__currency">грн.</span></div>
+				</div>
+					<div class="goods">
+					<div class="goods__firm">Nokian</div>
+					<div class="goods__title">Hakkapeliitta R</div>
+					<div class="goods__img"> <img src="img/nokian.jpg" alt="Goodyear"></div>
+					<div class="goods__price">115.00<span class="goods__currency">грн.</span></div>
+				</div>
+					<div class="goods">
+					<div class="goods__firm">Hankook</div>
+					<div class="goods__title">K 708 155/65 R14t</div>
+					<div class="goods__img"> <img src="img/hankook.jpg"  alt="Goodyear"></div>
+					<div class="goods__price">393.00<span class="goods__currency">грн.</span></div>
+				</div>
+				<div class="goods">
+					<div class="goods__firm">Goodyear</div>
+					<div class="goods__title">Ultra Grip Extreme</div>
+					<div class="goods__img"> <img src="img/goodyearl.jpg"  alt="Goodyear"></div>
+					<div class="goods__price">90.00<span class="goods__currency">грн.</span></div>
+				</div>
+					<div class="goods">
+					<div class="goods__firm">Nokian</div>
+					<div class="goods__title">Hakkapeliitta R</div>
+					<div class="goods__img"> <img src="img/nokian.jpg" alt="Goodyear"></div>
+					<div class="goods__price">115.00<span class="goods__currency">грн.</span></div>
+				</div>
+				<div class="goods">
+					<div class="goods__firm">Hankook</div>
+					<div class="goods__title">K 708 155/65 R14t</div>
+					<div class="goods__img"> <img src="img/hankook.jpg" alt="Goodyear"></div>
+					<div class="goods__price">393.00<span class="goods__currency">грн.</span></div>
+				</div>
+			</div>
+			<div class="nav-block right-nav float_l">
+				<form action="#">
+					<ul class="catalog">
+						<div class="category main">
+							<div class="cat"></div> <span>Бренды:</span>
+						</div>
+						<li>
+							<ul>
+								<li>
+									<div class="category tire-r">
+										<div class="round"></div> <span>Шины</span>
+									</div>
+									<div class="line">
+										<input type="checkbox" id="brand11">
+										<label for="brand11">Бренд 1</label>
+									</div>
+									<div class="line">
+										<input type="checkbox" id="brand12">
+										<label for="brand12">Бренд 2</label>
+									</div>
+									<div class="line">
+										<input type="checkbox" id="brand13">
+										<label for="brand13">Бренд 3</label>
+									</div>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul >
+								<li>
+									<div class="category tire-r">
+										<div class="round"></div> <span>Шины</span>
+									</div>
+									<div class="line">
+										<input type="checkbox" id="brand1">
+										<label for="brand1">Бренд 1</label>
+									</div>
+									<div class="line">
+										<input type="checkbox" id="brand2">
+										<label for="brand2">Бренд 2</label>
+									</div>
+									<div class="line">
+										<input type="checkbox" id="brand3">
+										<label for="brand3">Бренд 3</label>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<input class="right-but" type="submit" value="Выбрать">
+				</form>
+			</div>
+		</div>
+		<div class="logos">
+			<a href="#"><div class="toyo-logo"></div></a>
+			<a href="#"><div class="brodgstone-logo"></div></a>
+			<a href="#"><div class="continental-logo"></div></a>
+			<a href="#"><div class="gooper-logo"></div></a>
+			<a href="#"><div class="avon-logo"></div></a>
+			<a href="#"><div class="roerns-logo"></div></a>
+			<a href="#"><div class="firelli-logo"></div></a>
+			<a href="#"><div class="dunlop-logo"></div></a>
+		</div>
+		<footer>
+			<div>
+				<a href="#">О компании</a>
+				<span>|</span>
+				<a href="#">Доставка</a>
+				<span>|</span>
+				<a href="#">Статьи</a>
+				<span>|</span>
+				<a href="#">Контакты</a>
+			</div>
+			<p class="copy">Создание сайта &copy; Global Vision</p>
+		</footer>
 	</div>
 </body>
 </html>
