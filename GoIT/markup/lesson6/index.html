@@ -157,25 +157,81 @@
 							</select>
 						</div>
 						<div class = "tire-season clearfix">
-								<p>Сезон:</p>
-								<input type="checkbox" id = "summer">
-								<label for="summer">лето</label>
-								<input type="checkbox" id = "winter">
-								<label for="winter">зима</label>
-								<input type="checkbox" id = "allseason">
-								<label for="allseason">все сезоны</label>
+							<p class="float_l">Сезон:</p>
+							<div class="tire-season__checkbox float_l">
+								<div class="checkbox-line">
+									<input type="checkbox" id = "summer">
+									<label for="summer">лето</label>
+								</div>
+								<div class="checkbox-line">
+									<input type="checkbox" id = "winter">
+									<label for="winter">зима</label>
+								</div>
+								<div class="checkbox-line">
+									<input type="checkbox" id = "allseason">
+									<label for="allseason">всесез</label>
+								</div>
+							</div>
 						</div> 
-					<input class="search-but" type="submit" value="поиск...">
+					<input class="search-but search-but--season" type="submit" value="поиск...">
 				</form>
-				<form action="#" class="discs-search float_l shadow clearfix">
-					<div class="clearfix">
-						<p class="header-big float_l">поиск дисков</p>
+				<form action="#" class="discs-search float_l shadow ">
+					<div class="border-r float_l">
+						<div class="clearfix">
+							<p class="header-big float_l">поиск дисков</p>
+						</div>
+							<ul>
+								<li>
+									<p class="block-left first">Диаметр <span class="text-small">диска:</span></p>
+									<select>
+										<option>14</option>
+										<option>13</option>
+									</select>
+								</li>
+								<li>
+									<div class="block-left two-line second">
+										<p>Количество</p>
+										<p class ="text-small">крепёжных</p>
+										<p class ="text-small">отверстий:</p>
+									</div>
+									<select class="select-2">
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</li>
+								<li>
+									<div class="block-left two-line third">
+										<p>Диаметр</p>
+										<p class="text-small">расположения</p>
+										<p class="text-small">крепёжных</p>
+										<p class="text-small">отверстий:</p>
+									</div>
+									<select class="select-3">
+										<option>12</option>
+										<option>13</option>
+									</select>
+								</li>
+							</ul>
 					</div>
-
-
-
-
-					<input class="search-but" type="submit" value="поиск...">
+					<div class="discs-search__right float_r">
+						<p>ДЦО</p>
+						<p class="text-pico">(диаметр</p>
+						<p class="text-pico">центрального</p>
+						<p class="text-pico">отверстия):</p>
+						<div>
+							<select>
+								<option>12</option>
+								<option>14</option>
+							</select>
+						</div>
+						<p class="second_title">ЕТ</p>
+						<p class="text-pico">(вылет диска):</p>
+						<select>
+							<option>12</option>
+							<option>34</option>
+						</select>
+						<input class="search-but" type="submit" value="поиск...">
+					</div>
 				</form>
 			</div>
 		<div class="content-wrapper clearfix">

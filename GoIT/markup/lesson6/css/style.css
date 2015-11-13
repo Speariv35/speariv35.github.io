@@ -29,9 +29,15 @@
 @font-face {
     font-family: 'Lucida Sans';
     src: url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.eot);
-    src: url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.eot?#iefix) format('embedded-opentype'),
-         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff2) format('woff2'),
-         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff) format('woff'),
+    src: url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.eot?#iefix) format('embedded-opentype'),
+
+
+         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff2) format('woff2'),
+
+
+         url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.woff) format('woff'),
+
+
          url(/fonts/Lucida/lucida_sans_unicode_regular-webfont.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -370,6 +376,13 @@ margin-left: 127px;
 .block-left{
 	float: left;
 	clear: both;
+	color: #000;
+}
+
+.text-small {
+	font-size: 9px;
+	letter-spacing: 0.3px;
+	color: #77858b;
 }
 
 .margin {
@@ -388,8 +401,13 @@ margin-left: 127px;
 	margin-right: 14px;
 }
 
+.search-but:active {
+	border: none;
+}
+
+
 .tire-search {
-	color: #154468;
+	color: #000;
 	border: 1px solid #9c9c9d;
 	border-radius: 16px;
 	height: 132px;
@@ -450,15 +468,43 @@ padding-right: 87px;
 	width:45px;
 }
 
-.tire-season input {
+.tire-season p {
+	margin-left: 13px;
+	margin-top: 6px;
 }
 
+.checkbox-line { 
+	margin-top: -4px;
+}
 
+.checkbox-line input { 
+	margin: 3px -1px 0px 0px;
+}
 
+.checkbox-line label { 
+	display: inline-block;
+}
 
+.tire-season__checkbox {
+	margin-top: 7px;
+	margin-left: 11px;
+	font-size: 12px;
+}
 
+.search-but--season { 
+	margin-top: -5px; 
+	margin-right: 12px;
+}
+
+.border-r {
+	overflow: hidden;
+	border-right: 1px solid #bdc6ca;
+	width: 175px;
+	margin-top: 2px; 
+}
 
 .discs-search {
+	font-family: "Lucida Sans";
 	color: #154468;
 	border: 1px solid #9c9c9d;
 	border-radius: 16px;
@@ -467,10 +513,79 @@ padding-right: 87px;
 	margin-left: 10px;
 }
 
-.discs-search .header-big {
-	margin-left: 5px;
+.discs-search select {
+	float: left;
+	margin-left: 9px;
+	height: 16px;
+	margin-top: 3px;
+	width: 57px;
 }
 
+.first { 
+	margin-top: 7px; 
+	margin-left: 15px; 
+	font-size: 11px;
+}
+
+.second { 
+	margin-left: 16px; 
+	margin-top: 5px;
+
+}
+
+.third { 
+	margin-left: 16px; 
+	margin-top: 2px;
+
+}
+
+.discs-search .select-2 { 
+	margin-top: 15px; 
+	height: 17px; 
+	margin-left: 
+	34px; width: 50px;;;
+	
+}
+
+.discs-search .select-3 { 
+	margin-top: 14px; 
+	margin-left: 22px;;
+	
+}
+
+.discs-search .header-big {
+	margin-left: 8px;
+	font-size: 13px;
+	font-family: Arial;
+	margin-top: -2px;
+	margin-bottom: 3px;
+}
+
+.discs-search__right { 
+	width: 80px; 
+	margin-top: 4px; 
+	color: #000; 
+}
+
+.discs-search__right select {
+	display: block;
+	float: none;
+	margin-left: 1px;
+}
+
+.text-pico {
+	font-size: 8px;
+	color: #77858b;
+}
+
+.second_title {
+	margin-top:8px;
+}
+
+.discs-search .search-but {
+	margin-top: 4px;
+	margin-right: 13px;
+}
 
 /* LEFT NAVIGATION */
 
@@ -624,8 +739,18 @@ padding-right: 87px;
 }
 
 .line	{
-	margin-top: 5px;
-	margin-left: 8px;
+	margin-top: 8px;
+	margin-left: 12px;
+}
+
+.line input { margin: 2px 7px 0px 0px;
+
+}
+
+.line label {
+	display: inline-block;
+	font-family: "Lucida Sans";
+	vertical-align: top;
 }
 
 .right-but {
@@ -642,7 +767,7 @@ padding-right: 87px;
 	border-radius: 13px;
 	color: #fff;
 	height: 26px;
-	margin-top: 12px;
+	margin-top: 6px;
 	width: 80px;
 	font-size: 12px;
 	text-transform: uppercase;

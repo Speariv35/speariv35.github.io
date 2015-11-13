@@ -236,7 +236,8 @@ form>input::-webkit-input-placeholder {
 	padding-left: 20px;
 }
 
-.input-field:hover {
+.input-field:hover,
+ .input-field:focus {
 	background: none;
 	background-color: #1b5288;
 	border-bottom: 1px solid #689bcc;
