@@ -361,6 +361,12 @@ margin-left: 127px;
 	width: 102px;
 	height: 17px;
 	float: right;
+	background-image: url('../img/select.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
+	-moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
 }
 
 .discs .year{
@@ -428,6 +434,12 @@ margin-left: 127px;
 	width: 51px;
 	height: 17px;
 	float: right;
+	background-image: url('../img/select.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
+	-moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
 	
 }
 
@@ -478,7 +490,12 @@ padding-right: 87px;
 }
 
 .checkbox-line input { 
-	margin: 3px -1px 0px 0px;
+	margin: 6px 1px 0px 0px;
+	width: 10px;
+	height: 10px;
+	background-color: #fff;
+	box-shadow: inset 1px 1px 1px rgba(0,0,0,.75);
+	border: solid 1px #114165;
 }
 
 .checkbox-line label { 
@@ -487,7 +504,7 @@ padding-right: 87px;
 
 .tire-season__checkbox {
 	margin-top: 7px;
-	margin-left: 11px;
+	margin-left: 12px;
 	font-size: 12px;
 }
 
@@ -519,6 +536,12 @@ padding-right: 87px;
 	height: 16px;
 	margin-top: 3px;
 	width: 57px;
+	background-image: url('../img/select.png');
+	background-position: right center;
+	background-repeat: no-repeat;
+	-webkit-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
+	-moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0, 0.55) inset;
 }
 
 .first { 
@@ -743,7 +766,7 @@ padding-right: 87px;
 	margin-left: 12px;
 }
 
-.line input { margin: 2px 7px 0px 0px;
+.line input { margin: 4px 11px 0px 0px; width: 10px; height: 10px; background-color: #fff; box-shadow: inset 1px 1px 1px rgba(0,0,0,.75); border: solid 1px #114165;
 
 }
 
@@ -751,6 +774,7 @@ padding-right: 87px;
 	display: inline-block;
 	font-family: "Lucida Sans";
 	vertical-align: top;
+	margin-top: 2px;
 }
 
 .right-but {
@@ -767,7 +791,7 @@ padding-right: 87px;
 	border-radius: 13px;
 	color: #fff;
 	height: 26px;
-	margin-top: 6px;
+	margin-top: 12px;
 	width: 80px;
 	font-size: 12px;
 	text-transform: uppercase;
