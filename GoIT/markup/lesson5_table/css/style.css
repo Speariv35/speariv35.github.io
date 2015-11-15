@@ -20,6 +20,7 @@ body {
 }
 
 .h135 {
+
 	height: 135px;
 }
 
@@ -42,11 +43,42 @@ body {
 /* TABLE  */
 
 
-table,
-tr,
-td {
-	border: 7px solid black;
+table {
 	border-collapse: collapse;
+}
+
+
+table tr:nth-child(7),
+table tr:nth-child(6),
+table tr:nth-child(4) {
+	border-top: 7px solid black;
+}
+
+table tr:nth-child(2),
+table tr:nth-child(3) {
+	border-top: 7px solid black;
+	border-bottom: 7px solid black;
+}
+
+table tr:nth-child(1) td:nth-child(2),
+table tr:nth-child(2) td:nth-child(2),
+table tr:nth-child(3) td:nth-child(2),
+table tr:nth-child(3) td:nth-child(2),
+table tr:nth-child(4) td:nth-child(2),
+table tr:nth-child(4) td:nth-child(3),
+table tr:nth-child(5) td:nth-child(2),
+table tr:nth-child(5) td:nth-child(3),
+table tr:nth-child(5) td:nth-child(4),
+table tr:nth-child(6) td:nth-child(1)
+ {
+	border-left: 7px solid black;
+	border-right: 7px solid black;
+}
+
+table tr:nth-child(5) td:nth-child(2),
+table tr:nth-child(5) td:nth-child(3),
+table tr:nth-child(5) td:nth-child(5) {
+	border-top: 7px solid black;
 }
 
 /* COLORS */
@@ -56,6 +88,7 @@ td {
 }
 
 .grey {
+
 	background-color: #393134;
 }
 

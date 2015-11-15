@@ -121,6 +121,44 @@ h3 {
 	margin-right: 17px;
 }
 
+/* .img-left {
+	position: relative;
+    z-index: 1;
+
+}
+
+
+.img-left:after {
+	top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	background-color: rgba(37, 166, 247, 0.9);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-left:hover:after {
+	 opacity: 0.9;
+}
+
+.img-left .ll {
+	text-align: center;
+	opacity: 0;
+}
+
+.img-left:hover .ll {
+	position: absolute;
+		opacity: 1;
+} */
+
 
 .homework_img_c {
 	margin-left: 5px;
@@ -183,17 +221,17 @@ h3 {
 
 /*    LAMP ON HOVER  */
 
-.img-left div,
-.img-center div,
-.img-right div {
+.img-left .lamp,
+.img-center .lamp,
+.img-right .lamp {
 	opacity: 0;
 	transition: opacity 2s linear;
  
 }
 
-.img-left:hover  div,
-.img-center:hover  div,
-.img-right:hover  div {
+.img-left:hover  .lamp,
+.img-center:hover  .lamp,
+.img-right:hover  .lamp {
 
 	opacity:1;
 	position: absolute;
