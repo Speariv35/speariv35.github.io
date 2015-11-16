@@ -280,6 +280,11 @@ margin-left: 127px;
 	margin-left: 15px;
 }
 
+.goods a {
+	text-decoration: none;
+	color: #000;
+}
+
 .goods-num-title {
 	color: #8a9296; 
 	font-size: 11px;
