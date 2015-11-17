@@ -114,7 +114,7 @@ body {
 /* LOGIN */
 
 .login {
-	margin: 0px auto 80px auto;
+	margin: 213px auto 80px auto;
 	width: 560px;
 }
 
@@ -171,6 +171,7 @@ body {
 
 .link {
 	text-decoration: none;
+	display: block;
 }
 
 .button-begin {
@@ -215,9 +216,28 @@ body {
 }
 
 .line {
-	background: url(../img/line.png) no-repeat;
-	background-position: center;
 	margin-top: 30px;
+	position: relative;
+}
+
+.line:before {
+    content: "";
+    position: absolute;
+    width: 125px;
+    top: 7px;
+    left: 141px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000;
+}
+
+.line:after {
+	 content: "";
+    position: absolute;
+    width: 124px;
+    top: 7px;
+    left: 294px;
+    border-top: 1px solid #666;
+    border-bottom: 1px solid #000;
 }
 
 .login-form {
