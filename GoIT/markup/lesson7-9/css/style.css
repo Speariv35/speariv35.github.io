@@ -1,0 +1,127 @@
+
+@font-face {
+    font-family: 'league_gothic';
+    src: url(../fonts/leaguegothic-regular.eot);
+    src: url(../fonts/leaguegothic-regular.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/leaguegothic-regular.woff2) format('woff2'),
+         url(../fonts/leaguegothic-regular.woff) format('woff'),
+         url(../fonts/leaguegothic-regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url(../fonts/opensans-light.eot);
+    src: url(../fonts/opensans-light.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/opensans-light.woff2) format('woff2'),
+         url(../fonts/opensans-light.woff) format('woff'),
+         url(../fonts/opensans-light.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url(../fonts/opensans-extrabold.eot);
+    src: url(../fonts/opensans-extrabold.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/opensans-extrabold.woff2) format('woff2'),
+         url(../fonts/opensans-extrabold.woff) format('woff'),
+         url(../fonts/opensans-extrabold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+}
+
+
+header {
+	font-family: "league_gothic";
+	color: #fff;
+	text-align: center;
+	height: 516px;
+	background: url(../img/bg.jpg) no-repeat top center;
+}
+
+.logo	{
+	padding-top: 70px;
+	font-size: 48px;
+	text-transform: uppercase;
+	text-shadow: 2px 2px 3px #000;
+
+}
+
+.logo span {
+
+}
+
+.header__menu {
+	position: relative;
+	width: 244px;
+	margin: 18px auto;
+	border-radius: 10px;
+	overflow: hidden;
+}
+
+.header__menu li {
+	border-bottom: 1px solid #35273d;
+	border-top : 1px solid #695272;
+}
+
+.header__menu a {
+	font-size: 24px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+   font-family: "league_gothic";
+   display: block;
+	line-height: 38px;
+	border-bottom: 2px solid transparent;
+}
+
+.header__menu li:last-child a {
+	border-bottom: none;
+}
+
+.header__menu li {
+	display: none
+}
+
+.header__menu:hover{
+	background-color: rgba(54, 41, 62, 0.8);
+	border: 1px solid #000;
+}
+
+.header__menu:hover li {
+	display: block;
+}
+
+.menu__home a {
+    border-top: none;
+    line-height: 51px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu__home:after {
+	content: "";
+	position: absolute;
+	top: 41px;
+	left: 98px;
+	border: 1px solid #edbfff;
+	width: 45px;
+}
+
+.header__menu a:hover {
+	border-bottom: 2px solid #edbfff;
+   background-color: rgba(34, 26, 39, 0.8);
+}
+
+
+.carousel__title {
+
+}
