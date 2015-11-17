@@ -19,10 +19,6 @@ body {
 	background-size: cover;
 }
 
-.space {
-	height: 213px;
-}
-
 /* HEADER */
 
 .header {
@@ -38,7 +34,7 @@ body {
 
 .header .header__wrapper {
 	margin: 0 auto;
-	width: 750px;
+	max-width: 1215px;
 	float: none;
 }
 
