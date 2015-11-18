@@ -202,8 +202,7 @@ body {
 
 
 .button-end {
-	margin-top: -1px;
-	height: 36px;
+	height: 35px;
 	color: #fff;
 	border-left: 1px solid #4c68a9;
 	vertical-align: top;
@@ -214,6 +213,7 @@ body {
 .line {
 	margin-top: 30px;
 	position: relative;
+	color: #999999;
 }
 
 .line:before {
