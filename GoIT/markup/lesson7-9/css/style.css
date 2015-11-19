@@ -67,7 +67,7 @@ body
 
 
 .wrapper {
-	min-width: 320px;
+	min-width: 300px;
 	margin: 0 auto;
 	position: relative;
 	z-index: -10;
@@ -146,10 +146,6 @@ body
 	border-bottom-right-radius: 10px;
 }
 
-.menu__home {
-	
-}
-
 .menu__home a {
     border-top: none;
     line-height: 51px;
@@ -175,24 +171,52 @@ body
 	border-top-right-radius: 10px;
 }
 
-
+.black-bg {
+	position: relative;
+	padding-top: 106px;
+	padding-bottom: 60px;
+}
 
 .carousel {
-	margin: 110px auto 80px auto;
+	margin: 0 auto;
 	text-align: left;
-	padding-left: 66px;
 	position: relative;
 	z-index: 1;
-	width: 254px;
+	overflow: hidden;
+}
+
+
+.carausel__img {
+	height: 407px;
+	top: 0;
+	right: 0;
+	display: none;
+}
+
+.carausel-wrapper {
+	float: left;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+}
+.carausel__left-nav {
+	margin-top: 11px;
+	float: left;
+}
+
+.carausel__right-nav {
+	float: right;
+	margin-top: 11px;
 }
 
 .carousel__title {
-	text-shadow: 1px 1px 3px #444444;
+	display: inline;
 	font-size: 36px;
 	margin-bottom: 2px;
+	text-shadow: 1px 1px 3px #444444;
 }
 
-.carousel__title:before {
+/* .carousel__title:before {
 	content: "";
 	position: absolute;
 	top: 9px;
@@ -213,18 +237,19 @@ body
 	background-position: -86px -197px;
 	right: -3px;
 	top: 9px; 
-}
+} */
 
 .carousel__text {
-	text-shadow: 1px 1px 3px #444444;
  	font-size: 18px;
  	text-transform: uppercase;
  	color: #edbfff;
+ 	margin-left: 18px;
 }
 
 .carousel__selector { 
 	position: relative;
 	z-index: 2;
+	margin-top: 20px;
 }
 .selector {
 	display: inline-block;
@@ -271,9 +296,9 @@ body
 	border-top: 1px solid #000;
 	border-bottom: 1px solid #fff;
 	padding-top: 70px;
-	padding-left: 82px;
+	padding-left: 76px;
 	letter-spacing: -0.4px;
-	padding-right: 9px;
+	padding-right: 16px;
 	position: relative;
 }
 
@@ -347,7 +372,7 @@ body
 	background-color: #fff;
 	margin-right: 18px;
 	border-bottom: 1px solid #eaeaea;
-	padding: 24px 7px 27px 36px;
+	padding: 24px 7px 27px 31px;
 }
 
 
@@ -357,7 +382,7 @@ body
 	border-radius: 50%;
 	position: absolute;
 	top: 18px;
-	left: -22px;
+	left: -28px;
 }
 
 .person__title {
@@ -406,7 +431,7 @@ body
 
 .blog__updates { 
 	margin-top: 45px; 
-	margin-left: 43px;
+	margin-left: 37px;
 }
 
 .updates__title {
