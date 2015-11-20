@@ -65,6 +65,10 @@ body
 	z-index: -15; 
 }
 
+.limiter {
+	max-width: 960px;
+	margin: 0 auto;
+}
 
 .wrapper {
 	min-width: 300px;
@@ -75,6 +79,7 @@ body
 /* HEADER */
 
 .header {
+	width: 100%;
 	font-family: "league_gothic";
 	color: #fff;
 	text-align: center;
@@ -84,6 +89,10 @@ body
 
 .sprite-pingbuller	{
 	margin-top: 70px;
+}
+
+.header__nav768 {
+	display: none;
 }
 
 .header__menu {
@@ -173,8 +182,8 @@ body
 
 .black-bg {
 	position: relative;
-	padding-top: 106px;
-	padding-bottom: 60px;
+	padding-top: 92px;
+	padding-bottom: 63px;
 }
 
 .carousel {
@@ -187,7 +196,7 @@ body
 
 
 .carausel__img {
-	height: 407px;
+	height: 305px;
 	top: 0;
 	right: 0;
 	display: none;
@@ -239,11 +248,15 @@ body
 	top: 9px; 
 } */
 
-.carousel__text {
+.carausel__tagline {
  	font-size: 18px;
  	text-transform: uppercase;
  	color: #edbfff;
  	margin-left: 18px;
+}
+
+.carausel__text {
+	display: none;
 }
 
 .carousel__selector { 
@@ -280,7 +293,7 @@ body
 /* ABOUT US */
 
 .about-us { 
-	height: 529px;
+	width: 100%;
 	color: #fff;
 	background: rgba(116,80,131,1);
 	background: -moz-linear-gradient(top, rgba(116,80,131,1) 0%, rgba(50,37,57,1) 100%);
@@ -300,6 +313,7 @@ body
 	letter-spacing: -0.4px;
 	padding-right: 16px;
 	position: relative;
+	padding-bottom: 60px;
 }
 
 .about-us__block { 
@@ -357,6 +371,7 @@ body
 /* BLOGS */
 
 .blogs {
+	width: 100%;
 	position: relative;
 	z-index: -1;
 	background-color: #f9f9f9;
@@ -401,6 +416,8 @@ body
 	font-size: 16px;
 	line-height: 24px;
 	padding-left: 3px;
+	height: 167px;
+	overflow: hidden;
 }
 
 .carousel__selector--blogs {
@@ -455,17 +472,23 @@ body
 .post__title {
 	font-size: 16px;
 	font-family: 'open_sansextrabold';
+	width: 160px;
+	overflow: hidden;
+	height: 17px;
 }
 
-.post_text {
+.post__text {
 	font-size: 16px;
 	font-family: 'open_sanslight';
 	margin-top: 8px;
+	width: 220px;
+	height: 18px;
+	overflow: hidden;
 }
 
 .block__link--updates {
-	margin-top: 29px;
-	margin-right: 9px;
+	margin-top: 20px;
+	margin-right: 42px;
 }
 
 .block__link--updates a {
@@ -481,6 +504,7 @@ body
 /* LOGOS */
 
 .logos {
+	width: 100%;
 	overflow: hidden;
 	position: relative;
 	background-color: #f9f9f9;
@@ -502,14 +526,25 @@ body
 	margin-left: 38px;
 }
 
+/* CATEGORIES */
+
+.categories {
+	display: none;
+}
+
 /* FOOTER  */
 
 footer {
+	width: 100%;
 	z-index: -1;
 	position: relative;
 	text-align: center;
 	color: #fff;
 	background: url(../img/bg-footer.jpg) no-repeat center top;
+}
+
+.footer__nav {
+	display: none;
 }
 
 .footer__text {
