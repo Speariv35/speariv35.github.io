@@ -49,8 +49,9 @@
 
 
 .blog__updates {
-	width: 54%;
-	margin: 57px auto;
+	 width: 54%;
+    margin: 57px auto;
+    padding-bottom: 45px;
 }
 
 .post__title {
@@ -64,8 +65,8 @@
 }
 
 .block__link--updates {
- 	margin-right: -46px;
-
+ 	bottom: 6px;
+   right: -22px;
 }
 
 /* LOGOS */
@@ -150,7 +151,7 @@
 
 
 .header{
-	padding-bottom: 154px;
+	padding-bottom: 98px;
 }
 
 .logo-wrapper {
@@ -209,11 +210,11 @@
 }
 
 .carausel__left-nav {
-	   margin-top: 82px;
+	margin-top: 82px;
 }
 
 .carausel__right-nav {
-	   margin-top: 82px;
+	margin-top: 82px;
 }
 
  .carausel-wrapper {
@@ -241,7 +242,7 @@
     position: relative;
     z-index: 2;
     margin-top: 36px;
-    margin-right: 14%;
+    margin-right: 34%;
 }
 
 /* PERSON */
@@ -279,8 +280,12 @@
 .about-us {
 	overflow: hidden;
 	padding-top: 77px;
-    padding-left: 10%;
     padding-right: 0px;
+    padding-bottom: 46px;
+}
+
+.about-us__block:first-child {
+    padding-left: 76px;
 }
 
 .about-us__block {
@@ -288,11 +293,12 @@
     margin-bottom: 24px;
     width: 26%;
     margin-left: 1px;
-    margin-right: 70px;
+    margin-right: 42px;
+    padding-left: 0px;
 }
 
 .about-us__block:last-child {
-	margin-right: 0px;
+	margin-right: 1px;
     margin-left: 2px;
 }
 
@@ -312,6 +318,7 @@
 .blogs {
 	overflow: hidden;
 	padding-bottom: 47px;
+	padding-top: 85px;
 }
 
 .blogs__person {
@@ -322,7 +329,7 @@
 	float: left;
 	width: 45%;
     margin-top: 17px;
-    margin-left: 3%;
+    margin-left: 1%;
 }
 
 .person__title {
@@ -348,10 +355,11 @@
 	float: left;
     width: 46%;
     margin: 42px auto;
+    padding-left: 0px;
 }
 
 .updates__title {
-	margin-left: 49px;
+	margin-left: 33px;
 }
 
 .updates__post {
@@ -366,13 +374,12 @@
 }
 
 .post__text {
- 	width: 265px;
+	width: 265px;
 
 }
 
 .block__link--updates {
- 	margin-right: -49px;
-    margin-top: 21px;
+ 	 right: -28px;
 }
 
 /* LOGOS */
@@ -428,16 +435,157 @@
 }
 
 
-
+}
 
 /* WIDTH 960px **************************************************************/
 
 
+@media (min-width: 960px) {
+/* HEADER */
+
+.header {
+	padding-bottom: 57px;
+}
+
+.black-stripe {
+	 background-color: rgba(0, 0, 0, 0.2);
+    position: absolute;
+    height: 401px;
+    width: 100%;
+    display: block;
+    top: 277px;
+}
+
+.sprite-pingbuller {
+   margin-left: 0;
+}
+
+.logo-wrapper {
+	float: left;
+   overflow: auto;
+}
+
+.header__nav768 {
+   float: right;
+   padding-top: 69px;
+   margin-left: 0;
+}
+
+.header__nav768 li:last-child {
+   float: left;
+   margin-right: 3px;
+}
+
+.black-bg {
+   margin-top: 278px;
+   padding-top: 78px;
+   padding-bottom: 80px;
+   background-color: transparent;
+}
+
+.carausel-wrapper {
+    text-align: left;
+    width: 81%;
+    margin-left: 0;
+}
+
+.carousel__title {
+    font-size: 60px;
+}
+
+.carausel__tagline {
+    font-size: 32px;
+    margin-top: -1px;
+}
+
+.carausel__text {
+   font-size: 18px;
+   width: 69%;
+   height: 144px;
+   line-height: 24px;
+}
+
+
+.categories {
+	width: 100%;
+}
+
+
+.about-us__block {
+  	margin-right: 62px;
+}
+
+.post__text {
+    width: 358px;
+}
+
+.carousel__selector {
+    margin-top: 93px;
+    margin-right: 15%;
+}
+
+.about-us {
+    padding-bottom: 100px;
+}
+
+.logos div {
+    margin-left: 79px;
+}
+
+.categories {
+    overflow: hidden;
+    padding-left: 1%;
+    padding-top: 39px;
+}
+
+.footer__text {
+    float: right;
+}
+
+.footer__nav {
+    
+}
+.footer__nav li {
+    margin-right: 6%;
+}
+
+}
 
 
 
 
 
+
+
+
+
+
+
+
+
+@media (min-width: 1030px) {
+.carausel__left-nav,
+.carausel__right-nav {
+	display: none;
+}
+
+.carausel__left-nav960 {
+	display: block;
+	float: left;
+	position: absolute;
+	left: 0;
+	top: 450px;
+}
+
+.carausel__right-nav960 {
+	display: block;
+	float: right;
+	position: absolute;
+	right: 0;
+	top: 450px;
+}
+
+}
 
 
 
