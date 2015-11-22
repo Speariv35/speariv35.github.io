@@ -54,13 +54,14 @@
 
 }
 
-html
-{  z-index: -16; 
+html{  
+	z-index: -16; 
 	position: relative; 
 }
 
 body
 { 
+	font-family: Arial, Tahoma, sans-serif;
 	position: relative; 
 	z-index: -15; 
 }
