@@ -42,9 +42,15 @@
 @font-face {
     font-family: 'league_gothic';
     src: url(../fonts/leaguegothic-regular.eot);
-    src: url(../fonts/leaguegothic-regular.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/leaguegothic-regular.woff2) format('woff2'),
-         url(../fonts/leaguegothic-regular.woff) format('woff'),
+    src: url(../fonts/leaguegothic-regular.eot?#iefix) format('embedded-opentype'),
+
+
+         url(../fonts/leaguegothic-regular.woff2) format('woff2'),
+
+
+         url(../fonts/leaguegothic-regular.woff) format('woff'),
+
+
          url(../fonts/leaguegothic-regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -54,9 +60,15 @@
 @font-face {
     font-family: 'open_sanslight';
     src: url(../fonts/opensans-light.eot);
-    src: url(../fonts/opensans-light.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/opensans-light.woff2) format('woff2'),
-         url(../fonts/opensans-light.woff) format('woff'),
+    src: url(../fonts/opensans-light.eot?#iefix) format('embedded-opentype'),
+
+
+         url(../fonts/opensans-light.woff2) format('woff2'),
+
+
+         url(../fonts/opensans-light.woff) format('woff'),
+
+
          url(../fonts/opensans-light.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -67,9 +79,15 @@
 @font-face {
     font-family: 'open_sansextrabold';
     src: url(../fonts/opensans-extrabold.eot);
-    src: url(../fonts/opensans-extrabold.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/opensans-extrabold.woff2) format('woff2'),
-         url(../fonts/opensans-extrabold.woff) format('woff'),
+    src: url(../fonts/opensans-extrabold.eot?#iefix) format('embedded-opentype'),
+
+
+         url(../fonts/opensans-extrabold.woff2) format('woff2'),
+
+
+         url(../fonts/opensans-extrabold.woff) format('woff'),
+
+
          url(../fonts/opensans-extrabold.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -85,7 +103,8 @@ body
 { 
 	font-family: Arial, Tahoma, sans-serif;
 	position: relative; 
-	z-index: -15; 
+	z-index: -15;
+	width: 100%; 
 }
 
 .limiter {
@@ -95,7 +114,7 @@ body
 }
 
 .wrapper {
-	min-width: 300px;
+	min-width: 100px;
 	margin: 0 auto;
 	position: relative;
 	z-index: -10;
@@ -407,7 +426,7 @@ body
 .block__text {
 	font-family: 'open_sanslight';
 	line-height: 24px;
-	padding-right: 25px;
+	padding-right: 34px;
 	margin-bottom: 16px;
 	height: 71px;
 	overflow: hidden;
@@ -449,7 +468,7 @@ body
 	background-color: #fff;
 	margin-right: 18px;
 	border-bottom: 1px solid #eaeaea;
-	padding: 24px 7px 27px 31px;
+	padding: 24px 31px 27px 31px;
 }
 
 .person-wrapper {
