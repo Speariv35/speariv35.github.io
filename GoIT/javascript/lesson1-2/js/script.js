@@ -10,7 +10,17 @@ var pow = parseInt(b);
 sum = num;
 
 if (pow == 0) {
-    alert ('Number '+ a +' in pow '+ b +' = 1');
+	 sum = 1;
+    alert ('Number '+ a +' in pow '+ b + ' = '+ sum);
+    console.log ('Result', sum)
+}
+else if (pow < 0) {
+		while (pow != -1) {
+        sum = sum / num;
+        pow++;
+    }
+    alert ('Number '+ a +' in pow '+ b +' = '+ sum);
+    console.log ('Result', sum)
 }
 else {
     while (pow != 1) {
@@ -18,5 +28,6 @@ else {
         pow--;
     }
     alert ('Number '+ a +' in pow '+ b +' = '+ sum);
+    console.log ('Result', sum)
 }
 

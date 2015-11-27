@@ -211,6 +211,17 @@ h3 {
 	border: 2px solid rgba(240, 121, 1, .5);
 }
 
+.rowphoto .center,
+.rowtitle .center {
+	width: 225px;
+	float: none;
+	margin: 0 auto;
+}
+
+.center-img {
+	width: 765px;
+}
+
 /* Footer Style*/
 
 .footer {
