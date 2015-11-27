@@ -94,6 +94,11 @@
 	margin-top: 19px;
 }
 
+.logos .logo5 {
+	
+}
+
+
 /* CATEGORIES */
 
 .categories {
@@ -126,6 +131,7 @@
 	overflow: hidden;
 	line-height: 24px;
 	text-shadow: 0px 1px 0px #ffffff;
+	margin-right: 25px;
 }
 
 
@@ -263,7 +269,7 @@
     top: -23px;
     right: 30px;
     display: block;
-    height: 434px;
+    height: 425px;
 }
 
 .carousel__selector {
@@ -271,7 +277,7 @@
     position: relative;
     z-index: 2;
     margin-top: 36px;
-    margin-right: 34%;
+    margin-right: 14%;
 }
 
 /* PERSON */
@@ -291,7 +297,7 @@
 	margin-top: 7px;
     line-height: 26px;
     overflow: hidden;
-    width: 46%;
+    width: 45%;
     height: 108px;
 }
 
@@ -420,6 +426,12 @@
 
 .logos div {
   	margin-left: 52px;
+  	margin-top: 27px;
+}
+
+.logos .logo6 {
+	margin-top: 5px;
+
 }
 
 /* CATEGORIES */
@@ -538,6 +550,7 @@
    width: 69%;
    height: 144px;
    line-height: 24px;
+   text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 
 .categories {
@@ -578,6 +591,10 @@
 }
 .logos div {
     margin-left: 79px;
+}
+
+.logos .logo6 {
+	margin-top: -1px;
 }
 
 .carousel__selector--blogs {

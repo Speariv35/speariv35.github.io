@@ -42,15 +42,15 @@
 @font-face {
     font-family: 'league_gothic';
     src: url(../fonts/leaguegothic-regular.eot);
-    src: url(../fonts/leaguegothic-regular.eot?#iefix) format('embedded-opentype'),
-
-
-         url(../fonts/leaguegothic-regular.woff2) format('woff2'),
-
-
-         url(../fonts/leaguegothic-regular.woff) format('woff'),
-
-
+    src: url(../fonts/leaguegothic-regular.eot?#iefix) format('embedded-opentype'),
+
+
+         url(../fonts/leaguegothic-regular.woff2) format('woff2'),
+
+
+         url(../fonts/leaguegothic-regular.woff) format('woff'),
+
+
          url(../fonts/leaguegothic-regular.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -60,15 +60,15 @@
 @font-face {
     font-family: 'open_sanslight';
     src: url(../fonts/opensans-light.eot);
-    src: url(../fonts/opensans-light.eot?#iefix) format('embedded-opentype'),
-
-
-         url(../fonts/opensans-light.woff2) format('woff2'),
-
-
-         url(../fonts/opensans-light.woff) format('woff'),
-
-
+    src: url(../fonts/opensans-light.eot?#iefix) format('embedded-opentype'),
+
+
+         url(../fonts/opensans-light.woff2) format('woff2'),
+
+
+         url(../fonts/opensans-light.woff) format('woff'),
+
+
          url(../fonts/opensans-light.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -79,15 +79,15 @@
 @font-face {
     font-family: 'open_sansextrabold';
     src: url(../fonts/opensans-extrabold.eot);
-    src: url(../fonts/opensans-extrabold.eot?#iefix) format('embedded-opentype'),
-
-
-         url(../fonts/opensans-extrabold.woff2) format('woff2'),
-
-
-         url(../fonts/opensans-extrabold.woff) format('woff'),
-
-
+    src: url(../fonts/opensans-extrabold.eot?#iefix) format('embedded-opentype'),
+
+
+         url(../fonts/opensans-extrabold.woff2) format('woff2'),
+
+
+         url(../fonts/opensans-extrabold.woff) format('woff'),
+
+
          url(../fonts/opensans-extrabold.ttf) format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -243,7 +243,7 @@ body
 
 
 .carausel__img {
-	height: 305px;
+	height: 298px;
 	top: 0;
 	right: 0;
 	display: none;
@@ -468,7 +468,7 @@ body
 	background-color: #fff;
 	margin-right: 18px;
 	border-bottom: 1px solid #eaeaea;
-	padding: 24px 31px 27px 31px;
+	padding: 24px 37px 27px 31px;
 }
 
 .person-wrapper {
@@ -503,6 +503,7 @@ body
 	padding-left: 3px;
 	height: 167px;
 	overflow: hidden;
+	text-shadow: 0px 1px 0px #ffffff;
 }
 
 .carousel__selector--blogs {
@@ -549,6 +550,7 @@ body
 	position: relative;
 	margin-bottom: 40px;
 	padding-left: 75px;
+	text-shadow: 0px 1px 0px #ffffff;
 }
 
 .updates__title {
@@ -623,8 +625,18 @@ body
 }
 
 .logos .logo5 { 
-	margin-left: 0px;
+	margin-left: 1px;
 	margin-top: 20px;
+}
+
+.logos .logo4 {
+	margin-left: 14px;
+	margin-top: 3px;
+}
+
+.logos .logo6 {
+	margin-top: -12px;
+	margin-left: -24px;
 }
 
 .logos .sprite-logo5 {
