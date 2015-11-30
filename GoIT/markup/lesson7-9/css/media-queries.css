@@ -78,26 +78,28 @@
 /* LOGOS */
 
 .logos {
-	padding-bottom: 33px;
+	padding-bottom: 14px;
 	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.0);
 	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0);
 	
 }
 
 .logos div {
-    margin-top: 47px;
+    margin-top: 16px;
     margin-left: 63px;
     float: left;
 }
 
 .logos div img {
-	margin-top: 19px;
 }
 
 .logos .logo5 {
-	
+ 	margin-top: 51px;
 }
 
+.logos .logo4 {
+	
+}
 
 /* CATEGORIES */
 
@@ -276,8 +278,8 @@
     float: right;
     position: relative;
     z-index: 2;
-    margin-top: 36px;
-    margin-right: 14%;
+    margin-top: 35px;
+    margin-right: 33%;
 }
 
 /* PERSON */
@@ -421,16 +423,17 @@
 }
 
 .logos {
-	padding-bottom: 17px;
+	margin-bottom: 0px;
 }
 
 .logos div {
-  	margin-left: 52px;
+  	margin-left: 46px;
   	margin-top: 27px;
+  	height: 46px;
 }
 
 .logos .logo6 {
-	margin-top: 5px;
+	margin-top: 29px;
 
 }
 
