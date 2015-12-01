@@ -1,33 +1,28 @@
-var a;
-var b;
-var sum;
+function pow(x, y) {
+  var result = x;
 
-a = prompt ('Input number', a);
-b = prompt ('Input pow', b);
-var num = parseInt(a);
-var pow = parseInt(b);
-
-sum = num;
-
-if (pow == 0) {
-	 sum = 1;
-    alert ('Number '+ a +' in pow '+ b + ' = '+ sum);
-    console.log ('Result', sum)
+  if (y > 0) {
+    for (var i = 1; i < y; i++) {
+    result *= x;
+  }
+    return result;
+  } else if (y < 0) {
+    for (var i = -1; i > y; i--) {
+    result *= x;
 }
-else if (pow < 0) {
-		while (pow != -1) {
-        sum = sum / num;
-        pow++;
-    }
-    alert ('Number '+ a +' in pow '+ b +' = '+ sum);
-    console.log ('Result', sum)
-}
-else {
-    while (pow != 1) {
-        sum = sum * num;
-        pow--;
-    }
-    alert ('Number '+ a +' in pow '+ b +' = '+ sum);
-    console.log ('Result', sum)
+    result = 1 / result;
+    return result;
+  }
+  else {
+    result = 1;
+    return result;
+  }
+
 }
 
+var x = prompt('Input x ', x);
+var y = prompt('Input y ', y);
+
+
+alert( pow(x, y) );
+console.log ('x pow y = ', result)
