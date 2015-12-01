@@ -2,8 +2,14 @@
 var arr = [], name, login, i;
 
 for ( i = 5; i > 0; i--) {
-	arr[i] = prompt ('Input name of your users (' + i + ' users left): ', name);
+	while (true) {
+	arr[i] = prompt('Input name of your users (' + i + ' users left): ');
+	if  ( (arr[i] != null) && (arr[i] != '') ) {
+		break;
+	}
+	alert ('Input correct username!!!');
 	} 
+}
 
 login = prompt ('Input login to check', login);
 

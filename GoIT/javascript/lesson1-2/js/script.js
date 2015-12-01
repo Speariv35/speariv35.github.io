@@ -1,3 +1,17 @@
+while (true) {
+
+var x = prompt('Input x ', x);
+var y = prompt('Input y ', y);
+
+if ( ( (x != null) && (y != null) ) && ( (x != '') && (y != '') ) && ( (isNaN(x) != true) && (isNaN(y) != true) ) )  {
+    break;
+}
+    alert ('Input correct  x  and y ! (numbers)');
+}
+
+alert( pow(x, y) );
+console.log ('x pow y = ', pow(x, y))
+
 function pow(x, y) {
   var result = 1;
 
@@ -15,8 +29,4 @@ function pow(x, y) {
   }
 }
 
-var x = prompt('Input x ', x);
-var y = prompt('Input y ', y);
 
-alert( pow(x, y) );
-console.log ('x pow y = ', pow(x, y))
