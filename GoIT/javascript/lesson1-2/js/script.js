@@ -25,4 +25,4 @@ var y = prompt('Input y ', y);
 
 
 alert( pow(x, y) );
-console.log ('x pow y = ', result)
+console.log ('x pow y = ', pow(x, y))
