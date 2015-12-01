@@ -13,15 +13,16 @@ for ( i = 5; i > 0; i--) {
 
 login = prompt ('Input login to check', login);
 
-var sucsess = 0;
+var sucsess = false;
 
 for ( i = 0; i < arr.length; i++) {
 	if (login == arr [i]) {
-		sucsess++;
+		sucsess = true;
+		break;
 	} 
 }
 
-if (sucsess > 0) {
+if (sucsess) {
 	alert (login + ', your login successful');
 } else  {
 	alert ('No such user ' + login + ' !!!')
