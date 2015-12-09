@@ -1,90 +1,75 @@
-var testForm = {
- 	createForm: function () {
- 		var element = document.createElement('form');
-		element.classList.add('form');
-		element.innerHTML = '<h3>Тест по программированию</h3>';
-		var link = document.body;
-		link.appendChild(element);
- 	},
+var app = {
 
- 	createUl: function (object, i) {
- 		var object;
- 		var element = document.createElement('ul');
-		element.classList.add('nav-stacked');
-		var link = document.querySelectorAll('.'+object);
-  		link[i].appendChild(element);
-},
+  createElement: function(parameters) {
+    var element = document.createElement(parameters.tagName);
 
- 	createLi: function (elem, text) {
- 		var text;
- 		var element = document.createElement('li');
-		var link = document.querySelector('.' + elem);
-		element.classList.add('list-title');
-		link.appendChild(element);
-		element.innerHTML = i + '. ' + text + i;
- 	},
+    if (parameters.inputType){
+      element.setAttribute('type', parameters.inputType);
+    }
 
- 	createUlLi: function (elem, ElemInColection) {
- 		var element = document.createElement('li');
-		var link = document.querySelectorAll('.' + elem);
-		element.classList.add('list-title');
-		link[ElemInColection].appendChild(element);
- 	},
+    if (parameters.className){
+      element.className = parameters.className;
+    }
 
-   createInputLabel: function (elem, text, ElemInColection) {
+    if (parameters.content){
+      element.innerHTML = parameters.content;
+    }
 
-   var checkbox = document.createElement('input');
-	checkbox.type = "checkbox";
-	checkbox.name = "name";
-	checkbox.value = "value";
-	checkbox.id = "id";
-	var label = document.createElement('label')
-	label.htmlFor = "id";
-	label.appendChild(document.createTextNode(text + (i+1) ) );
+    if (parameters.parentElement){
+      parameters.parentElement.appendChild(element);
+    }
 
-	var link = document.querySelectorAll('.' + elem);
+     if (parameters.value){
+      element.value = parameters.value;
+    }
 
-	link[ElemInColection].appendChild(checkbox);
-	link[ElemInColection].appendChild(label);
+    return element;
+  }
 
-   }
+}
 
 
+var body = document.querySelector('body');
 
+app.createElement({
+  tagName: 'h1',
+  content: 'Тест по программированию',
+  parentElement: body
+});
 
-/*	createUL: function () {
-	var element = document.createElement('li');
-	var link = document.querySelector('.nav-stacked');
-	link.appendChild(element);
-	element.innerHTML = '<h5>Вопрос№</h5>' + i;
- 	}*/
- }
+var form = app.createElement({
+  tagName: 'form',
+  parentElement: body
+});
 
+for (var i = 0; i < 3; i++) {
 
- testForm.createForm ();
+      app.createElement({
+        tagName: 'h2',
+        content: 'Вопрос №' + (i + 1),
+        parentElement: form
+      });
 
- testForm.createUl ('form', 0);
+      for (var j = 0; j < 3; j++) {
 
- for (var i = 1 ; i <= 3; i++) {
- 	testForm.createLi ('nav-stacked', 'Вопрос №');
- };
+        var label = app.createElement({
+          tagName: 'label',
+          content: 'Вариант ответа №' + (j + 1),
+          parentElement: form
+        });
 
- var number = document.querySelectorAll('.list-title').length;
- for (var i = 0; i < number; i++) {
- 	testForm.createUl ('list-title', i);
- };
+        var checkbox = app.createElement({
+          tagName: 'input',
+          inputType: 'checkbox'
+        });
 
+        label.insertAdjacentElement('afterBegin', checkbox);
+      }
+}
 
-for (var j = 0; j < 3; j++) {
-	for (var i = 1 ; i <= 3; i++) {
- 	testForm.createUlLi ('nav-stacked .nav-stacked', j);
- }
-};
- 
-// for (var k = 0; k < 3; k++) {
-	for (var i = 0, j=0 ; i,j < 3; i++, j++) {
-	 testForm.createInputLabel ('nav-stacked .nav-stacked .list-title', 'Вариант ответа №', j );
-	// }
-};
- 
-
+app.createElement({
+  tagName: 'input',
+  inputType: 'submit',
+  value: 'Проверить мои результаты',
+  parentElement: form
+});
