@@ -40,14 +40,23 @@ body {
 	font-weight: bold;
 	line-height: 64px;
 	margin-top: 53px;
+	cursor: pointer;
 }
 
 .start-cont {
 	float: left;
 	background-color: #33ad4a;
 }
+.start-cont:hover {
+	background-color: #44cb5e;
+}
+
 
 .clear {
 	float: right;
 	background-color: #c0363d;
+}
+
+.clear:hover {
+	background-color: #dc4d54;
 }
