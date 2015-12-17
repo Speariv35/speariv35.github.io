@@ -3,7 +3,7 @@
 	var minutes = '00';
 	var hours = '00';
 	started = 0;
-	var timerId = setInterval("timer()", 1);
+	
 
 
 link = document.querySelector('.button');
@@ -15,10 +15,11 @@ function startTimer () {
 	started++;
 	started = started % 2;
 	if (started) {
+		timerId = setInterval("timer()", 1);
 		linkStart.innerHTML = 'Pause';
 		linkStart.style.backgroundColor = '#33ad4a';
-		// clearTimeout (timerId);
 } else {
+		clearInterval(timerId);
 	 	linkStart.innerHTML = 'Cont..';
 	 	linkStart.style.backgroundColor = '#2379bb';
 	  }
@@ -45,11 +46,6 @@ function clearTimer () {
 }
 
 function timer(){
-
-if (started) {
-
-
-
 if (mseconds < 10) {
 		mseconds = '00' + mseconds;
 	}
@@ -59,7 +55,7 @@ if (mseconds >= 10 & mseconds <100) {
 
     document.querySelector('.time').innerHTML = hours + ':' + minutes + ':' + seconds;
     document.querySelector('.miliseconds').innerHTML = mseconds;
-	 mseconds++;
+	 ++mseconds;
 
 	if (mseconds === 1000) {
 		mseconds = 0;
@@ -86,10 +82,7 @@ if (mseconds >= 10 & mseconds <100) {
  }
 }
 
- } else {
- 	clearTimeout (timerId);
- }
-}
+} 
 
-setInterval(timer, 1)
+
 
