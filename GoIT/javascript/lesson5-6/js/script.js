@@ -31,6 +31,7 @@ linkClear = document.querySelector('.clear');
 linkClear.addEventListener( "click" , clearTimer);
 
 function clearTimer () {
+	clearInterval(timerId);
 	var linkStart = document.querySelector('.start-cont')
    linkStart.innerHTML = 'Start';
 	linkStart.style.backgroundColor = '#33ad4a';
