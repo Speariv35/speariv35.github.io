@@ -1,0 +1,46 @@
+.wrapper {
+
+	width: 600px;
+	margin: 0 auto;
+	padding-top: 100px;
+}
+
+.tabs-wrapper {
+	border: 1px solid grey;
+	border-radius: 5px;
+	padding: 5px;
+}
+
+ul {
+	padding-top: 10px;
+	padding-left: 10px;
+	background-color: grey;
+	border-radius: 5px;
+}
+
+.tab-1,
+.tab-2,
+.tab-3 {
+	width: 80px;
+	line-height: 20px;
+	background-color: #cccccc;
+	display: inline-block;
+	cursor: pointer;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 5px;
+	text-align: center;
+}
+
+.tab {
+	margin: 20px;
+}
+
+.tab-1 {
+	background-color: #fff;
+}
+
+.txt2,
+.txt3 {
+	display: none;
+}
