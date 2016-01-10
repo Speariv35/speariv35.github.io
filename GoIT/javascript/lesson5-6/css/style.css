@@ -32,6 +32,10 @@ body {
 }
 
 .button {
+
+}
+
+.start-cont {
 	border: 9px solid #000;
 	border-radius: 30px;
 	width: 201px;
@@ -41,9 +45,6 @@ body {
 	line-height: 64px;
 	margin-top: 53px;
 	cursor: pointer;
-}
-
-.start-cont {
 	float: left;
 	background-color: #33ad4a;
 }
@@ -53,6 +54,15 @@ body {
 
 
 .clear {
+	border: 9px solid #000;
+	border-radius: 30px;
+	width: 201px;
+	text-align: center;
+	font-size: 47px;
+	font-weight: bold;
+	line-height: 64px;
+	margin-top: 53px;
+	cursor: pointer;
 	float: right;
 	background-color: #c0363d;
 }
