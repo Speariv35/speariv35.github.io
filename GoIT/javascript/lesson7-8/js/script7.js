@@ -14,7 +14,10 @@ $(function () {
 	$('.tab-3').on('click', function(){
 		show('.tab-3', '.txt3');
 	});
-
+//Tab 4
+	$('.tab-4').on('click', function(){
+		show('.tab-4', '.txt4');
+	});
 function show(tab, tabtxt){
 	$(tabtxt).css("display", "block");
 	$(tab).css({

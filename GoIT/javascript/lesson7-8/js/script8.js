@@ -1,77 +1,70 @@
-// /*$(function(){
-// var title;
-// var showOn = false;
-// /*functions-----------------*/
-// //fonction add himt
-// 	function addHint(id, name, child){
-// 		title = $(id).attr('title');
-// 		$(name).append('<span class = "hint"></span>');
-// 		var ch = $('.hint').addClass(child);
-// 		$(ch).text(title);
-// 		$(ch).animate({
-// 			opacity: 1
-// 		}, 500)
-// 	}
-// //fonction add all hint
-// 	function addAllHint(){
-// 		showOn = true;
-// 		addHint('#firstName', '.boxForFirstName', 'fName');
-// 		addHint('#lastName', '.boxForLastName', 'lName');
-// 		addHint('#address', '.boxForAdrees', 'addr');
-// 	}
-// //fonction delete hint	
-// 	function deleteHint(name){
-// 		$('.'+name).remove();
-// 	}
-// //fonction delete all hint
-// 	function deleteAllHint(){
-// 		showOn = false;
-// 		$('.fName').remove();
-// 		$('.lName').remove();
-// 		$('.addr').remove();
-// 	}
-// /*events--------------------*/
-// //event add help first name
-// 	$('#firstName').on('mouseover', function(){
-// 		if(showOn)
-// 			deleteAllHint();
-// 		addHint('#firstName', '.boxForFirstName', 'fName')
-// 	})
-// 	//event delete help
-// 		$('#firstName').on('mouseout', function(){
-// 			deleteHint('fName');
-// 		})
-// //event add help last name
-// 	$('#lastName').on('mouseover', function(){
-// 		if(showOn)
-// 			deleteAllHint();
-// 		addHint('#lastName', '.boxForLastName', 'lName')
-// 	})
-// 	//event delete help
-// 		$('#lastName').on('mouseout', function(){
-// 			deleteHint('lName');
-// 		})
-// //event add help address
-// 	$('#address').on('mouseover', function(){
-// 		if(showOn)
-// 			deleteAllHint();
-// 		addHint('#address', '.boxForAdrees', 'addr')
-// 	})
-// 	//event delete help
-// 		$('#address').on('mouseout', function(){
-// 			deleteHint('addr');
-// 		})
-// //opacity button show help
-// 	$('.showH').on('mouseover', function(){
-// 		$('.showH').css("opacity", "1");
-// 	})
-// 	$('.showH').on('mouseout', function(){
-// 		$('.showH').css("opacity", "0.5");
-// 	})
-// //event hint all
-// 	$('.showH').on('click', function(){
-// 		if(!showOn)
-// 			addAllHint();
-// 		})
-// });
-// */
+	$(function(){
+
+visible = false;
+var n=0;
+
+	function hideHelp(name){
+	  $('.'+name).remove();
+	}
+
+function showHelp(id, parent, child){
+		titles = $(id).attr('title');
+		$(parent).append('<span class = "help"></span>');
+		var ch = $('.help').eq(n).addClass(child);
+		$(ch).text(titles);
+		n++;
+	}
+
+function showAllHelp(){
+	   visible = true;
+	   n=0;
+		showHelp('#first-name', '.fname-wrapper', 'fname-help');
+		showHelp('#last-name', '.lname-wrapper', 'lname-help');
+		showHelp('#address', '.addr-wrapper', 'addr-help');
+	}
+
+function hideAllHelp(){	
+	$('.fname-help').remove();
+	$('.lname-help').remove();
+	$('.addr-help').remove();
+	visible = false;
+}
+
+
+$('#first-name').on({
+    mouseenter: function() {
+    n=0;
+    hideAllHelp()
+    showHelp('#first-name', '.fname-wrapper', 'fname-help');
+  }, mouseleave: function() {
+    hideHelp('fname-help');
+  }
+});
+
+$('#last-name').on({
+     mouseenter: function() {
+     	n=0;
+     	hideAllHelp()
+     	showHelp('#last-name', '.lname-wrapper', 'lname-help');
+  }, mouseleave: function() {
+    hideHelp('lname-help');
+  }
+});
+
+$('#address').on({
+     mouseenter: function() {
+     	n=0;
+     	hideAllHelp()
+    showHelp('#address', '.addr-wrapper', 'addr-help');
+  }, mouseleave: function() {
+    hideHelp('addr-help');
+  }
+});
+
+$('.show-all').on('click', function(){
+	if(!visible)
+			showAllHelp();
+		n=0;
+		})
+
+	});
