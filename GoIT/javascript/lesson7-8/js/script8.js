@@ -62,6 +62,7 @@ $('#address').on({
 });
 
 $('.show-all').on('click', function(){
+	event.preventDefault();
 	if(!visible)
 			showAllHelp();
 		n=0;

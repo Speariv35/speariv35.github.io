@@ -5,29 +5,48 @@
 	<title>JS Homework 9-10</title>
 	<link rel="stylesheet" href="/css/reset.css">
 	<script src= "//code.jquery.com/jquery-1.12.0.min.js"></script>
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
 	<script src="js/jquery.jcarousel.min.js"></script>
 	<script src="js/script.js"></script>
 	<link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 	<div class="wrapper">
+
+	<nav class="main_nav">
+        <ul class="main_menu">
+            <li class="main_menu--item"><a class="main_menu--link" href="#">Home</a></li>
+            <li class="main_menu--item "><a class="main_menu--link" href="#">Menu</a>
+               
+            </li>
+            <li class="main_menu--item main_dropdown"><a class="main_menu--link" href="#">Item 3</a>
+             <ul class="sub_menu">
+                    <li class="sub_menu--item"><a class="sub_menu--link" href="#">SubItem 1</a></li>
+                    <li class="sub_menu--item"><a class="sub_menu--link" href="#">SubItem 2</a></li>
+                    <li class="sub_menu--item"><a class="sub_menu--link" href="#">SubItem 3</a></li>
+                    <li class="sub_menu--item"><a class="sub_menu--link" href="#">SubItem 4</a></li>
+                </ul></li>
+            <li class="main_menu--item main_dropdown"><a class="main_menu--link" href="#">Item 4</a>
+                <ul class="sub_menu">
+                    <li class="sub_menu--item"><a class="sub_menu--link" href="#">SubItem 1</a></li>
+                    <li class="sub_menu--item"><a class="sub_menu--link" href="#">SubItem 2</a></li>
+                    <li class="sub_menu--item"><a class="sub_menu--link" href="#">SubItem 3</a></li>
+                    <li class="sub_menu--item"><a class="sub_menu--link" href="#">SubItem 4</a></li>
+                </ul>
+            </li>
+            <li class="main_menu--item"><a class="main_menu--link" href="#">Item 5</a></li>
+        </ul>
+    </nav>
 	<div class="jcarauser-wrapper">
-		<a class="jcarousel-prev" href="#">Previous</a>
-		<a class="jcarousel-next" href="#">Next</a>
-		<p class="jcarousel-pagination" data-jcarouselpagination="true">
-			<a href="#1" class="">1</a>
-			<a href="#2" class="active">2</a>
-			<a href="#3" class="">3</a>
-			<a href="#4" class="">4</a>
-		</p>
+		<a class="jcarousel-prev" href="#"><img src="img/previous.png" height="68" width="100" alt=""></a>
+		<a class="jcarousel-next" href="#"><img src="img/next.png" alt=""></a>
+		<p class="jcarousel-pagination" data-jcarouselpagination="true"></p>
 				<div class="jcarousel" data-jcarousel="true"> 
 				    <ul>
-				        <li class=".jcarousel-item"><img src="img/img-big-1.jpg" height="300" width="1000" alt=""></li> 
-				        <li class=".jcarousel-item"><img src="img/img-big-2.jpg" height="300" width="1000" alt=""></li> 
-				        <li class=".jcarousel-item"><img src="img/img-big-3.jpg" height="300" width="1000" alt=""></li> 
-				        <li class=".jcarousel-item"><img src="img/img-big-4.jpg" height="300" width="1000" alt=""></li> 
-				      
+				        <li class=".jcarousel-item"><img src="img/img-big-2.jpg"  alt=""></li> 
+				        <li class=".jcarousel-item"><img src="img/img-big-3.jpg"  alt=""></li> 
+				        <li class=".jcarousel-item"><img src="img/img-big-4.jpg"  alt=""></li> 
+				        <li class=".jcarousel-item"><img src="img/img-big-3.jpg"  alt=""></li> 
 				    </ul> 
 				</div> 
 		</div>

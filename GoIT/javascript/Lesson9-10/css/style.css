@@ -1,15 +1,116 @@
 
+body {
+	background-color: #999;
+}
+
+.main_nav {
+    width: 1030px;
+    margin: 50px auto;
+    background: #ccc;
+    height: 30px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+}
+
+.main_menu {
+    position: relative;
+}
+
+.main_menu--item {
+    position: relative;
+    float: left;
+    line-height: 30px;
+    -webkit-transition: 0.3s all linear;
+    -moz-transition: 0.3s all linear;
+    -o-transition: 0.3s all linear;
+    transition: 0.3s all linear;
+}
+
+.main_menu--item:hover {
+    background: #ccc;
+}
+
+.main_dropdown > a {
+    background: url(../img/arrow-down.png) 70px center no-repeat;
+}
+
+.main_menu--link {
+    display: block;
+    text-decoration: none;
+    color: white;
+    -webkit-transition: 0.3s all linear;
+    -moz-transition: 0.3s all linear;
+    -o-transition: 0.3s all linear;
+    transition: 0.3s all linear;
+    line-height: 30px;
+    padding: 0 10px 0 10px;
+}
+
+.main_menu--link:hover {
+    color: black;
+}
+
+.sub_menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+    background-color: #ccc;
+    z-index: 1;
+}
+
+.sub_menu--link {
+    display: block;
+    padding: 5px 20px;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .wrapper {
-	width: 1000px;
-	margin: 100px auto;
+	padding-top: 50px;
+	padding-bottom: 500px
+}
+
+
+.title {
+	font-family: Arial;
+	font-size: 80px;
+	color: #ccc;
+	margin-bottom: 50px;
+	 color: white;
+  text-shadow:
+   -5px -3px 0 #000,  
+   opacity: 0.9;
+ 
 }
 
 .jcarauser-wrapper {
-	width: 1000px;
+	max-width: 1000px;
+	margin: 0px auto;
 	position: relative;
 	border: 15px solid #ccc;
 	border-radius: 10px;
+	-webkit-box-shadow: 2px 10px 28px 0px rgba(0,0,0,0.52);
+-moz-box-shadow: 2px 10px 28px 0px rgba(0,0,0,0.52);
+box-shadow: 2px 10px 28px 0px rgba(0,0,0,0.52);
 
 }
 
@@ -22,37 +123,40 @@
 .jcarousel ul {
     width: 20000em;
     position: relative;
-
-    /* Optional, required in this case since it's a <ul> element */
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
 .jcarousel li {
-    /* Required only for block elements like <li>'s */
     float: left;
     left: 0;
 }
 
+	
+.jcarousel-prev img,
+.jcarousel-next img{
+	width: 50px;
+	height: 34px;
+}
 
 .jcarousel-prev {
 	position: absolute;
-	left: -141px;
-	font-family: arial;
-	font-size: 20px;
-	text-decoration: none;
+	left: -5px;
+	top: 45%;
+	z-index: 1;
+	opacity: 0.6;
+
 
 }
 
 
 .jcarousel-next {
 	position: absolute;
-	right: -100px;
-	color: #000;
-	font-family: arial;
-	font-size: 20px;
-	text-decoration: none;
+	right: -5px;
+	top: 45%;
+	z-index: 1;
+	opacity: 0.6;
 }
 
 
@@ -62,17 +166,27 @@
 	bottom: 15px;
 	left: 5%;
 	z-index: 1;
+	opacity: 0.6;
+
 }
 .jcarousel-pagination a {
 	margin-left: 10px;
 	font-family: arial;
 	font-size: 10px;
-	color: #000;
+	color: #fff;
 	text-decoration: none;
-	background-color: #ccc;
+	background-color: #000;
 	border: 3px solid #000;
 	border-radius: 50%;
 	display: inline-block;
 	width: 15px;
 	line-height: 15px;
 }
+
+
+.jcarousel-pagination a.active{
+	background-color: #fff;
+	color: #000;
+	
+}
+
