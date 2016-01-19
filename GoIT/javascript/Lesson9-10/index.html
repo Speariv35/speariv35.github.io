@@ -8,7 +8,10 @@
 	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js"></script>
 	<script src="js/jquery.jcarousel.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/prettyCheckable.min.js"></script>
+	<script src="js/jquery.ddslick.js"></script>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/prettyCheckable.css">
 </head>
 <body>
 	<div class="wrapper">
@@ -50,6 +53,51 @@
 				    </ul> 
 				</div> 
 		</div>
+		<div class="overflow">
+	<div class="css-checkbox">
+	<form action="#">
+	CSS_Checkbox
+  <p>
+    <input type="checkbox" id="test1" />
+    <label for="test1">Red</label>
+  </p>
+  <p>
+    <input type="checkbox" id="test2" checked="checked" />
+    <label for="test2">Yellow</label>
+  </p>
+  <p>
+    <input type="checkbox" id="test3" checked="checked" disabled="disabled" />
+    <label for="test3">Green</label>
+  </p>
+    <p>
+      <input type="checkbox" id="test4" disabled="disabled" />
+      <label for="test4">Brown</label>
+  </p>
+</form>
+	</div>
+	<div class="jquery-checkbox">
+	JQuery_Checkbox
+		  <p>
+	<form>
+    <input type="checkbox" class="jq-chkbx" id="test12" />
+    <label for="test12">Red</label>
+  </p>
+  <p>
+    <input type="checkbox" class="jq-chkbx" id="test22" checked="checked" />
+    <label for="test22"></label>
+  </p>
+  <p>
+    <input type="checkbox" class="jq-chkbx" id="test32" checked="checked" disabled="disabled" />
+    <label for="test32"></label>
+  </p>
+    <p>
+      <input type="checkbox" class="jq-chkbx" id="test42" disabled="disabled" />
+      <label for="test42"></label>
+  </p>
+</form>
+	</div>
+	</div> 	
+<div id="divNoImage" class="dd-container" style="width: 260px;"><div class="dd-select" style="width: 260px; background: rgb(238, 238, 238);"><input class="dd-selected-value" type="hidden"><a class="dd-selected">Select your favorite social network</a><span class="dd-pointer dd-pointer-down"></span></div><ul class="dd-options dd-click-off-close" style="width: 260px; display: none;"><li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="1"> <label class="dd-option-text">Facebook</label></a></li><li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="2"> <label class="dd-option-text">Twitter</label></a></li><li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="3"> <label class="dd-option-text">LinkedIn</label></a></li><li><a class="dd-option"> <input class="dd-option-value" type="hidden" value="4"> <label class="dd-option-text">Foursquare</label></a></li></ul></div>
 	</div>
 </body>
 </html>

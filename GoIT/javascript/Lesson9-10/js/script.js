@@ -79,4 +79,33 @@
       autostart: true
   });
 
+
+
+
+  $('input.jq-chkbx').prettyCheckable({
+    color: 'red'
+  });
+
+
+var ddBasic = [
+    { text: "Facebook", value: 1, },
+    { text: "Twitter", value: 2, },
+    { text: "LinkedIn", value: 3, },
+    { text: "Foursquare", value: 4, }
+];
+
+
+
+/*Ddslick   */
+
+$('#divNoImage').ddslick({
+    data: ddBasic,
+    selectText: "Select your favorite social network"
+});
+
     });
+
+
+
+
+
