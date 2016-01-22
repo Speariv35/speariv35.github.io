@@ -12,7 +12,7 @@
     		var $overlay;
 
     		function showModal(e) {
-                $link = $(this); /*$(e.target.parent());*/
+                $link = $(this); 
     			var href = $link.attr('href');
 
     			$modal = $('<div class="fancybox-modal"><img src="' + href + '"></div>');
