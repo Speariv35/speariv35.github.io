@@ -1,5 +1,5 @@
-
-$(function() {
+(function($){
+    $.fn.carousel = function(){
     $prev = $('.prev');
     $next = $('.next');
     var elemList = $('.carousel');
@@ -33,5 +33,7 @@ $(function() {
         $next.addClass("inactive");
         }
     });
+    return this;
+    }
  
-});
+})(jQuery);

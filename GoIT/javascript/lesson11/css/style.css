@@ -1,4 +1,6 @@
 
+/* CARAUSEL STYLE */
+
 .carausel-wrapper {
 	padding-top: 200px;
 	width: 1000px;
@@ -44,4 +46,39 @@
 .inactive {
 	cursor: default;
 	opacity: 0.3;
+}
+
+
+/* FANCYBOX STYLE */
+
+.fancybox {
+	text-decoration: none;
+	font-family: arial;
+	color: #000;
+}
+
+.fancybox-modal {
+	position: absolute;
+	width: 800px;
+	height: 480px;
+	top: 50%;
+	left: 50%;
+	margin: -240px 0 0 -400px;
+	border: 10px solid #fff;
+	border-radius: 5px;
+}
+
+.fancybox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.7;
+}
+
+
+.fancybox-modal img {
+	margin: 0 auto; 
 }

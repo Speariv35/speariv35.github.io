@@ -1,0 +1,40 @@
+(function($){
+    $.fn.fancybox = function(){
+
+  /*  		var defaults = {
+    			overlayColor:
+
+    		}*/
+
+			var $link = this;
+    		var $body = $('body');
+    		var $modal;
+    		var $overlay;
+            $link
+    		
+    		function showModal(e) {
+    			var href = $link.attr('href');
+
+    			$modal = $('<div class="fancybox-modal"><img src="' + href + '"></div>');
+    			$overlay = $('<div class="fancybox-overlay"></div>');
+
+                e.stopPropagation();
+				e.preventDefault();
+
+				$body.append($overlay);
+    			$body.append($modal);
+    			$overlay.one('click', hideModal);
+    		}
+
+    		function hideModal() {
+    			$modal.hide();
+    			$overlay.hide();
+    		}
+
+
+    		$link.on('click', showModal);
+
+    	    return this;
+    }
+ 
+})(jQuery);
