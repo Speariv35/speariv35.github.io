@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript HW Lesson 13-14</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href='css/style.css'>
+	<script src= "//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/lodash.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+	<script type="text/template" id="test_tmpl">
+		<form>
+			<h1>Тест по CSS</h1>
+			<% for (var i = 0; i < data.length; i++) { %>
+                <h2><%- data[i].question %></h2>
+                    <label class="center-block"><input type="checkbox" name="" id="q<%= i+1 %>answ1"><%- data[i].option1 %></label>
+                    <label class="center-block"><input type="checkbox" name="" id="q<%= i+1 %>answ2"><%- data[i].option2 %></label>
+                    <label class="center-block"><input type="checkbox" name="" id="q<%= i+1 %>answ3"><%- data[i].option3 %></label>
+ 				<% } %>
+ 			<input type="submit" class="check-result" value="Проверить мои результаты">
+
+		</form>
+	</script>
+
+</body>
+</html>
