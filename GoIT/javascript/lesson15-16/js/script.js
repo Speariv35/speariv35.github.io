@@ -1,6 +1,6 @@
 'use strict'
-$(function(){
-/*HOME WORK 15*/    
+$(function(){   
+
     $('html').keydown(function(e){
         if(event.keyCode == 13)
         {
@@ -9,10 +9,8 @@ $(function(){
         }
     });
     $('.searchButton').on('click', function(){
-      getData(0)
-        
-    })
-    
+      getData(0)   
+    })  
 });
 
     var element;
@@ -39,64 +37,69 @@ $(function(){
         $('.search').remove();
         getData(index*6);
     }
-// /*HOME WORK 16*/
-//     /*create classes*/
-//         function human(){
-//             this.name   = 'name';
-//             this.age    = 0;
-//             this.sex    = 'sex';
-//             this.height = 0;
-//             this.weight = 0;
-//         }
-//         function worker(){
-//             this.company    = 'google';
-//             this.salary     = 10000;
-//             this.goToWork = function(){
-//                 return 'went to work';
-//             };
-//         }
-//         function student(){
-//             this.univercity     = 'Kyiv College';
-//             this.scholarship    = 100;
-//             this.gotToWatchTV = function(){
-//                 return 'went to watch tv';
-//             };
-//         }
-//     /*init*/    
-//         var newHuman = new human();
-//         worker.prototype = newHuman;
-//         student.prototype = newHuman;
-//     /*create objects*/
-//         var newStudent = new student();
-//         var newWorker = new worker();
-//     /*set parameters to objects*/
-//         /*set worker*/
-//             newWorker.name      = 'Jack';
-//             newWorker.age       = 26;
-//             newWorker.sex       = "man";
-//             newWorker.height    = 180;
-//             newWorker.weight    = 80;
-//         /*set student*/
-//             newStudent.name = "Natali";
-//             newStudent.age  = 18;
-//             newStudent.sex  = "woman";
-//             newStudent.height = 160;
-//             newStudent.weight = 45;
-//     /*show result*/
-//         /*worker*/
-//             console.log('Worker:\t\t',newWorker.name,
-//                          "\n  age:\t\t", newWorker.age,
-//                          "\n  sex:\t\t", newWorker.sex,
-//                          "\n  height:\t", newWorker.height,
-//                          "\n  weight:\t", newWorker.weight       
-//             );
-//             console.log(newWorker.name,newWorker.goToWork()); 
-            
-            
-//         /*student*/
-//             console.log('\nStudent:\t',newStudent.name,
-//                          "\n  age:\t\t", newStudent.age,
-//                          "\n  sex:\t\t", newStudent.sex,
-//                          "\n  height:\t", newStudent.height,
-//                          "\n  weight:\t", newStudent.weight);
-//             console.log(newStudent.name,newStudent.gotToWatchTV()); 
+
+
+// Ptototype
+
+function human(){
+    this.name   = 'name';
+    this.age    = 0;
+    this.sex    = 'sex';
+    this.height = 0;
+    this.weight = 0;
+}
+
+   function student(){
+    this.studyPlace     = 'KPI';
+    this.money    = 1500;
+    this.watchSerials = function(){
+        return 'Walking Dead online';
+    };
+}
+
+function worker(){
+    this.salary     = 15000;
+    this.company    = 'Luxoft';
+    this.work = function(){
+        return 'Working .... !!!';
+    };
+}
+
+
+var newHuman = new human();
+student.prototype = newHuman;
+worker.prototype = newHuman;
+
+
+var newStudent = new student();
+var newWorker = new worker();
+
+    newWorker.name      = 'Nick';
+    newWorker.age       = 32;
+    newWorker.sex       = "male";
+    newWorker.height    = 163;
+    newWorker.weight    = 70;
+
+    newStudent.name = "Natali";
+    newStudent.age  = 21;
+    newStudent.sex  = "female";
+    newStudent.height = 170;
+    newStudent.weight = 95;
+
+
+    console.log('Worker:',newWorker.name,
+                 "age:", newWorker.age,
+                 "sex:", newWorker.sex,
+                 "height:", newWorker.height,
+                 "weight:", newWorker.weight);
+
+    console.log(newWorker.name,newWorker.work()); 
+    
+
+    console.log('Student:',newStudent.name,
+                 "age:", newStudent.age,
+                 "sex:", newStudent.sex,
+                 "height:", newStudent.height,
+                 "weight:", newStudent.weight);
+
+    console.log(newStudent.name,newStudent.watchSerials()); 
