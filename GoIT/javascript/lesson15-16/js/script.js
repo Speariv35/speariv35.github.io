@@ -87,14 +87,15 @@ var newWorker = new worker();
     newStudent.weight = 95;
 
 
-    console.log('sorker:',newWorker.name,
+    console.log('worker:',newWorker.name,
                  "age:", newWorker.age,
                  "sex:", newWorker.sex,
                  "height:", newWorker.height,
                  "weight:", newWorker.weight);
 
-    console.log(newWorker.name,newWorker.work()); 
+    console.log('Activity',newWorker.work()); 
     
+    console.log ('----------------------------------------------------');
 
     console.log('student:',newStudent.name,
                  "age:", newStudent.age,
@@ -102,4 +103,4 @@ var newWorker = new worker();
                  "height:", newStudent.height,
                  "weight:", newStudent.weight);
 
-    console.log(newStudent.name,newStudent.watchSerials()); 
+    console.log('Activity',newStudent.watchSerials()); 
