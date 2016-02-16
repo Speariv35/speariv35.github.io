@@ -18,7 +18,7 @@ $(function(){
 
     function getData(next){
         var text = $('#text').val();
-        $.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=8&start=" + next + "&q='"+text+"'&callback=GoogleCallback&context=?");      
+        $.getJSON("http://ajax.googleapis.com/ajax/services/search/web?v=1.0&key=ABQIAAAACKQaiZJrS0bhr9YARgDqUxQBCBLUIYB7IF2WaNrkYqF0tBovNBQFDtM_KNtb3xQxWff2mI5hipc3lg&rsz=6&start=" + next + "&q='"+text+"'&callback=GoogleCallback&context=?");      
     }
     function GoogleCallback (func, data) {
         $('.search').remove();
@@ -53,7 +53,7 @@ function human(){
     this.studyPlace     = 'KPI';
     this.money    = 1500;
     this.watchSerials = function(){
-        return 'Walking Dead online';
+        return 'Watching Walking Dead online';
     };
 }
 
@@ -87,7 +87,7 @@ var newWorker = new worker();
     newStudent.weight = 95;
 
 
-    console.log('Worker:',newWorker.name,
+    console.log('sorker:',newWorker.name,
                  "age:", newWorker.age,
                  "sex:", newWorker.sex,
                  "height:", newWorker.height,
@@ -96,7 +96,7 @@ var newWorker = new worker();
     console.log(newWorker.name,newWorker.work()); 
     
 
-    console.log('Student:',newStudent.name,
+    console.log('student:',newStudent.name,
                  "age:", newStudent.age,
                  "sex:", newStudent.sex,
                  "height:", newStudent.height,

@@ -26,8 +26,8 @@ input {
 }
 
 .searchButton {
-	background: url("../img/search.png");
-	width: 31px;
+	background: url("../img/search.png") no-repeat;
+	width: 30px;
 	height: 30px;
 	border: none;
 	float: right;
