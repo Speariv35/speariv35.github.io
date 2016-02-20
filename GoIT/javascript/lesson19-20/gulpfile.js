@@ -72,13 +72,13 @@ gulp.task('js:build', function () {
 
 
 gulp.task('style:build', function () {
-    gulp.src(path.src.style) //Выберем наш main.scss
+    gulp.src(path.src.style) 
         .pipe(sourcemaps.init()) 
-        .pipe(sass()) //Скомпилируем
-        .pipe(prefixer()) //Добавим вендорные префиксы
-        .pipe(cssmin()) //Сожмем
+        .pipe(sass()) 
+        .pipe(prefixer()) 
+        .pipe(cssmin()) 
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest(path.build.css)) //И в build
+        .pipe(gulp.dest(path.build.css)) 
         .pipe(reload({stream: true}));
 });
 
