@@ -1,28 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Javascript HW Lesson 13-14</title>
-	<link rel="stylesheet" href="/css/reset.css">
-	<link rel="stylesheet" href='css/style.css'>
-	<script src= "//code.jquery.com/jquery-1.12.0.min.js"></script>
-	<script src="js/lodash.js"></script>
-	<script src="js/script.js"></script>
-</head>
-<body>
-	<script type="text/template" id="test_tmpl">
-		<form>
-			<h1>Тест по CSS</h1>
-			<% for (var i = 0; i < data.length; i++) { %>
-                <h2><%- data[i].question %></h2>
-                    <label class="center-block"><input type="checkbox" name="" id="q<%= i+1 %>answ1"><%- data[i].option1 %></label>
-                    <label class="center-block"><input type="checkbox" name="" id="q<%= i+1 %>answ2"><%- data[i].option2 %></label>
-                    <label class="center-block"><input type="checkbox" name="" id="q<%= i+1 %>answ3"><%- data[i].option3 %></label>
- 				<% } %>
- 			<input type="submit" class="check-result" value="Проверить мои результаты">
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Local storage</title>
+     <link rel="stylesheet" href="css/style.css">
+     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+     <script type="text/javascript" src="js/template.js"></script> 
 
-		</form>
-	</script>
-
-</body>
+  </head>
+  <body>
+    <div class="wrapper">
+      <p class="testTitle">Тест по программированию</p>
+      <form method="post" action="">
+        <script type = "text/template" id = "test">
+       <% for (var key in temp){ %>
+        <div class="answersBlock">
+        <div><span><%=key%>. </span><span class="questionTitle"><%=temp[key].title%></span></div>
+        <div><input type="checkbox" class="checkbox" name="answ1" id="<%=key%>.0" value="<%=temp[key].answers[0]%>"><label for="<%=key%>.0" class="answer"><%=temp[key].answers[0]%></label></div>
+        <div><input type="checkbox" class="checkbox" name="answ2" id="<%=key%>.1" value="<%=temp[key].answers[1]%>"><label for="<%=key%>.1" class="answer"><%=temp[key].answers[1]%></label></div>
+        <div><input type="checkbox" class="checkbox" name="answ3" id="<%=key%>.2" value="<%=temp[key].answers[2]%>"><label for="<%=key%>.2" class="answer"><%=temp[key].answers[2]%></label></div>
+        </div>
+       <% }%>
+      </script>
+      <input class="submit" type="submit" value="Проверить">
+      </form>
+    </div>
+        <script type="text/javascript" src="js/script.js"></script> 
+  </body>
 </html>
