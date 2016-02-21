@@ -5,7 +5,112 @@
 */
 @import "partials/varmixins";
 
+body {
+	font: 100% "Ubuntu", sans-serif;
+	background-color: #f7f7f7;
+}
+
+.wrapper {
+	width: 1160px;
+	margin: 0 auto;
+}
+
+.header-top {
+	padding-top: 10px;
+}
+
+.logo__link {
+	
+}
+
+.logo__wrap {
+	float: left;
+	padding: 27px 0 0 7px;
 
 
+		img {
+			float: left;
+			margin-right: 10px;
+		}
+	
+}
+
+.text-wrap {
+	float: left;
+}
+
+.logo__title {
+	color: $grey;
+	display: block;
+	font-weight: 900;
+	font-size: 32px;
+	margin-top: -8px;
+	
+}
+
+.logo__text {
+	display: block;
+	color: $grey;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 3.5px;
+	margin-top: -3px;
+	font-weight: 100;
+	margin-left: 3px;
+}
 
 
+.header__social {
+	float: right;
+    padding-top: 37px;
+	margin-right: -5px;
+}
+
+.social__item {
+	margin-left: 10px;
+    float: left;
+}
+
+.social__link {
+	height: 20px;
+    width: 22px;
+    display: block;
+    color: #ccc;
+    transition: all 0.25s;
+}
+
+.social__link:hover {
+	color: $blue;
+}
+
+/* HEADER TOP MENU */
+
+.header-nav-wrapper {
+	margin-top: 34px;
+	background-color: $grey;
+}
+.top-menu {
+	float: left;
+
+
+.top-menu__item {
+	float: left;
+	
+	padding: 0 32px 0 32px;;
+
+}
+
+.active {
+	background-color: $blue;
+}
+
+.top-menu__link {
+	line-height: 56px;
+	color: #fff;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.top-menu__link:hover {
+	color: $yellow;
+}
