@@ -158,6 +158,7 @@ nav {
 			position: absolute;
 			
 			left: 36px;
+			z-index: 1;
 			top: 233px;
 		}
 
@@ -211,4 +212,70 @@ nav {
 
 }
 
+
+/* ABOUT US */
+
+.about-us-wrapper {
+	margin-top: 74px;
+	margin-left: 125px;
+}
+
+.about-us-item {
+	float: left;
+	margin-right: 150px;
+	position: relative;
+	width: 245px;
+}
+
+.last {
+	margin-right: 0px;
+}
+
+.about-us__number {
+	top: -20px;
+	left: -129px;
+	position: absolute;
+	font-size: 90px;
+	color: rgba(42,43,46,0.1);
+}
+
+
+.about-us__title {
+	font-weight: 900;
+	font-size: 19px;
+	margin-top: 10px;
+}
+
+.about-us__text {
+	font-size: 13px;
+	line-height: 20px;
+	margin-top: 20px;
+	color: #8a8a8a;
+}
+
+.about-us__link {
+	text-decoration: none;
+	margin-top: 16px;
+	display: inline-block;
+	font-size: 13px;
+	font-weight: 600;
+	color: #000;
+	transition: all ease-in 0.5s;
+}
+
+.about-us__link:hover {
+	color: $blue;
+	transition: all ease-in 0.5s;
+}
+
+.fa-long-arrow-right {
+	margin-left: 5px;
+	color: $blue;
+	transition: all ease-in 0.5s;
+}
+
+.about-us__link:hover .fa-long-arrow-right {
+	color: #000;
+	transition: all ease-in 0.5s;
+}
 
