@@ -5,6 +5,7 @@
 	<title>JS HW 19-20</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js" ></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<script src="js/main.js"></script>
@@ -12,11 +13,27 @@
 <body>
 	<div class="wrapper">
 		
-	
 	//= template/header.html
 
  	<section class="content">
      
+<div class="jcarauser-wrapper">
+<img class="tagline" src="img/business.png" alt="Build your business">
+	<p class="jcarousel-pagination" data-jcarouselpagination="true">
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+	</p>
+	<div class="jcarousel" data-jcarousel="true">
+	    <ul>
+	        <li class=".jcarousel-item"><img src="img/crausel_slide_1.jpg"  alt=""></li> 
+	        <li class=".jcarousel-item"><img src="img/crausel_slide_2.jpg"  alt=""></li> 
+	        <li class=".jcarousel-item"><img src="img/crausel_slide_3.jpg"  alt=""></li> 
+	    </ul> 
+	</div> 
+</div>
+	
+
     </section>
 
     //= template/footer.html
