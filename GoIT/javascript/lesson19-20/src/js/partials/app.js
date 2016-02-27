@@ -1,44 +1,43 @@
-$(function() {
+(function($){
+    $.fn.fancybox = function(){
 
 
-// JCARAUSEL
+			var $link = this;
+    		var $body = $('body');
+    		var $modal;
+    		var $overlay;
+            var present = false;
+
+    		function showModal(e) {
+                e.preventDefault();
+
+                if (!present) {
+                $link = $(this); 
+    			var href = $link.attr('href');
+
+    			$modal = $('<div class="fancybox-modal"><img src="' + href + '"></div>');
+    			$overlay = $('<div class="fancybox-overlay"></div>');
+
+                e.stopPropagation();
+				
+				$body.append($overlay);
+    			$body.append($modal);
+    			$overlay.one('click', hideModal); 
+                present = true;
+            } 
+
+    		}
+
+    		function hideModal() {
+    			$modal.hide();
+    			$overlay.hide();
+                present = false;
+    		}
 
 
-  $('.jcarousel').jcarousel({
-  	  wrap: 'circular'});
+    		$link.on('click', showModal);
 
-          $('.jcarousel-prev').jcarouselControl({
-      target: '-=1'
-  });
-
-  $('.jcarousel-prev').jcarouselControl({
-      target: '-=1'
-  });
-
-  $('.jcarousel-next').jcarouselControl({
-      target: '+=1'
-  });
-
-
-  $('.jcarousel-pagination')
-
-  .on('jcarouselpagination:active', 'a', function() {
-      $(this).addClass('active');
-  })
-  .on('jcarouselpagination:inactive', 'a', function() {
-      $(this).removeClass('active');
-  })
-
-  $('.jcarousel-pagination').jcarouselPagination({
-      item: function(page) {
-          return '<a href="#' + page + '">' + page + '</a>';
-      }
-  });
-
-    $('.jcarousel').jcarouselAutoscroll({
-      interval: 3000,
-      target: '+=1',
-      autostart: true
-  });
-
-    });
+    	    return this;
+    }
+ 
+})(jQuery);

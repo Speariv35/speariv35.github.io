@@ -18,7 +18,10 @@
 	    <h1 class="logo">
 	    	<a class="logo__link" href="#">
 	    		<div class="logo__wrap">
-	    			<img src="img/logo.png" alt="Build Home">
+	    			<div class="logo-animation-wrap">
+	    				<img src="img/logo.png" alt="Build Home">
+	    				<img src="img/logo_gears.png" alt="logo gears" class="logo-animation">
+	    			</div>
 	    			<div class="text-wrap">
 		    			<span class="logo__title">Build Home</span>
 		    			<span class="logo__text">Industrial theme</span>
@@ -72,7 +75,7 @@
 			<div class="about-us-wrapper clearfix">
 				<div class="about-us-item">
 					<span class="about-us__number">01</span>
-					<img src="img/settings.png" alt="gears" class="about-us__ico">
+					<img  src="img/settings.png" alt="gears" class="about-us__ico gears">
 					<h2 class="about-us__title">Power Inside</h2>
 					<p class="about-us__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique </p>
 					<a href="#" class="about-us__link">Read More
@@ -81,7 +84,10 @@
 				</div>
 				<div class="about-us-item ">
 					<span class="about-us__number">02</span>
-					<img src="img/params.png" alt="params" class="about-us__ico">
+					<div class="settings-wrapper">
+					<img src="img/anim_settings.png" class="settings-animate">
+					<img src="img/params.png" alt="params" class="about-us__ico ">
+					</div>
 					<h2 class="about-us__title">New Technologies</h2>
 					<p class="about-us__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique </p>
 					<a href="#" class="about-us__link">Read More
@@ -90,7 +96,7 @@
 				</div>
 				<div class="about-us-item last">
 					<span class="about-us__number">03</span>
-					<img src="img/truck.png" alt="truck" class="about-us__ico">
+					<img src="img/truck.png" alt="truck" class="about-us__ico truck">
 					<h2 class="about-us__title">Past Support</h2>
 					<p class="about-us__text">Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique </p>
 					<a href="#" class="about-us__link">Read More
@@ -102,7 +108,7 @@
 		<div class="services">
 			<div class="centring-wrapper clearfix">
 				<h2 class="services__title">Our Services</h2>
-				<a href="#"  class="services__item">
+				<a href="img/pic_big_1.jpg"  class="services__item fancybox">
 				<div class="wrapper-service__item">
 					<div class="img-hover">
 						<span>+</span>
@@ -111,7 +117,7 @@
 				</div>
 				<h3 class="service-item__text">Shedule Services</h3>
 				</a>
-				<a href="#"  class="services__item">
+				<a href="img/pic_big_2.jpg"  class="services__item fancybox">
 				<div class="wrapper-service__item">
 					<div class="img-hover">
 						<span>+</span>
@@ -120,7 +126,7 @@
 				</div>
 				<h3 class="service-item__text">Preventive Maintence</h3>
 				</a>
-				<a href="#"  class="services__item">
+				<a href="img/pic_big_3.jpg"  class="services__item fancybox">
 				<div class="wrapper-service__item">
 					<div class="img-hover">
 						<span>+</span>
@@ -128,7 +134,7 @@
 					<img src="img/pic_3.jpg" alt="Worker">
 				</div>
 				<h3 class="service-item__text">Tire and Wheel Services</h3>
-				<a href="#" class="services__item services__item--last">
+				<a href="img/pic_big_1.jpg"  class="services__item fancybox services__item--last">
 				<div class="wrapper-service__item">
 					<div class="img-hover">
 						<span>+</span>
@@ -181,25 +187,37 @@
    				<h2 class='banners__title'>Banners Place</h2>
    				<div class="banners__accordion">
     				<div class="accordion__item">
-        				<div class="accordion__block clearfix accordion__block--active " href="#"><div class="opener">-</div> <div class="accordion__title">ACCORDION PANEL 1</div></div>
-        				<div  class="accordion__content accordion__content--active ">
+        				<div class="accordion__block clearfix" href="#">
+	        				<div class="opener">+</div> 
+	        				<div class="accordion__title">ACCORDION PANEL 1</div>
+        				</div>
+        				<div  class="accordion__content  ">
         					<p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
         				</div>
    					</div>
    						<div class="accordion__item">
-        				<div class="accordion__block clearfix" href="#"><div class="opener">+</div> <div class="accordion__title">ACCORDION PANEL 2</div></div>
+        				<div class="accordion__block clearfix" >
+	        				<div class="opener">+</div> 
+	        				<div class="accordion__title">ACCORDION PANEL 2</div>
+        				</div>
         				<div  class="accordion__content">
         					<p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
         				</div>
    					</div>
    						<div class="accordion__item">
-        				<div class="accordion__block clearfix" href="#"><div class="opener">+</div> <div class="accordion__title">ACCORDION PANEL 3</div></div>
+        				<div class="accordion__block clearfix" >
+        					<div class="opener">+</div> 
+        					<div class="accordion__title">ACCORDION PANEL 3</div>
+        				</div>
         				<div  class="accordion__content">
         					<p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
         				</div>
    					</div>
    						<div class="accordion__item">
-        				<div class="accordion__block clearfix" href="#"><div class="opener">+</div> <div class="accordion__title">ACCORDION PANEL 4</div></div>
+        				<div class="accordion__block clearfix" href="#">
+	        				<div class="opener">+</div> 
+	        				<div class="accordion__title">ACCORDION PANEL 4</div>
+        				</div>
         				<div  class="accordion__content">
         					<p>Cum sociis natoque penatibus et magnis dis parturient mus. Pro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur momo. Cum sociis natoque penatibus et magnis dis parturient ontesmus. Nemo enim ipsam voluptatem quia ptas sit aspernatur samomoPro vel nibh et elit mollis commodo et nec augueique Nemo enim ipsam voluptatem quia ptas sit aspernatur </p>
         				</div>

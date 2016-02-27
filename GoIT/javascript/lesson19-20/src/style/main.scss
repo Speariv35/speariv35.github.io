@@ -5,6 +5,48 @@
 */
 @import "partials/varmixins";
 
+
+/* FANCYBOX STYLE */
+
+.fancybox {
+	text-decoration: none;
+}
+
+.fancybox-modal {
+	position: fixed;
+	z-index: 3;
+	width: 842px;
+	height: 405px;
+	top: 50%;
+	left: 50%;
+	margin: -202px 0 0 -421px;
+	border: 10px solid #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+	-moz-box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+	box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+}
+
+.fancybox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.8;
+	
+}
+
+
+.fancybox-modal img {
+	margin: 0 auto; 
+}
+
+
+/* Main STYLE */
+
 body {
 	font: 100% "Ubuntu", sans-serif;
 	background-color: #f7f7f7;
@@ -28,12 +70,50 @@ body {
 	padding: 27px 0 0 7px;
 
 
-		img {
+		.logo-animation-wrap {
+			position: relative;
+			overflow: hidden;
 			float: left;
 			margin-right: 10px;
+			width:36px;
+			height:36px;
 		}
-	
+		
+		.logo-animation {
+			position: absolute;
+			top: 2px;
+			right: -15px;
+
+		}
 }
+
+@keyframes logo {
+
+	0% {
+		-ms-transform: rotate(0deg); /* IE 9 */
+   	    -webkit-transform: rotate(0deg); /* Safari */
+        transform: rotate(0deg);
+	}
+
+
+		100% {
+		-ms-transform: rotate(360deg); /* IE 9 */
+   	    -webkit-transform: rotate(360deg); /* Safari */
+        transform: rotate(360deg);
+	}
+}
+
+
+ .logo-animation {
+	animation-name: logo;
+	animation-duration: 1.5s;
+	animation-timing-function: ease-in-out;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;
+}
+
+
+
 
 .text-wrap {
 	float: left;
@@ -288,6 +368,95 @@ nav {
 }
 
 
+/* ANIMATION ABOUT US */
+
+@keyframes gears {
+
+	0% {
+		-ms-transform: translate(0px,0px) rotate(0deg); /* IE 9 */
+   	    -webkit-transform: translate(0px,0px) rotate(0deg); /* Safari */
+        transform: translate(0px,0px) rotate(0deg);
+	}
+
+	50% {
+	-ms-transform: translate(100px,0px) rotate(360deg); /* IE 9 */
+   	    -webkit-transform: translate(100px,0px) rotate(360deg); /* Safari */
+        transform: translate(100px,0px) rotate(360deg);
+    
+	}
+
+		100% {
+		-ms-transform: translate(0px,0px) rotate(0deg); /* IE 9 */
+   	    -webkit-transform: translate(0px,0px) rotate(0deg); /* Safari */
+        transform: translate(0px,0px) rotate(0deg);
+	}
+}
+
+
+.about-us-item:hover .gears {
+	animation-name: gears;
+	animation-duration: 2.5s;
+	animation-timing-function: ease-in;
+}
+
+@keyframes truck {
+
+	0% {
+		-ms-transform: translate(0px,0px) rotateY(0deg) ; /* IE 9 */
+   	    -webkit-transform: translate(0px,0px) rotateY(0deg) ; /* Safari */
+        transform: translate(0px,0px) rotateY(0deg) ;
+	}
+
+	40% {
+		-ms-transform: translate(90px,0px) ; /* IE 9 */
+   	    -webkit-transform: translate(90px,0px) ; /* Safari */
+        transform: translate(90px,0px) ;
+	}
+
+	50% {
+	-ms-transform: translate(100px,0px) rotateY(180deg); /* IE 9 */
+   	    -webkit-transform: translate(100px,0px) rotateY(180deg); /* Safari */
+        transform: translate(100px,0px) rotateY(180deg);
+    
+	}
+
+	90% {
+	-ms-transform: translate(10px,0px) rotateY(180deg); /* IE 9 */
+   	    -webkit-transform: translate(10px,0px) rotateY(180deg); /* Safari */
+        transform: translate(10px,0px) rotateY(180deg);
+    
+	}
+		100% {
+		-ms-transform: translate(0px,0px) rotateY(0deg); /* IE 9 */
+   	    -webkit-transform: translate(0px,0px) rotateY(0deg);; /* Safari */
+        transform: translate(0px,0px) rotateY(0deg);;
+	}
+}
+
+.about-us-item:hover .truck {
+	animation-name: truck;
+	animation-duration: 2.5s;
+	animation-timing-function: ease-in;
+}
+
+.settings-wrapper {
+	position: relative;
+	width: 32px;
+	height: 32px;
+}
+
+.settings-animate {
+	position: absolute;
+	left: 11px;
+	top: 18px;
+	transition: all 0.5s ease-in;
+}
+
+.about-us-item:hover .settings-animate {
+	transition: all 0.5s ease-in;
+	top: 5px;
+}
+
 /* SERVICES */
 
 .services {
@@ -339,7 +508,7 @@ nav {
 
 .img-hover {
 	transition: all  0.8s;
-	z-index: 3;
+	z-index: 1;
 	position: absolute;
 	width: 260px;
 	height: 260px;
@@ -462,7 +631,9 @@ nav {
 	float: left;
 	margin-top: 60px;
 	width: 560px;
+	height: 415px;
 	padding-bottom: 70px;
+	overflow: hidden;
 }
 
 .banners__title {
@@ -475,6 +646,11 @@ nav {
 
 /*---------- Accordion ----------*/
 
+
+.accordion__item {
+	cursor: pointer;
+}
+
 .accordion__block {
 	background-color: #fff;
 	margin: 5px 0px;
@@ -483,18 +659,21 @@ nav {
 	line-height: 40px;
 }
 
-.accordion__block--active {
+.accordion__block--active,
+.accordion__block:hover {
 	border: none;
 	background-color: $yellow;
 	color: #fff;
+	border: 1px solid transparent;
 }
 
 .opener {
 	float: left;
-	padding: 0px 15px;
 	height: 40px;
+	width: 40px;
 	font-size: 20px;
 	border-right: 1px solid #e8e8e8;
+	text-align: center;
 	
 	}
 
@@ -509,7 +688,7 @@ nav {
 }
 
 .accordion__content {
-	display: none;
+	
 	margin-left: 37px;
 	color: $grey-text;
 	font-size: 13px;
@@ -585,10 +764,8 @@ nav {
 .footer__contacts {
 	padding: 20px 0px;
 	color: #6a6c70;
- 	background-color: #35383c
-
+ 	background-color: #35383c;
 }
-
 
 .contacts__item {
   float: left;
