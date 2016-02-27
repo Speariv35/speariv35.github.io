@@ -87,7 +87,7 @@ var allPanels = $('.banners__accordion  .accordion__content').hide();
   }
   });
 
-/*LODASH*/
+/*LODASH**********************************************************************************/
 
 
 // uniqueSkills
