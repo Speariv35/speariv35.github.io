@@ -297,7 +297,8 @@ nav {
 /* ABOUT US */
 
 .centring-wrapper {
-		width: 1160px;
+	
+	width: 1160px;
 	margin: 0 auto;
 }
 
@@ -309,6 +310,7 @@ nav {
 }
 
 .about-us-item {
+
 	float: left;
 	margin-right: 150px;
 	position: relative;
@@ -476,6 +478,7 @@ nav {
 }
 
 .services__item {
+	animation-delay: 0.2s;
 	text-align: center;
 	float: left;
 	position: relative;
@@ -712,6 +715,11 @@ nav {
 	 	margin: 0px 20px;
 	 }
 }
+
+.logo-wrapper {
+	animation-delay: 0.4s;
+}
+
 
 
 /* FOOTER */

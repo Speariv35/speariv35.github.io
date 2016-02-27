@@ -2,13 +2,19 @@
 /*
  * Custom
  */
-
+$(function() {
 
 //= partials/app.js
 
+//= partials/jsonData.js
 
 
-$(function() {
+
+
+/*WOW INIT*/
+
+new WOW().init();
+           
 
 
 // JCARAUSEL
@@ -52,16 +58,11 @@ $(function() {
 
 /*FANCYBOX INIT*/
 
-
       $('a.fancybox').fancybox({
   });
 
 
 /* ACCORDION  */
-
-// Start condition
-
-
 
 var allPanels = $('.banners__accordion  .accordion__content').hide();
     
@@ -86,5 +87,45 @@ var allPanels = $('.banners__accordion  .accordion__content').hide();
   }
   });
 
+/*LODASH*/
+
+
+// uniqueSkills
+
+  var uniqueSkills = [];
+    uniqueSkills = _.map(jsonData, 'skills');
+    uniqueSkills = _.flattenDeep(uniqueSkills);
+    uniqueSkills = _.sortBy(_.map(_.uniq(uniqueSkills), _.toLower));
+
+    console.log('--------------------------uniqueSkills------------------------------');
+    console.log(uniqueSkills);
+
+
+// MaxFriends
+ 
+  var mapFriends = _.map(jsonData, function(e) {
+
+    return { "name": e.name, "friends": e.friends}
+
+  });
+
+  var MaxFriendsSort = _.map(_.sortBy(mapFriends, 'friends.length'), 'name');
+
+    console.log('--------------------------maxFriends------------------------------');
+    console.log(MaxFriendsSort);
+
+// AllFriendUnique
+
+
+  var friends = _.map(jsonData, function(e) {
+
+  return {"name": _.map(e.friends, "name")}
+  
+  });
+
+  var allFriendUnique = _.uniq(_.sortBy(_.flattenDeep(_.map(friends, 'name'))));
+
+    console.log('--------------------------allFriendUnique------------------------------');
+    console.log(allFriendUnique);
 
    });

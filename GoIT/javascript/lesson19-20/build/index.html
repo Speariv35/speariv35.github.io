@@ -5,9 +5,12 @@
 	<title>JS HW 19-20</title>
 	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/lodash.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.4/jquery.jcarousel.min.js" ></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<script src="js/wow.js"></script>
 	<script src="js/main.js"></script>
 </head>
 <body>
@@ -56,7 +59,7 @@
 	</section>
 
  	<section class="content">
-		<div class="jcarauser-wrapper">
+		<div class="jcarauser-wrapper wow fadeIn ">
 		<img class="tagline" src="img/business.png" alt="Build your business">
 			<p class="jcarousel-pagination" data-jcarouselpagination="true">
 				<a href="#"></a>
@@ -72,7 +75,7 @@
 			</div> 
 		</div>
 		<div class="centring-wrapper">
-			<div class="about-us-wrapper clearfix">
+			<div class="about-us-wrapper clearfix wow fadeInUp">
 				<div class="about-us-item">
 					<span class="about-us__number">01</span>
 					<img  src="img/settings.png" alt="gears" class="about-us__ico gears">
@@ -108,7 +111,7 @@
 		<div class="services">
 			<div class="centring-wrapper clearfix">
 				<h2 class="services__title">Our Services</h2>
-				<a href="img/pic_big_1.jpg"  class="services__item fancybox">
+				<a href="img/pic_big_1.jpg"  class="services__item fancybox wow fadeIn">
 				<div class="wrapper-service__item">
 					<div class="img-hover">
 						<span>+</span>
@@ -117,7 +120,7 @@
 				</div>
 				<h3 class="service-item__text">Shedule Services</h3>
 				</a>
-				<a href="img/pic_big_2.jpg"  class="services__item fancybox">
+				<a href="img/pic_big_2.jpg"  class="services__item fancybox wow fadeIn">
 				<div class="wrapper-service__item">
 					<div class="img-hover">
 						<span>+</span>
@@ -126,7 +129,7 @@
 				</div>
 				<h3 class="service-item__text">Preventive Maintence</h3>
 				</a>
-				<a href="img/pic_big_3.jpg"  class="services__item fancybox">
+				<a href="img/pic_big_3.jpg"  class="services__item fancybox wow fadeIn">
 				<div class="wrapper-service__item">
 					<div class="img-hover">
 						<span>+</span>
@@ -134,7 +137,7 @@
 					<img src="img/pic_3.jpg" alt="Worker">
 				</div>
 				<h3 class="service-item__text">Tire and Wheel Services</h3>
-				<a href="img/pic_big_1.jpg"  class="services__item fancybox services__item--last">
+				<a href="img/pic_big_1.jpg"  class="services__item fancybox services__item--last wow fadeIn">
 				<div class="wrapper-service__item">
 					<div class="img-hover">
 						<span>+</span>
@@ -147,8 +150,8 @@
 		</div>
 		<div class="centring-wrapper clearfix">
 			<div class="news">
-				<h2 class="news__title">Latest News</h2>
-				<div class="news__item clearfix">
+				<h2 class="news__title wow fadeIn">Latest News</h2>
+				<div class="news__item clearfix wow flipInX">
 					<div class="news__img">
 						<span class="news__month">Jan</span>
 						<span class="news__date">23</span>
@@ -165,7 +168,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="news__item clearfix">
+				<div class="news__item clearfix wow flipInX">
 					<div class="news__img">
 						<span class="news__month">Jan</span>
 						<span class="news__date">21</span>
@@ -183,7 +186,7 @@
 					</div>
 				</div>
 			</div>
-   			<div class="banners">
+   			<div class="banners wow fadeIn">
    				<h2 class='banners__title'>Banners Place</h2>
    				<div class="banners__accordion">
     				<div class="accordion__item">
@@ -227,22 +230,24 @@
    		</div>
    		<div class="logos">
 	   		<div class="centring-wrapper">
-				<img src="img/brand_1.png" alt="">
-				<img src="img/brand_2.png" alt="">
-				<img src="img/brand_3.png" alt="">
-				<img src="img/brand_4.png" alt="">
-				<img src="img/brand_5.png" alt="">
-				<img src="img/brand_6.png" alt="">
+	   			<div class="logo-wrapper wow zoomIn">
+					<img src="img/brand_1.png" alt="">
+					<img src="img/brand_2.png" alt="">
+					<img src="img/brand_3.png" alt="">
+					<img src="img/brand_4.png" alt="">
+					<img src="img/brand_5.png" alt="">
+					<img src="img/brand_6.png" alt="">
+				</div>
 	   		</div>
    		</div>
     </section>
 
     
-    <section class="footer">
+    <section class="footer wow fadeIn">
     	<div class="centring-wrapper">
     		<div class="footer-upper clearfix">
     			<div class="footer__block">
-    				<p class="footer__links">SOCIALS</p>
+    				<h2 class="footer__links">SOCIALS</h2>
     				<ul >
     					<li class="footer__item"><a href="" class="footer__link">Facebook</a></li>
     					<li class="footer__item"><a href="" class="footer__link">Flickr</a></li>
@@ -251,7 +256,7 @@
     				</ul>
     			</div>
     			<div class="footer__block">
-    				<p class="footer__links">LINKS</p>
+    				<h2 class="footer__links">LINKS</h2>
     				<ul >
     					<li class="footer__item"><a href="" class="footer__link">How to Write a Blog</a></li>
     					<li class="footer__item"><a href="" class="footer__link">Create a Blog in 4 Steps</a></li>
@@ -260,7 +265,7 @@
     				</ul>
     			</div>
     			<div class="footer__block">
-    				<p class="footer__links">BLOGROLL</p>
+    				<h2 class="footer__links">BLOGROLL</h2>
     				<ul >
     					<li class="footer__item"><a href="" class="footer__link">Blogs Blog</a></li>
     					<li class="footer__item"><a href="" class="footer__link">Roll Up Roll Up</a></li>
@@ -269,7 +274,7 @@
     				</ul>
     			</div>
     			<div class="footer__block footer__block--last">
-    				<p class="footer__links">ABOUT US</p>
+    				<h2 class="footer__links">ABOUT US</h2>
     				<ul >
     					<li class="footer__item"><a href="" class="footer__link">Agriculture</a></li>
     					<li class="footer__item"><a href="" class="footer__link">Harvest</a></li>
