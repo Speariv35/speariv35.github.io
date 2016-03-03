@@ -17,9 +17,11 @@ new WOW().init();
 
 
 // JCARAUSEL
-
-  $('.jcarousel').jcarousel({
-  	  wrap: 'circular'});
+$(window).load(function(){
+    $(document).ready(function(){
+      
+          $('.jcarousel').jcarousel({
+      wrap: 'circular'});
 
           $('.jcarousel-prev').jcarouselControl({
       target: '-=1'
@@ -55,6 +57,10 @@ new WOW().init();
       target: '+=1',
       autostart: true
   });
+
+    });
+});
+  
 
 /*FANCYBOX INIT*/
 
