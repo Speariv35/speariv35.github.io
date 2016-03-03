@@ -10,7 +10,6 @@ $(function() {
 
 
 
-
 /*WOW INIT*/
 
 new WOW().init();
@@ -44,9 +43,10 @@ new WOW().init();
       $(this).removeClass('active');
   })
 
+
   $('.jcarousel-pagination').jcarouselPagination({
-      item: function(page) {
-          return '<a></a>';
+      item: function() {
+           return '<a href="#"></a>';
       }
   });
 

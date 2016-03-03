@@ -7,7 +7,7 @@
  * Copyright 2009-2016 Jeremy Ashkenas, DocumentCloud and Investigative Reporters & Editors
  * Available under MIT license <https://lodash.com/license>
  */
-;(function() {
+(function() {
 
   /** Used as a safe reference for `undefined` in pre-ES5 environments. */
   var undefined;

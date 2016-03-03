@@ -11,6 +11,7 @@ var gulp = require('gulp'),
     imagemin = require('gulp-imagemin'),
     pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
+    rename = require("gulp-rename"),
     browserSync = require("browser-sync"),
     reload = browserSync.reload;
 
@@ -26,6 +27,7 @@ var gulp = require('gulp'),
     src: { 
         html: 'src/*.html', 
         js: 'src/js/main.js',
+        jsVendor: 'src/js/vendor.js',
         style: 'src/style/main.scss',
         img: 'src/img/**/*.*', 
         fonts: 'src/fonts/**/*.*'
@@ -63,8 +65,20 @@ gulp.task('js:build', function () {
     gulp.src(path.src.js) 
         .pipe(rigger()) 
         .pipe(sourcemaps.init()) 
-        // .pipe(uglify()) 
+        .pipe(uglify()) 
         .pipe(sourcemaps.write()) 
+        .pipe(rename('main.min.js'))
+        .pipe(gulp.dest(path.build.js)) 
+        .pipe(reload({stream: true})); 
+});
+
+gulp.task('jsVendor:build', function () {
+    gulp.src(path.src.jsVendor) 
+        .pipe(rigger()) 
+        .pipe(sourcemaps.init()) 
+        .pipe(uglify()) 
+        .pipe(sourcemaps.write()) 
+        .pipe(rename('vendor.min.js'))
         .pipe(gulp.dest(path.build.js)) 
         .pipe(reload({stream: true})); 
 });
@@ -78,6 +92,7 @@ gulp.task('style:build', function () {
         .pipe(prefixer()) 
         .pipe(cssmin()) 
         .pipe(sourcemaps.write())
+        .pipe(rename('main.min.css'))
         .pipe(gulp.dest(path.build.css)) 
         .pipe(reload({stream: true}));
 });
@@ -108,7 +123,8 @@ gulp.task('build', [
     'js:build',
     'style:build',
     'fonts:build',
-    'image:build'
+    'image:build',
+    'jsVendor:build'
 ]);
 
 
@@ -121,6 +137,7 @@ gulp.task('watch', function(){
     });
     watch([path.watch.js], function(event, cb) {
         gulp.start('js:build');
+        gulp.start('jsVendor:build');
     });
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
