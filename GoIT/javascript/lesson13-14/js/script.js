@@ -1,104 +1,116 @@
-'use strict';
 
-/*DATA FOR TEST*/
-
-var testData = [{
-		question: '1. Есть такой код: ul li:first-letter {font-size: 200%;}. Что он делает? ',
-		option1: 'Делает первую букву у первого элемента в ненумерованном списке размером 200%.',
-		option2: 'Делает первую букву у первого элемента в нумерованном списке размером 200%.',
-		option3: 'Делает первую букву у каждого элемента ненумерованного списка размером 200%.'
-	},
-	{
-		question: '2. Есть такой HTML-код: <div id="myid">Содержимое</div>. Как задать стиль для тега <div>?',
-		option1: 'div #myid {margin: 1px;}',
-		option2: 'div[myid] {margin: 1px;}',
-		option3: '#myid {margin: 1px;}',
-	},
-	 {
-		question: '3. Какое свойство используется для задания полей у блока?',
-		option1: 'margin',
-		option2: 'position',
-		option3: 'padding',
-	}];
-
-var testAnswers = {
-	answer1: 'Делает первую букву у каждого элемента ненумерованного списка размером 200%.',
-	answer2: {
-		rigth1: 'div#myid {margin: 1px;}',
-		right2: '#myid {margin: 1px;}'
-	},
-
-	answer3: 'padding',
-}
-
-/*WRITE TO LOCAL STORAGE*/
-
-var testDataStr = JSON.stringify(testData);
-var testAnswersStr = JSON.stringify(testAnswers);
-
-console.log('JSON Data', testDataStr);
-console.log('JSON Answers', testAnswersStr);
-
-localStorage.setItem('testData', testDataStr);
-localStorage.setItem('testAnswers', testAnswersStr);
-
-/*READ FROM LOCAL STORAGE*/
-
-var testDataJSON = localStorage.getItem('testData');
-var testAnswersJSON = localStorage.getItem('testAnswers');
-
-var testDataObj = JSON.parse(testDataJSON);
-var testAnswersObj = JSON.parse(testAnswersJSON);
-
-console.log ('Restore from LS', testDataObj);
-console.log ('Restore from LS', testAnswersObj);
-
-/*CREATE DOM FROM TEMPLATE*/
+'use strict;'
 
 $(function(){
 
-	var test_tmpl = $('#test_tmpl').html();
-	var template = _.template(test_tmpl);
-	
-	var insert = template({
-  data: testDataObj
+
+  var html = $('#test').html();
+  
+/*DATA FOR TEST*/
+
+  var question = [
+  {
+  	question: '1. Есть такой код: ul li:first-letter {font-size: 200%;}. Что он делает?',
+  	answer: [
+    'Делает первую букву у первого элемента в ненумерованном списке размером 200%.',
+    'Делает первую букву у первого элемента в нумерованном списке размером 200%.',
+    'Делает первую букву у каждого элемента ненумерованного списка размером 200%.'
+    ],
+    rightAnswer: {
+        2:true
+      }
+  },
+  {
+    question: '2. Есть такой HTML-код: div id="myid" Содержимое. Как задать стиль для тега div ?',
+    answer: [
+    'div myid {margin: 1px;}',
+    'div[myid] {margin: 1px;}',
+    '#myid {margin: 1px;}',
+    ],
+    rightAnswer: {
+        2:true
+      }
+  },
+  {
+    question: '3. Какое свойство используется для задания полей у блока?',
+    answer: [
+    'margin',
+    'position',
+    'padding',
+    ],
+    rightAnswer: {
+        2:true
+      }
+  },
+  ];
+
+
+  var strQuestionAnswer = JSON.stringify(question);
+  var objQuestionAnswer = JSON.parse(strQuestionAnswer);
+
+
+  var content = tmpl(html, {
+  	data: objQuestionAnswer
+  	});
+
+  $body = $('body');
+  $body.append(content);
+
+
+  var answerArray = [];
+
+  function checkAnswer(e){
+     var user = [];
+    
+    for (var i = 0; i < question.length; i++) {
+       
+      var inputs = $('.question' + i +' input:radio');
+
+        for (var k = 0; k < inputs.length; k++) { 
+           var checked = []; 
+           var right = []; 
+
+           if (inputs[k].checked == true) {
+              checked[k] = inputs[k].checked;
+           }
+
+           right[k] = question[i].rightAnswer[k] == 1;
+
+           if (checked[k] !== right[k]) {
+
+            user.push("0");
+           } else {
+            user.push("1");
+            };
+        };
+    };
+
+    var result = 0;
+   
+    for (var i = 0; i < user.length; i++) {
+     
+       if (user[i] == 1) {
+         result += 1;
+       };
+    };
+
+
+    $modal = $('<div class="modal"><p> ' + 'Результат: ' + result + ' верных ответа </p></div>');
+    $overlay = $('<div class="overlay"></div>')
+
+    $overlay.one('click', hideModal);
+    $body.append($overlay);
+    $body.append($modal);
+};
+
+  function hideModal(){
+    $('.checkbox').removeAttr('checked');
+    $modal.remove();
+    $overlay.remove();
+  }
+
+  var check = $('.check');
+
+  check.on('click', checkAnswer);
+
 });
-	$('body').append(insert);
-
-/*CHECK RIGHT ANSWERS*/
-
-
- var $answers = $('input:checkbox:checked #q1answ3');
-
-function checkAnswer(e) {
-	e.preventDefault;
-	if (testAnswersObj.answer1 = $($answers).eq(0).html()) {
-		alert ('Ok');
-		alert ('$answers', $($answers).html());
-		alert ('Right', testAnswersObj.answer1);
-	} else {
-		alert ('Wrong');
-}};
-
-
-$('.check-result').on('click', checkAnswer);
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-});
-
-
