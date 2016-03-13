@@ -18,6 +18,7 @@ body{
 .question:hover {
 	background-color: #d3d3d3;
 	transition: all 0.5s ease-in;
+
 }
 
 .question__text {
@@ -55,6 +56,8 @@ input {
 	background-color: #3a3a3a;
 	color: #fff;
 	transition: all 0.5s ease-in;
+	
+
 }
 
 .modal {

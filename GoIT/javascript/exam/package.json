@@ -1,0 +1,29 @@
+{
+  "name": "JS Exam",
+  "version": "0.0.0",
+  "description": "Sass praactice",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "speariv35",
+  "license": "ISC",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp.spritesmith": "^6.2.0",
+    "imagemin-pngquant": "^4.2.2",
+    "gulp-minify-css": "^1.2.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-rigger": "^0.5.8",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.5.0",
+    "gulp-uglify": "^1.5.2",
+    "gulp-watch": "^4.3.5",
+    "rimraf": "^2.5.2"
+  }
+}
