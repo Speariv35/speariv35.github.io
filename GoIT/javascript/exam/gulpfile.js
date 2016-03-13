@@ -85,19 +85,19 @@ gulp.task('jsVendor:build', function () {
         .pipe(reload({stream: true})); 
 });
 
-gulp.task('sprite:build', function() {
-    var spriteData = 
-        gulp.src(path.src.sprite) // путь, откуда берем картинки для спрайта
-            .pipe(spritesmith({
-                imgName: 'sprite.png',
-                cssName: 'sprite.css',
-                algorithm: 'binary-tree',
-                imgPath: '/build/img/sprite.png'
-            }));
+// gulp.task('sprite:build', function() {
+//     var spriteData = 
+//         gulp.src(path.src.sprite) // путь, откуда берем картинки для спрайта
+//             .pipe(spritesmith({
+//                 imgName: 'sprite.png',
+//                 cssName: 'sprite.css',
+//                 algorithm: 'binary-tree',
+//                 imgPath: '/build/img/sprite.png'
+//             }));
 
-    spriteData.img.pipe(gulp.dest(path.build.img)); // путь, куда сохраняем картинку
-    spriteData.css.pipe(gulp.dest('./src/style/partials')); // путь, куда сохраняем стили
-});
+//     spriteData.img.pipe(gulp.dest(path.build.img)); // путь, куда сохраняем картинку
+//     spriteData.css.pipe(gulp.dest('./src/style/partials')); // путь, куда сохраняем стили
+// });
 
 gulp.task('style:build', function () {
     gulp.src(path.src.style) 
@@ -134,7 +134,7 @@ gulp.task('fonts:build', function() {
 gulp.task('build', [
     'html:build',
     'js:build',
-    'sprite:build',
+    // 'sprite:build',
     'style:build',
     'fonts:build',
     'image:build',

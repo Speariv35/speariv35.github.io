@@ -4,7 +4,7 @@
 * Custom
 */
 @import "partials/varmixins";
-@import "partials/sprite.css";
+// @import "partials/sprite.css";
 @import "partials/mediaqueries";
 @import "partials/animate.css";
 
@@ -12,8 +12,20 @@
 
 /*  STYLE */
 
+body {
+	color: #fff;
+}
 
-img {
-	width: 1000px;
+
+.main-wrapper {
+	width: 320px;
 	margin: 0 auto;
+}
+
+
+header {
+	height: 540px;
+	background-image: url("../img/bg.jpg");
+	background-position: center;
+	background-size: cover;
 }
