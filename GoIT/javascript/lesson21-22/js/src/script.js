@@ -47,7 +47,7 @@ $(function () {
         if (inputs[k].checked == true) {
           checked[k] = inputs[k].checked;
         }
-        right[k] = question[i].rightAnswer[k + 1] == 1;
+        right[k] = question[i].rightAnswer[k] == 1;
 
         if (checked[k] !== right[k]) {
           user.push("0");
@@ -64,21 +64,22 @@ $(function () {
       };
     };
 
-    $modal = $('<div class="modal"><p> ' + 'Результат: ' + result + ' верных ответа </p></div>');
-    $overlay = $('<div class="overlay"></div>');
+    var $modal = $('<div class="modal"><p> ' + 'Результат: ' + result + ' верных ответа </p></div>');
+    var $overlay = $('<div class="overlay"></div>');
 
     $overlay.one('click', hideModal);
     $body.append($overlay);
     $body.append($modal);
   };
 
-  var hideModal = function hideModal() {
+  function hideModal() {
+
     $('.checkbox').removeAttr('checked');
-    $modal.remove();
-    $overlay.remove();
-  };
+    $('.modal').remove();
+    $('.overlay').remove();
+  }
 
-  var result = $('.result');
+  var check = $('.check');
 
-  result.on('click', checkAnswer);
+  check.on('click', checkAnswer);
 });

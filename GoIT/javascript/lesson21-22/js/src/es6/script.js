@@ -62,7 +62,7 @@ $(() => {
            if (inputs[k].checked == true) {
               checked[k] = inputs[k].checked;
            }
-           right[k] = question[i].rightAnswer[k+1] == 1;
+           right[k] = question[i].rightAnswer[k] == 1;
 
            if (checked[k] !== right[k]) {
             user.push("0");
@@ -81,21 +81,22 @@ $(() => {
     };
 
 
-    $modal = $('<div class="modal"><p> ' + 'Результат: ' + result + ' верных ответа </p></div>');
-    $overlay = $('<div class="overlay"></div>')
+    const  $modal = $('<div class="modal"><p> ' + 'Результат: ' + result + ' верных ответа </p></div>');
+    const  $overlay = $('<div class="overlay"></div>')
 
     $overlay.one('click', hideModal);
     $body.append($overlay);
     $body.append($modal);
 };
 
-  let hideModal = () => {
+  function hideModal(){
+    
     $('.checkbox').removeAttr('checked');
-    $modal.remove();
-    $overlay.remove();
+    $('.modal').remove();
+    $('.overlay').remove();
   }
 
-  let result = $('.result');
+  let check = $('.check');
 
-  result.on('click', checkAnswer);
+  check.on('click', checkAnswer);
 });
