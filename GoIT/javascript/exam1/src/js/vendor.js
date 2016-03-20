@@ -9,6 +9,8 @@
 
 //= vendor/isotope.pkgd.min.js
 
+//= vendor/tmpl.js
+
 //= vendor/handlebars-v4.0.5.js
 
 //= vendor/wow.js

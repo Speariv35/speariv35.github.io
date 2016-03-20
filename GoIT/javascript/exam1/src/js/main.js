@@ -5,7 +5,6 @@
 //= partials/app.js
 
 
-
 (function($) {
 
 
@@ -98,7 +97,7 @@
 			wordArr.forEach(function(word, i) {
 				(i != 0) ? requestStr = requestStr + '+' + word : requestStr = requestStr + word;
 			});
-			requestStr = requestStr + '&image_type=photo';
+			requestStr = requestStr + '&image_type=photo';	
 
 			function formImgArray(data) {
 					var i = 0;
@@ -130,7 +129,7 @@
 
 	function initIsotope() {
 		var elem = document.querySelector('.ideas');
-		var isoProt = new Isotope( elem, {
+		var isotopeInst = new Isotope( elem, {
 		itemSelector: '.ideas__link',
 		transitionDuration: '0.6s',
 		masonry: {
@@ -149,6 +148,7 @@
 		var html = template(img);
 		var element = document.querySelector('.ideas');
 		element.innerHTML = html;
+
 	}
 
 	function firstInit() {
@@ -159,13 +159,44 @@
 
 	document.addEventListener('DOMContentLoaded', firstInit);
 
+/*SIGNUP MODAL WINDOW*************************************************************************************/
+	
+    		var $body = $('body');
+    		var $modal;
+    		var $overlay;
+            var present = false;
+
+				function showModal(e) {
+                e.preventDefault();
+
+                if (!present) {
+    			$modal = $('<div class="main"> 	<div class="social-icons"> 		 <div class="col_1_of_f span_1_of_f"><a href="#"> 		    <ul class="facebook"> 		    	<i class="fb"> </i> 		    	<li>Connect with Facebook</li> 		    	<div class="clear"> </div> 		    </ul> 		    </a> 		 </div>	 		 <div class="col_1_of_f span_1_of_f"><a href="#"> 		    <ul class="twitter"> 		      <i class="tw"> </i> 		      <li>Connect with Twitter</li> 		      <div class="clear"> </div> 		    </ul> 		    </a> 		</div> 		<div class="clear"> </div>	       </div>       <h2 class="signup-text">Or Signup with</h2> 		<form> 		   <div class="lable"> 		        <div class="col_1_of_2 span_1_of_2">	<input type="text" class="text" value="First Name" onfocus="this.value = "";" onblur="if (this.value == "") {this.value = "First Name";}" id="active"></div>                 <div class="col_1_of_2 span_1_of_2"><input type="text" class="text" value="Last Name" onfocus="this.value = "";" onblur="if (this.value == "") {this.value = "Last Name";}"></div>                 <div class="clear"> </div> 		   </div> 		   <div class="lable-2"> 		        <input type="text" class="text" value="your@email.com " onfocus="this.value = "";" onblur="if (this.value == "") {this.value = "your@email.com ";}"> 		        <input type="password" class="text" value="Password " onfocus="this.value = "";" onblur="if (this.value == "") {this.value = "Password ";}"> 		   </div> 		   <h3>Bycreating an account, you agree to our <span class="term"><a href="#">Terms & Conditions</a></span></h3> 		   <div class="submit"> 			  <input type="submit" onclick="" value="Create account" > 		   </div> 		   <div class="clear"> </div> 		</form> 	 		</div>');
+    			$overlay = $('<div class="signup-overlay"></div>');
+
+                e.stopPropagation();
+				
+				$body.append($overlay);
+    			$body.append($modal);
+    			$overlay.one('click', hideModal); 
+    			$('.submit input').one('click', hideModal);
+                present = true;
+            } 
+        }
+    		function hideModal() {
+    			$modal.hide();
+    			$overlay.hide();
+                present = false;
+    		}
 
 
-/*FANCYXBOX INIT*******************************************/
+    		$(".header-top__sign-up").on('click', showModal);
+    		$(".header-top__login").on('click', showModal);
+
+/*FANCYXBOX INIT**************************************************************************************/
 
 		
 		$(".fancybox").fancybox();
-	
+
 
 })();
 
