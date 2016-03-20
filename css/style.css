@@ -1,0 +1,265 @@
+* {
+	padding: 0;
+	margin: 0
+}
+
+@font-face {
+	font-family: Open Sans;
+	Src: url(../fonts/OpenSans-Light.ttf);
+}
+
+body {
+	font-family: Open Sans;
+	background-color: #676767;
+}
+
+.wrapper {
+	background-color: #fff;
+	width: 1054px;
+	margin: 0 auto; 
+	-webkit-box-shadow: 0px 3px 34px 4px rgba(0,0,0,0.25);
+	-moz-box-shadow: 0px 3px 34px 4px rgba(0,0,0,0.25);
+	box-shadow: 0px 3px 34px 4px rgba(0,0,0,0.25);
+	
+}
+
+/* Header Style*/
+
+.header	{
+	overflow: hidden;
+	background: url(../img/header_bg.png);
+}
+
+.logo {
+	padding: 60px 50px;
+	float: left;
+}
+
+h1 {
+	float: left;
+	font-size: 100px;
+	color: #fff;
+	font-weight: 100;
+}
+
+h2 {
+	float: right;
+	font-size: 70px;
+	color: #fff;
+	font-weight: 100;
+	padding-top: 85px;
+	padding-right:27px; 
+	padding-bottom: 10px;
+}
+
+.whiteline {
+	background-color: #fff;
+	height: 10px;
+}
+
+/* Content Style*/
+
+.ceiling {
+	height: 67px;
+}
+
+.content {
+	width: 765px;
+	overflow: hidden;
+	background: rgba(241,241,241,1);
+    background: -moz-linear-gradient(top, rgba(241,241,241,1) 0%, rgba(199,199,199,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(241,241,241,1)), color-stop(100%, rgba(199,199,199,1)));
+    background: -webkit-linear-gradient(top, rgba(241,241,241,1) 0%, rgba(199,199,199,1) 100%);
+    background: -o-linear-gradient(top, rgba(241,241,241,1) 0%, rgba(199,199,199,1) 100%);
+    background: -ms-linear-gradient(top, rgba(241,241,241,1) 0%, rgba(199,199,199,1) 100%);
+    background: linear-gradient(to bottom, rgba(241,241,241,1) 0%, rgba(199,199,199,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1f1f1', endColorstr='#c7c7c7', GradientType=0 );
+}
+
+.content div {
+	float: left;
+}
+
+.centralblock {
+	overflow: hidden;
+	background-color: #e7e7e7;
+}	
+
+.left_wall, 
+.content, 
+.right_wall {
+	float: left;
+}
+
+.left_wall {
+	width: 145px;
+}
+
+.homework {
+	width: 100%;
+	text-align:center;
+}
+
+h3 {
+	text-align: center;
+	color: #6a6a6a;
+	font-size: 50px;
+	font-weight: 300;
+}
+
+.content img {
+	-webkit-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
+	-moz-box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
+	box-shadow: -2px 5px 28px 2px rgba(0,0,0,0.16);
+	margin-top: 10px;
+	border-radius: 5px;
+	border: 2px solid #f07901;
+}
+
+.homework_img_l {
+	margin-left: 39px;
+	margin-right: 17px;
+}
+
+/* .img-left {
+	position: relative;
+    z-index: 1;
+
+}
+
+
+.img-left:after {
+	top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 2;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+	background-color: rgba(37, 166, 247, 0.9);
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-left:hover:after {
+	 opacity: 0.9;
+}
+
+.img-left .ll {
+	text-align: center;
+	opacity: 0;
+}
+
+.img-left:hover .ll {
+	position: absolute;
+		opacity: 1;
+} */
+
+
+.homework_img_c {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.homework_img_r {
+	margin-left: 17px;
+	margin-right: 39px;
+}
+
+.rowtitle div {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	
+}
+
+.title-left  {
+	width: 210px;
+	margin: 10px 0px 10px 42px ;
+}
+
+.title-center  {
+	width: 210px;
+	margin: 10px 20px 10px 20px;
+}
+
+.title-right  {
+	width: 210px;
+	margin: 10px 42px 10px 10px ;
+}
+
+
+.title-left a, 
+.title-center a, 
+.title-right a {
+	text-decoration: none;
+	color: #6a6a6a;
+	transition: color 0.5s linear;
+}
+
+.rowtitle div a:hover {
+	text-decoration: none;
+	color: #f07901;
+
+}
+
+.rowphoto div a img:hover {
+	border: 2px solid rgba(240, 121, 1, .5);
+}
+
+.rowphoto .center,
+.rowtitle .center {
+	width: 225px;
+	float: none;
+	margin: 0 auto;
+}
+
+.center-img {
+	width: 765px;
+}
+
+/* Footer Style*/
+
+.footer {
+	background-color: #dbdbdb;
+}
+
+
+
+/*    LAMP ON HOVER  */
+
+.img-left .lamp,
+.img-center .lamp,
+.img-right .lamp {
+	opacity: 0;
+	transition: opacity 2s linear;
+ 
+}
+
+.img-left:hover  .lamp,
+.img-center:hover  .lamp,
+.img-right:hover  .lamp {
+
+	opacity:1;
+	position: absolute;
+	float: none;
+    background-image: url(../img/lamp.png);
+    background-repeat: no-repeat;
+    top: 215px;
+    width: 215px;
+    height: 130px;
+}
+
+.img-left:hover  div {
+	background-position: left 75px top 0px;
+}
+.img-center:hover  div {
+	background-position: left 45px top 0px;
+}
+.img-right:hover  div {
+	background-position: left 55px top 0px;
+}

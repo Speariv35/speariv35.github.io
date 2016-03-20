@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Javascript HW Lesson 12</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href='css/style.css'>
+	<script src= "//code.jquery.com/jquery-1.12.0.min.js"></script>
+	<script src="js/template.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+	
+	
+<script type="text/template" id="test">
+	<div class="wrapper">
+	  <div class="header">
+	  	<h1><%= name %></h1>
+	  	<img src="img/<%= imgLink %>">
+	  	<p><%= jobTitle %></p>
+	  </div>
+	  <div class="list">
+	  	<p>Хочу учить фронтенд, потому что:</p>
+		<ul>
+			<li><%= opinion1 %></li>
+			<li><%= opinion2 %></li>
+			<li><%= opinion3 %></li>
+		</ul>
+	  </div>
+	  <div class="info">
+	  	<p>Мой контактный телефон</p>
+		<p><%= phone %></p>
+		<div class="link">
+			<p>Мой профиль вконтакте</p>
+			<p><a href="<%= fbLink %>">vk.com</a></p>
+	  </div>
+	  </div>
+	   <div class="footer">
+	  	<p>Мой фидбек:</p>
+		<p><%= feedback %></p>
+	  </div>
+	</div>
+</script>
+
+</body>
+</html>

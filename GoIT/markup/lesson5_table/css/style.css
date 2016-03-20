@@ -1,0 +1,43 @@
+
+
+
+
+table {
+	width:540px;
+	height: 500px;
+	border:8px solid #ffffff;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+tr, td {
+	border:7px solid #000000;
+	border-spacing: 0 0;
+}
+
+
+/* COLORS */
+
+.orange {
+	background-color: #ff5c2e;
+}
+
+.grey {
+
+	background-color: #393134;
+}
+
+.yellow {
+	background-color: #fff362;
+}
+
+.blue {
+	background-color: #064581;
+}
+
+.white {
+	background-color: #fff;
+}
+
+.black {
+	background-color: #000000;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Homework 15-16</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="js/lodash.js"></script>
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+		<form action="#">
+			<input type="text" id = "text">
+			<button type = "button" class = "searchButton" value=" "></button>
+		</form>
+		<script type = "text/template" id = "test">
+			<ul class = "search">
+				<% for(var index in element.results){%>
+					<li class = "search__item">
+						<a href = "<%= element.results[index].url%>" class = "search__link"><%=element.results[index].titleNoFormatting%></a>
+						<p class = "search__text"><%= element.results[index].unescapedUrl%></p>
+						<p class = "search__content"><%= element.results[index].content%></p>
+					</li>
+				<%}%>	
+			</ul>
+			<div class = "nav">
+				<ul class = "nav__search">
+					<%for(var i = 0; i < 6; ++i){%>
+						<li class = "nav__item" onclick="showSearch(<%= i %>)">
+							<p class = "nav__link number"><%= i+1%></p>
+						</li>
+					<%}%>
+				</ul>
+			</div>	
+		</script>
+</body>
+</html>

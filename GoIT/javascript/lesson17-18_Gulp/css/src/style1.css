@@ -1,0 +1,25 @@
+
+.main_menu--link:hover {
+    color: black;
+}
+
+.sub_menu {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    display: none;
+    background-color: #ccc;
+    z-index: 1;
+}
+
+body {
+    text-align: center;
+}
+
+.sub_menu--link {
+    display: block;
+    padding: 5px 20px;
+    width: 100px;
+    text-decoration: none;
+    color: white;
+}

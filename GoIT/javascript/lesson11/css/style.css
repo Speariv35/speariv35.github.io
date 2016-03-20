@@ -1,0 +1,89 @@
+
+/* CARAUSEL STYLE */
+
+.carausel-wrapper {
+	padding-top: 200px;
+	width: 1000px;
+	margin: 0 auto;
+	
+	overflow: hidden;
+}
+
+
+.carousel {    
+    list-style: none;
+    width: 100000px;
+    left: 0;
+    position: relative;
+}
+ 
+.carousel-el {
+    display: block;
+   
+    float: left;
+    text-align: center;
+    padding: 0px;
+    
+}
+ 
+.carousel-element img {
+    max-width: 100px;
+}
+.controls {
+	float: left;
+	margin-top: 50px;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.hide {
+	overflow: hidden;
+	width: 600px;
+	margin: 0 auto;
+	float: left;
+}
+
+.inactive {
+	cursor: default;
+	opacity: 0.3;
+}
+
+
+/* FANCYBOX STYLE */
+
+.fancybox {
+	text-decoration: none;
+	font-family: arial;
+	color: #000;
+	display: block;
+}
+
+.fancybox-modal {
+	position: absolute;
+	width: 800px;
+	height: 480px;
+	top: 50%;
+	left: 50%;
+	margin: -240px 0 0 -400px;
+	border: 10px solid #fff;
+	border-radius: 5px;
+	-webkit-box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+	-moz-box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+	box-shadow: 10px 6px 49px 1px rgba(0,0,0,1);
+}
+
+.fancybox-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000;
+	opacity: 0.8;
+	
+}
+
+
+.fancybox-modal img {
+	margin: 0 auto; 
+}

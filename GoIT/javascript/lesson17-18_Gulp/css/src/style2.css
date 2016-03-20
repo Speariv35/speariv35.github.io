@@ -1,0 +1,31 @@
+
+body {
+	background-color: #999;
+}
+
+.main_nav {
+    width: 1030px;
+    margin: 50px auto;
+    background: #ccc;
+    height: 30px;
+    margin-bottom: 50px;
+    border-radius: 7px;
+}
+
+.main_menu {
+    position: relative;
+}
+
+.main_menu--item {
+    position: relative;
+    float: left;
+    line-height: 30px;
+    -webkit-transition: 0.3s all linear;
+    -moz-transition: 0.3s all linear;
+    -o-transition: 0.3s all linear;
+    transition: 0.3s all linear;
+}
+
+.main_menu--item:hover {
+    background: #ccc;
+}

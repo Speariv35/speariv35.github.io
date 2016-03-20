@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>JS HW 13-14</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/template.js"></script>
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+
+    <script type="text/template" id = "test">
+    <% for (var i =0; i<data.length; i++) { %>
+    <div class="question<%=i%> question">
+      <h1 class="question__text"><%= data[i].question %></h1>
+        <% for (var k = 0; k < data[i].answer.length; k++) { %>
+        <div class="checkbox">
+            <label><input type="radio" class="checkbox" name="radio<%= [i] %>"><%= data[i].answer[k] %></label> 
+        </div>
+  <%}; %> 
+    </div>
+    
+  <%}; %>  
+  <div class="check"><span>Проверить</span></div>
+</script>
+
+
+</body>
+</html>

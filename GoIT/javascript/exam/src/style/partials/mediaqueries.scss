@@ -1,0 +1,355 @@
+/* 768 PX ***************************************************************/
+
+@media (min-width: 768px) {
+
+	.wrapper {
+		width: 768px;
+	} 
+
+
+	.header-top {
+		margin: 17px 30px 0 0;
+		float: right;
+	}
+
+	.header-bottom {
+		width: 500px;
+		margin-bottom: 95px;
+		overflow: hidden;
+		text-align: center;
+
+		&__title {
+			float: left;
+			padding-top: 20px;
+			margin-left: 46px;
+			margin-bottom: 0px;
+	}
+
+		&__tagline  {
+			padding-top: 140px;
+			font: 700 52px/62px Montserrat;
+	}
+
+		&__text {
+		    margin-top: 27px;
+		    font: 300 24px/22px Roboto;
+
+		}
+	}
+
+	.button {
+		margin-top: 28px;
+		width: 225px;
+		display: inline-block;
+
+	}
+
+
+	.work-steps__wrapper {
+		overflow: hidden;
+	}
+	.work-steps {
+		&__wrapper {
+		padding-top: 90px;
+		padding-bottom: 60px;
+		text-align: center;
+	}
+
+		&__title {
+			margin-bottom: 20px;
+		}
+
+	}
+
+
+
+	.jcarousel {
+		margin-right: 20px;
+		float: left;
+		width: 236px;
+		height: 400px;
+	}
+
+	.jcarousel--last {
+		margin-right: 0px;
+	}
+
+	.step-item {
+		text-align: left;
+		width: 236px;
+		height: 400px;
+		padding-top: 210px;
+	
+	}
+	
+	
+	.arrows__left, .arrows__right {
+		background: url(../img/sprite.png);
+		width: 30px;
+		height: 55px;
+		top: 153px;
+	}
+	
+	.arrows__left:hover,
+	.arrows__right:hover {
+		opacity: 0.8;
+
+	}
+
+	.arrows__left:active, 
+	.arrows__right:active {
+		opacity: 1;
+
+	}
+
+	.arrows__left {
+		background-position: 0 68px;
+		left: 20px;  
+	}
+
+	.arrows__right {
+		background-position: 31px 68px;
+		right: 20px;  
+	}
+
+
+
+	.partners {
+		padding-top: 27px;
+		padding-bottom: 80px
+	}
+
+	.partners__title {
+		margin-bottom: 20px;
+	}
+
+	.partners-item {
+		float: left;
+		width: 330px;
+		margin-bottom: 10px;
+
+		&__ico-bg {
+			top: 83px;
+			right:98px;
+		}
+		
+		
+	}
+
+	.partners-item--left {
+		margin-left: 90px;
+	}
+
+	.partners-item--right {
+		margin-left: -70px;
+	}
+
+	.button-partners {
+		margin-top: 60px;
+		width: 190px;
+	}
+
+
+	.search {
+		padding-bottom: 60px;
+
+		&__text {
+			margin-bottom: 25px
+		}
+
+		&__input{
+			width: 240px;
+			margin-right: 7px;
+		}
+
+		&__button {
+			width: 160px;
+		}
+	}
+
+
+	footer  .wrapper {
+		padding-top: 9px;
+	}
+
+	.column {
+		float: left;
+	}
+
+	.column-links {
+		margin-top: 10px;
+		text-align: left;
+	}
+
+	.column__link {
+		padding-left: 70px;
+		float: none;
+	}
+
+	.column--big {
+		letter-spacing: 0.8px;
+		margin-left: 40px;
+	}
+
+
+	.column__sitelogo {
+		display: block;
+		padding-top: 10px;
+	}
+
+
+	.column--copyright {
+		margin-top: 10px;
+		float: right;
+		margin-right: 27px;
+	}
+
+	.column__text {
+		display: block;
+		margin-right: -28px;
+	}
+
+	.column__title--partners {
+		padding-left: 35px;
+	}
+
+}
+
+.grid {
+	margin-left: 10px;
+}
+
+.grid-item {
+	width: 236px;
+	height: 310px;
+}
+
+.grid-item--wide {
+	width: 490px;  
+}
+
+
+
+/* 940 PX ***************************************************************/
+
+@media (min-width: 940px) {
+
+
+.wrapper {
+		width: 940px;
+	} 
+
+.wrapper--header {
+	max-width: 1038px;
+	width: 100%;
+}
+
+.work-steps__wrapper {
+	padding: 90px 0px 25px 00px;
+}
+
+.jcarousel {
+		margin-right: 20px;
+		float: left;
+		width: 300px;
+		height: 400px;
+	}
+
+.jcarousel--last {
+	margin-right: 0px;
+}
+
+.step-item {
+	text-align: left;
+	width: 300px;
+	height: 400px;
+	padding-top: 230px;
+
+}
+
+
+.partners {
+	padding-top: 60px;
+	padding-bottom: 80px
+}
+
+.partners__title {
+	margin-bottom: 20px;
+}
+
+.partners-item {
+	float: left;
+	margin-right: 33px;
+	width: 210px;
+	margin-bottom: 10px;
+
+	&__ico-bg {
+		top: 85px;
+		right:36px;
+	}
+	&__text {
+		margin: 0 15px;
+	}
+	
+}
+
+.partners-item--left {
+	margin-left: 0px;
+}
+
+.partners-item--right {
+	margin-left: 0px;
+}
+
+.partners-item--last {
+	margin-right: 0;
+}
+
+.button-partners {
+	margin-top: 12px;
+	width: 190px;
+}
+
+.ideas__title {
+	padding-bottom: 37px;
+}
+
+
+.wrapper--footer {
+	max-width: 1020px;
+	width: 100%;
+}
+
+.column--big {
+	margin-right: 20px;
+}
+
+.column__title--partners {
+	margin-left: -15px;
+}
+
+.search .ideas__title {
+	padding-bottom: 20px;
+}
+	
+.grid {
+	padding-bottom: 75px;
+} 	
+
+.grid-item {
+	width: 290px;
+	height: 310px;
+}
+
+.grid-item--wide {
+	width: 600px;  
+}
+
+
+
+
+
+
+
+}
+
