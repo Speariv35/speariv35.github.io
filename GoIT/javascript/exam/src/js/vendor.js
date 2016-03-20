@@ -5,6 +5,6 @@
 
 //= vendor/jquery.jcarousel.min.js
 
-
+//= vendor/jquery.xdomainrequest.min.js
 
 //= vendor/wow.js

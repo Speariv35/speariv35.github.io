@@ -42,7 +42,6 @@
 				target: '+=1'
 			});
 
-			
 /*SHOW MORE PARTNERS SLIDER*****************************************************************/
 
 			var opened = false;
@@ -73,7 +72,10 @@
 /** MASONRY*****************************************************************/
 
 	(function(){
-	var images = {
+
+	var inputIdeas = document.querySelector('.ideas-form__input');
+	var formIdeas = document.querySelector('.ideas-form');
+	var img = {
 		
 		photos: [
 		"img/gallery_1.jpg",
@@ -87,52 +89,53 @@
 		word: 'Choose your activity'
 	}
 
-	var inputActivity = document.querySelector('.activity-form__input');
-	var formActivity = document.querySelector('.activity-form');
+	
 
-	function getImagesByRequest() {
-			images.photos = [];
-			var wordArr = images.word.split(" ");
+	function getImages() {
+			img.photos = [];
+			var wordArr = img.word.split(" ");
 			var requestStr = 'https://pixabay.com/api/?key=2223288-d10240586d6b3acc79b68cd15&q=';
 			wordArr.forEach(function(word, i) {
 				(i != 0) ? requestStr = requestStr + '+' + word : requestStr = requestStr + word;
 			});
 			requestStr = requestStr + '&image_type=photo';
 
-			function successFunc(data) {
+			function formImgArray(data) {
 					var i = 0;
+
 					while(i < 7) {
-						images.photos.push(data.hits[i].webformatURL);
+						img.photos.push(data.hits[i].webformatURL);
+
 						i++;
 					}
 						render();
-						IsotopeInit();
+						initIsotope();
 				}
 
-			var promise = $.ajax({
+			var request = $.ajax({
 				url: requestStr
 			});
-			promise.done(successFunc);
+			request.done(formImgArray);
 	}
 
-	//GET IMAGES BY REQUEST
+	
 	function getUserQuery(event) {
 		event.preventDefault();
-		images.word = inputActivity.value;
-		getImagesByRequest();
+		img.word = inputIdeas.value;
+		getImages();
 
   
 	}
 
-		// ISOTOPE
-	function IsotopeInit() {
-		var elem = document.querySelector('.activity');
-		var iso = new Isotope( elem, {
-		itemSelector: '.activity__link',
-		transitionDuration: '0.8s',
+
+	function initIsotope() {
+		var elem = document.querySelector('.ideas');
+		var isoProt = new Isotope( elem, {
+		itemSelector: '.ideas__link',
+		transitionDuration: '0.6s',
 		masonry: {
-			columnWidth: ".activity__sizer",
-			gutter: '.activity__sizer',
+			columnWidth: ".ideas__sizer",
+			gutter: '.ideas__sizer',
 			gutter: 10,
 			isFitWidth: true,
 			percentPosition: true
@@ -143,19 +146,29 @@
 	function render() {
 		var source = $("#image-tmpl").html();
 		var template = Handlebars.compile(source);
-		var html = template(images);
-		var element = document.querySelector('.activity');
+		var html = template(img);
+		var element = document.querySelector('.ideas');
 		element.innerHTML = html;
 	}
 
-	function init() {
+	function firstInit() {
 		render();
-		IsotopeInit();
-		formActivity.addEventListener('submit', getUserQuery);
+		initIsotope();
+		formIdeas.addEventListener('submit', getUserQuery);
 	}
 
-	document.addEventListener('DOMContentLoaded', init);
+	document.addEventListener('DOMContentLoaded', firstInit);
+
+
+
+/*FANCYXBOX INIT*******************************************/
+
+		
+		$(".fancybox").fancybox();
+	
+
 })();
+
 
 
 })(jQuery);

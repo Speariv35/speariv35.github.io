@@ -4,8 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>JS Exam</title>
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.css">
 	<link rel="stylesheet" href="css/main.min.css">
 	<!--[if lte IE 8]>
 	<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -184,27 +183,28 @@
 				<a href="#">
 					<div class="partners-item partners-item--right partners-item--last">
 						<img class="partners-item__img" src="img/partner8.jpg" alt="Joey">
-						<div class="partners-item__ico-bg partners-item__ico-bg--blue"><div class="partners-item__ico plane"></div></div>
+						<div class="partners-item__ico-bg partners-item__ico-bg--blue"><div class="partners-item__ico plane">
+						</div></div>
 						<p class="partners-item__title">Bradley Hunter</p>
 						<p class="partners-item__text">Based in Chicago. I love playing tennis and loud music.</p>
 					</div>
 				</a>
 			</div>
-			<a  class="button button-partners" href="#">See other partners</a>
+			<a class="button button-partners" href="#">See other partners</a>
 		</div>
 	</section>
-		<section class="activity-section">
+		<section class="ideas-section">
 			<div class="wrapper">
-				<div class="activity-section__gallery clearfix">
+				<div class="ideas-section__gallery clearfix">
 					<h3 class="section-title partners__title">Discover holiday activity ideas</h3>
-					<div class="activity clearfix">
+					<div class="ideas clearfix">
 					</div>
 				</div>
-				<div class="activity-section__bottom">
+				<div class="ideas-section__bottom">
 					<h3 class="section-title partners__title">Discover holiday activity ideas</h3>
-					<form class="activity-form" action="#">
-						<p class="activity-form__text">Hi! What are your holiday interests?</p>
-						<input type="text" class="activity-form__input" placeholder="Enter your interests" required> 
+					<form class="ideas-form" action="#">
+						<p class="ideas-form__text">Hi! What are your holiday interests?</p>
+						<input type="text" class="ideas-form__input" placeholder="Enter your interests" required> 
 						<button type="submit" class="button search-button">Search partners</button>
 					</form>
 				</div>
@@ -213,11 +213,11 @@
 
 
 <script id="image-tmpl" type="text/x-handlebars-template">
-	<a href="#" class="activity__sizer"></a>
+	<a href="#" class="ideas__sizer"></a>
 		{{#each photos}}
-		<a href={{this}} class="activity__link" target="_blank">
-			<img src={{this}} alt="" class="activity__img">
-			<h4 class="activity__title">{{../word}}</h4>
+		<a href={{this}} class="ideas__link fancybox" target="_blank">
+			<img src={{this}} alt="" class="ideas__img">
+			<h4 class="ideas__title">{{../word}}</h4>
 		</a>
 		{{/each}}
 	</script>
@@ -227,6 +227,5 @@
     </div>
     <script src="js/vendor.min.js"></script>
 	<script src="js/main.min.js"></script>
-	
 </body>
 </html>
