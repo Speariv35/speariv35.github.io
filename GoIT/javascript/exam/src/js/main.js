@@ -6,6 +6,7 @@
 //= partials/app.js
 
 //= vendor/tmpl.js
+
 //= vendor/isotope.pkgd.min.js
 
 
