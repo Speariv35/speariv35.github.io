@@ -46,7 +46,9 @@
 				target: '+=1'
 			});
 
-			
+		});	
+
+
 /*SHOW MORE PARTNERS SLIDER*****************************************************************/
 
 			var opened = false;
@@ -86,7 +88,7 @@
 				cache: false,
 				url: 'http://api.pixplorer.co.uk/image?word=' + imageQuery + '&amount=7&size=s',
 				success: function(data) {
-					console.log(data);
+					
 					var imageObject = tmpl($('#grid-tmpl').html(), data);
 
 					$('.grid').remove();
@@ -117,7 +119,7 @@
 		});
 
 		renderList();
-	});
+	
 
 })(jQuery);
 
