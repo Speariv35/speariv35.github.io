@@ -27,8 +27,8 @@
 
 
 .main{
-	position: fixed;
-	top: 10%;
+	position: absolute;
+	top: 5%;
     right: 25%;
     z-index: 5;
 	margin:7em auto 0;
@@ -229,58 +229,75 @@ input[type=submit] {
 	float: left;
 	margin:0 0 0 0;
 }
+
 /*----start-responsive design-----*/
 @media (max-width:1024px){
-.col_1_of_2 {
-	margin: 0 0 0 3.6%;
+	.col_1_of_2 {
+		margin: 0 0 0 3.6%;
+	}
+	.span_1_of_2 {
+		width: 47.7%;
+	}
+	.span_1_of_f {
+		width: 50%;
+	}
+	i.fb, i.tw {
+		margin-right: 1em;
+	}
+	.main {
+		width: 50%;
+	}
 }
-.span_1_of_2 {
-	width: 47.7%;
-}
-.span_1_of_f {
-	width: 50%;
-}
-i.fb, i.tw {
-	margin-right: 1em;
-}
-.main {
-	width: 50%;
-}
-}
+
 @media (max-width:800px){
-.span_1_of_f {
-	width: 100%;
-}
-.col_1_of_f {
-	float:none;
-}
-.span_1_of_2 {
-	width: 100%;
-}
-.col_1_of_2 {
-	margin:0;
-}
-.lable-2 input[type="text"], input[type="Password"] {
-	padding: 14px;
-	width: 89%;
-}
+	.main {
+		top: 5%;
+		margin: 0 auto;
+	}
+
+	.span_1_of_f {
+		width: 100%;
+	}
+	.col_1_of_f {
+		float:none;
+	}
+	.span_1_of_2 {
+		width: 100%;
+	}
+	.col_1_of_2 {
+		margin:0;
+	}
+	.lable-2 input[type="text"], input[type="Password"] {
+		padding: 14px;
+		width: 89%;
+	}
 }
 @media (max-width:480px){
-.main {
-margin: 7em auto 0;
-width:70%;
-}
+
+	.main {
+		margin: 0 auto;
+		top: 5%;
+		width:70%;
+		right: 15%;
+	}
+
+
 }
 @media (max-width:320px){
-.main {
-	width:80%;
-}
-.lable input[type="text"] {
-	width: 83%;
-}
-.lable-2 input[type="text"], input[type="Password"] {
-	width: 84%;
-}
+
+	.main {
+		width:80%;
+		top: 5%;
+	    right: 12%;
+	}
+
+	.lable input[type="text"] {
+		width: 83%;
+	}
+
+	.lable-2 input[type="text"], input[type="Password"] {
+		width: 84%;
+	}
 }
 
 
@@ -614,20 +631,43 @@ header {
 		margin: 0px 50px;
 	}
  
-	.cup {
+	 
+	.cup:before {
+		content: '';
+		background: url(../img/sprite.png) no-repeat;
 		background-position: 0 -17px;
+		display: block;
+		width: 16px;
+		height: 16px;
+		
 	}
 
-	.bulb {
+	.bulb:before {
+		content: '';
+		background: url(../img/sprite.png) no-repeat;
 		background-position: 1px -32px;
-		height: 18px;
+		display: block;
+		width: 16px;
+		height: 16px;
+		
 	}
 
-	.plane {
+	.plane:before {
+		content: '';
+		background: url(../img/sprite.png) no-repeat;
 		background-position: -1px -49px;
+		display: block;
 		width: 18px;
 		height: 17px;
 		margin-left: -2px;
+	}
+
+	.tv:before {
+		content: '';
+		display: block;
+		width: 16px;
+		height: 16px;
+		background: url(../img/sprite.png) no-repeat;
 	}
 
 }

@@ -317,12 +317,6 @@ header {
 		background-color: #4e73db;
 	}
 
-	&__ico {
-	width: 16px;
-	height: 16px;
-	background: url(../img/sprite.png) no-repeat;
-	}
-
 	&__title {
 		font: bold 14px "Montserrat";
 		display: block;
@@ -338,20 +332,42 @@ header {
 		margin: 0px 50px;
 	}
  
-	.cup {
+	.cup:before {
+		content: '';
+		background: url(../img/sprite.png) no-repeat;
 		background-position: 0 -17px;
+		display: block;
+		width: 16px;
+		height: 16px;
+		
 	}
 
-	.bulb {
+	.bulb:before {
+		content: '';
+		background: url(../img/sprite.png) no-repeat;
 		background-position: 1px -32px;
-		height: 18px;
+		display: block;
+		width: 16px;
+		height: 16px;
+		
 	}
 
-	.plane {
+	.plane:before {
+		content: '';
+		background: url(../img/sprite.png) no-repeat;
 		background-position: -1px -49px;
+		display: block;
 		width: 18px;
 		height: 17px;
 		margin-left: -2px;
+	}
+
+	.tv:before {
+		content: '';
+		display: block;
+		width: 16px;
+		height: 16px;
+		background: url(../img/sprite.png) no-repeat;
 	}
 
 }
