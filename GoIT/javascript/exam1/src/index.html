@@ -191,14 +191,14 @@
 		</section>
 
 
-<script id="image-tmpl" type="text/x-handlebars-template">
+<script id="image-tmpl" type="text/HTML">
 	<a href="#" class="ideas__sizer"></a>
-		{{#each photos}}
-		<a href={{this}} class="ideas__link fancybox" target="_blank">
-			<img src={{this}} alt="" class="ideas__img">
-			<h4 class="ideas__title">{{../word}}</h4>
+		<% for (var i = 0; i < img.photos.length; i++) { %>
+		<a href=<%=img.photos[i]%> class="ideas__link fancybox">
+			<img src=<%=img.photos[i]%> alt="" class="ideas__img">
+			<h4 class="ideas__title"><%=img.word%></h4>
 		</a>
-		{{/each}}
+		<% }; %>
 	</script>
 
 

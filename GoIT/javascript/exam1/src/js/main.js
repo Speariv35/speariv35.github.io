@@ -1,11 +1,12 @@
 
-/*
- * Custom
- */
+
+(function(){
+
 //= partials/app.js
 
+//= vendor/tmpl.js
 
-(function($) {
+//= vendor/jquery.xdomainrequest.min.js
 
 
 		$('.jcarousel').jcarousel({
@@ -69,12 +70,8 @@
 
 
 /** MASONRY*****************************************************************/
-
-	(function(){
-
-	var inputIdeas = document.querySelector('.ideas-form__input');
-	var formIdeas = document.querySelector('.ideas-form');
-	var img = {
+	
+		var img = {
 		
 		photos: [
 		"img/gallery_1.jpg",
@@ -86,9 +83,11 @@
 		"img/gallery_7.jpg"
 		],
 		word: 'Choose your activity'
-	}
-
+	};
 	
+
+	var inputIdeas = document.querySelector('.ideas-form__input');
+	var formIdeas = document.querySelector('.ideas-form');
 
 	function getImages() {
 			img.photos = [];
@@ -137,11 +136,12 @@
 	}
 
 	function render() {
-		var source = $("#image-tmpl").html();
-		var template = Handlebars.compile(source);
-		var html = template(img);
+		var templateStr = $('#image-tmpl').html();
+		var template = tmpl(templateStr,  {
+                    img: img
+                } );
 		var element = document.querySelector('.ideas');
-		element.innerHTML = html;
+		element.innerHTML = template;
 
 	}
 
@@ -150,6 +150,9 @@
 		initIsotope();
 		formIdeas.addEventListener('submit', getUserQuery);
 	}
+
+
+
 
 	document.addEventListener('DOMContentLoaded', firstInit);
 
@@ -196,7 +199,6 @@
 
 
 
-})(jQuery);
 
 
 
