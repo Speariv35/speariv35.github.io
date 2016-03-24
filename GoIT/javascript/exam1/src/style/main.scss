@@ -9,7 +9,7 @@
 @import "partials/animate.css";
 
 
-
+/* SIGNUP STYLE ***********************************************************************/
 
 
 .signup-overlay {
@@ -23,8 +23,6 @@
 	opacity: 0.8;
 	
 }
-
-
 
 .main{
 	position: absolute;
@@ -131,7 +129,9 @@ span.term a:hover{
 	border-right: none;
 	border-top: none;
 }
-.lable input[type="text"]:hover,.lable-2 input[type="text"]:hover,input[type="Password"]:hover,#active {
+.lable input[type="text"]:hover,
+.lable-2 input[type="text"]:hover,
+input[type="Password"]:hover,#active {
 	color:#DCDCDC;
 	border-left:6px solid #d64142;
 }
@@ -302,7 +302,9 @@ input[type=submit] {
 
 
 
-/*  STYLE */
+
+
+/*  MAIN  STYLE *************************************************************************/
 
 body {
 	font: 300 14px Roboto;
@@ -410,7 +412,7 @@ header {
 	}
 }
 
-/* WORKSTEPS */
+/* WORKSTEPS ****************************************************************/
 
 .work-steps {
 	background-color: $white;
@@ -534,7 +536,7 @@ header {
 }
 
 
-/* PARTNERS */
+/* PARTNERS ****************************************************************/
 
 .partners {
 	text-align: center;
@@ -694,7 +696,7 @@ header {
 	color: $white;
 }
 
-/* IDEAS */
+/* IDEAS ****************************************************************/
 
 .ideas {
 	margin: 0 auto;
@@ -809,7 +811,7 @@ header {
 	padding-bottom: 15px;
 }
 
-
+/*FOOTER ****************************************************************/
 .footer {
 	margin-top: 20px;
 	padding-top: 16px;

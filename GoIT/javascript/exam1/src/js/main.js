@@ -92,16 +92,10 @@
 
 	function getImages() {
 			img.photos = [];
-			var wordArr = img.word.split(" ");
-			var requestStr = 'https://pixabay.com/api/?key=2223288-d10240586d6b3acc79b68cd15&q=';
-			wordArr.forEach(function(word, i) {
-				(i != 0) ? requestStr = requestStr + '+' + word : requestStr = requestStr + word;
-			});
-			requestStr = requestStr + '&image_type=photo';	
+			var requestStr = 'https://pixabay.com/api/?key=2274289-63e61f648f1611a12b2cef1cf&q='+ img.word + '&image_type=photo';
 
 			function formImgArray(data) {
 					var i = 0;
-
 					while(i < 7) {
 						img.photos.push(data.hits[i].webformatURL);
 
@@ -170,7 +164,7 @@
                 e.preventDefault();
 
                 if (!present) {
-    			$modal = $('<div class="main"> 	<div class="social-icons"> 		 <div class="col_1_of_f span_1_of_f"><a href="#"> 		    <ul class="facebook"> 		    	<i class="fb"> </i> 		    	<li>Connect with Facebook</li> 		    	<div class="clear"> </div> 		    </ul> 		    </a> 		 </div>	 		 <div class="col_1_of_f span_1_of_f"><a href="#"> 		    <ul class="twitter"> 		      <i class="tw"> </i> 		      <li>Connect with Twitter</li> 		      <div class="clear"> </div> 		    </ul> 		    </a> 		</div> 		<div class="clear"> </div>	       </div>       <h2 class="signup-text">Or Signup with</h2> 		<form> 		   <div class="lable"> 		        <div class="col_1_of_2 span_1_of_2">	<input type="text" class="text" value="First Name" onfocus="this.value = "";" onblur="if (this.value == "") {this.value = "First Name";}" id="active"></div>                 <div class="col_1_of_2 span_1_of_2"><input type="text" class="text" value="Last Name" onfocus="this.value = "";" onblur="if (this.value == "") {this.value = "Last Name";}"></div>                 <div class="clear"> </div> 		   </div> 		   <div class="lable-2"> 		        <input type="text" class="text" value="your@email.com " onfocus="this.value = "";" onblur="if (this.value == "") {this.value = "your@email.com ";}"> 		        <input type="password" class="text" value="Password " onfocus="this.value = "";" onblur="if (this.value == "") {this.value = "Password ";}"> 		   </div> 		   <h3>Bycreating an account, you agree to our <span class="term"><a href="#">Terms & Conditions</a></span></h3> 		   <div class="submit"> 			  <input type="submit" onclick="" value="Create account" > 		   </div> 		   <div class="clear"> </div> 		</form> 	 		</div>');
+    			$modal = $('<div class="main"> 	<div class="social-icons"><div class="col_1_of_f span_1_of_f"><a href="#"> <ul class="facebook"><i class="fb"> </i><li>Connect with Facebook</li><div class="clear"> </div></ul></a></div><div class="col_1_of_f span_1_of_f"><a href="#"><ul class="twitter"><i class="tw"> </i><li>Connect with Twitter</li><div class="clear"> </div></ul></a></div><div class="clear"> </div></div><h2 class="signup-text">Or Signup with</h2><form> <div class="lable"><div class="col_1_of_2 span_1_of_2"><input type="text" class="text" placeholder="First Name" "></div><div class="col_1_of_2 span_1_of_2"><input type="text" class="text" placeholder="Last Name"></div><div class="clear"> </div></div><div class="lable-2"><input type="text" class="text" placeholder="your@email.com " > <input type="password" class="text" placeholder="Password " ></div><h3>Bycreating an account, you agree to our <span class="term"><a href="#">Terms & Conditions</a></span></h3><div class="submit"><input type="submit"></div><div class="clear"> </div></form></div>');
     			$overlay = $('<div class="signup-overlay"></div>');
 
                 e.stopPropagation();
