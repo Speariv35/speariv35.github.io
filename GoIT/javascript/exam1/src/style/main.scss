@@ -307,7 +307,7 @@ input[type=submit] {
 /*  MAIN  STYLE *************************************************************************/
 
 body {
-	font: 300 14px Roboto;
+	font: 300 14px Roboto, sans-serif;
 	color: $white;
 }
 
@@ -345,7 +345,7 @@ header {
 	 	text-decoration: none;
 	 	display: block;
 	 	padding: 0px 15px;
-	 	font: 700 14px/32px Montserrat;
+	 	font: 700 14px/32px Montserrat, sans-serif;
 	 }
 
 	 &__sign-up {
@@ -379,11 +379,11 @@ header {
 		&__title {
 			padding-top: 110px;
 			margin-bottom: 20px;
-			font: 700 22px/36px Montserrat;
+			font: 700 22px/36px Montserrat, sans-serif;
 		}
 
 		&__tagline {
-			font: 700 30px/36px Montserrat;
+			font: 700 30px/36px Montserrat, sans-serif;
 			text-transform: uppercase;
 		}
 
@@ -402,7 +402,7 @@ header {
 	display: block;
 	color: $white;
 	text-decoration: none;
-	font: 700 14px/40px Montserrat;
+	font: 700 14px/40px Montserrat, sans-serif;
 	transition: all 0.3s ease-in;
 			
 		&:hover {
@@ -426,7 +426,7 @@ header {
 	padding-bottom: 10px;
 	padding-left: 7px;
 	color: #000;
-	font: 700 22px/36px Montserrat;
+	font: 700 22px/36px Montserrat, sans-serif;
 }
 
 
@@ -495,7 +495,7 @@ header {
 		height: 20px;
 		border-radius: 10px;
 		background-color: #ff4e50;
-		font: 10px/21px "Montserrat";
+		font: 10px/21px "Montserrat", sans-serif;
 		text-transform: uppercase;  
 		box-sizing: border-box;
 		padding: 0 14px;
@@ -506,7 +506,7 @@ header {
 
 	&__title {
 		margin-top: 15px;
-		font: bold 24px/27px "Montserrat";
+		font: bold 24px/27px "Montserrat", sans-serif;
 	}
 
 	&__text{
@@ -546,7 +546,7 @@ header {
 .partners__title {
 	padding: 0 20px;
 	color: #000;
-	font: 700 22px/26px Montserrat;
+	font: 700 22px/26px Montserrat, sans-serif;
 }
 
 .partners-item {
@@ -619,7 +619,7 @@ header {
 	}
 
 	&__title {
-		font: bold 14px "Montserrat";
+		font: bold 14px "Montserrat", sans-serif;
 		display: block;
 		color: #333333;
 		margin-top: 14px;
@@ -749,7 +749,7 @@ header {
 		text-align: center;
 		font-size: 20px;
 		opacity: 0.6;
-		font-family: "Montserrat", Arial;
+		font-family: "Montserrat", sans-serif;
 		color: #fff;
 	}
 
@@ -760,7 +760,7 @@ header {
 			padding-bottom: 14px;
 			text-align: center;
 			font-size: 18px;
-			font-family: "RobotoLight", Arial;
+			font-family: "RobotoLight", sans-serif;
 			color: #333;
 		}
 
@@ -797,7 +797,7 @@ header {
 	margin-left: 15px;
 	width: 290px;
 	text-decoration: none;
-	font: 700 14px/40px Montserrat;
+	font: 700 14px/40px Montserrat, sans-serif;
 	transition: all 0.3s ease-in;
 			
 		&:hover {
@@ -830,7 +830,7 @@ header {
 
 .column__sitelogo {
 	color: #ff4e50;
-	font: bold 16px "Montserrat";
+	font: bold 16px "Montserrat", sans-serif;
 	text-decoration: none;
 
 	&:hover {
@@ -847,7 +847,7 @@ header {
 	padding-top: 10px;
 	margin-bottom: 0px;
 	color: #333333;
-	font: bold 14px "Montserrat";
+	font: bold 14px "Montserrat", sans-serif;
 }
 
 .column-links {
@@ -879,7 +879,7 @@ header {
 .column__text {
 	text-align: center;
 	color: #cccccc;
-	font: bold 11px "Montserrat";
+	font: bold 11px "Montserrat", sans-serif;
 	text-transform: uppercase;
 }
 
