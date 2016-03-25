@@ -82,21 +82,25 @@
 		"img/gallery_6.jpg",
 		"img/gallery_7.jpg"
 		],
-		word: ''
+		word: [ ""
+		],
+		firstInit: true
 	};
-	
+
+	var firstTimeInit = true;
 
 	var inputIdeas = document.querySelector('.ideas-form__input');
 	var formIdeas = document.querySelector('.ideas-form');
 
 	function getImages() {
 			img.photos = [];
-			
-			var requestStr = 'https://pixabay.com/api/?key=2274289-63e61f648f1611a12b2cef1cf&q='+ img.word + '&image_type=photo';
-			var firstTimeInit = false;
 
+			
+			var requestStr = 'https://pixabay.com/api/?key=2274289-63e61f648f1611a12b2cef1cf&q='+ img.word[0] + '&image_type=photo&per_page=50';
+			
 			function formFirstImgArray(data) {
-				console.log(data);
+					img.word = [];
+					firstTimeInit = false;
 					var i = 0;
 					while(i < 7) {
 
@@ -104,10 +108,9 @@
 						  return Math.random() * (max - min) + min;
 						}
 
-						var k = getRandomArbitary(0, 19);
-						k = Math.round(k);
-						img.photos.push(data.hits[k].webformatURL);
-						img.word.push(data.hits[k].tags);
+						var random = Math.round(getRandomArbitary(0, 49));
+						img.photos.push(data.hits[random].webformatURL);
+						img.word.push(data.hits[random].tags);
 
 						i++;
 					}
@@ -116,8 +119,8 @@
 				}
 
 				function formImgArray(data) {
-				console.log(data);
-
+					img.word = [];	
+					img.word[0] = inputIdeas.value;
 					var i = 0;
 					while(i < 7) {
 
@@ -125,9 +128,9 @@
 						  return Math.random() * (max - min) + min;
 						}
 
-						var k = getRandomArbitary(0, 19);
-						k = Math.round(k);
-						img.photos.push(data.hits[k].webformatURL);
+						random = Math.round(getRandomArbitary(0, 49));
+						img.photos.push(data.hits[random].webformatURL);
+						img.word.push(img.word[0]);
 						i++;
 					}
 						render();
@@ -140,15 +143,17 @@
 
 			if (firstTimeInit) {
 				request.done(formFirstImgArray);
-			}
+			} else {
 
 			request.done(formImgArray);
+
+			}
 	}
 
 	
 	function getUserQuery(event) {
 		event.preventDefault();
-		img.word = inputIdeas.value;
+		img.word[0] = inputIdeas.value;
 		getImages();
 
   
@@ -182,6 +187,7 @@
 
 	function firstInit() {
 		getImages();
+		
 		formIdeas.addEventListener('submit', getUserQuery);
 	}
 
