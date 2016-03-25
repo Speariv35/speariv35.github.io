@@ -82,7 +82,7 @@
 		"img/gallery_6.jpg",
 		"img/gallery_7.jpg"
 		],
-		word: 'Choose your activity'
+		word: ''
 	};
 	
 
@@ -91,13 +91,43 @@
 
 	function getImages() {
 			img.photos = [];
+			
 			var requestStr = 'https://pixabay.com/api/?key=2274289-63e61f648f1611a12b2cef1cf&q='+ img.word + '&image_type=photo';
+			var firstTimeInit = false;
 
-			function formImgArray(data) {
+			function formFirstImgArray(data) {
+				console.log(data);
 					var i = 0;
 					while(i < 7) {
-						img.photos.push(data.hits[i].webformatURL);
 
+						function getRandomArbitary(min, max) {
+						  return Math.random() * (max - min) + min;
+						}
+
+						var k = getRandomArbitary(0, 19);
+						k = Math.round(k);
+						img.photos.push(data.hits[k].webformatURL);
+						img.word.push(data.hits[k].tags);
+
+						i++;
+					}
+						render();
+						initIsotope();
+				}
+
+				function formImgArray(data) {
+				console.log(data);
+
+					var i = 0;
+					while(i < 7) {
+
+						function getRandomArbitary(min, max) {
+						  return Math.random() * (max - min) + min;
+						}
+
+						var k = getRandomArbitary(0, 19);
+						k = Math.round(k);
+						img.photos.push(data.hits[k].webformatURL);
 						i++;
 					}
 						render();
@@ -107,6 +137,11 @@
 			var request = $.ajax({
 				url: requestStr
 			});
+
+			if (firstTimeInit) {
+				request.done(formFirstImgArray);
+			}
+
 			request.done(formImgArray);
 	}
 
@@ -146,8 +181,7 @@
 	}
 
 	function firstInit() {
-		render();
-		initIsotope();
+		getImages();
 		formIdeas.addEventListener('submit', getUserQuery);
 	}
 
