@@ -135,18 +135,20 @@
 					}
 						render();
 						initIsotope();
+						inputIdeas.value = '';
 				}
 
 			var request = $.ajax({
 				url: requestStr
 			});
 
+
+
 			if (firstTimeInit) {
 				request.done(formFirstImgArray);
 			} else {
 
 			request.done(formImgArray);
-
 			}
 	}
 
@@ -155,7 +157,6 @@
 		event.preventDefault();
 		img.word[0] = inputIdeas.value;
 		getImages();
-
   
 	}
 
