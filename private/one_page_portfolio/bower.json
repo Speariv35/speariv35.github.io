@@ -1,0 +1,25 @@
+{
+  "name": "One page Portfolio",
+  "description": "Portfolio",
+  "main": "gulpfile.js",
+  "authors": [
+    "Speariv35 <speariv35@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.3"
+  },
+  "devDependencies": {
+    "jquery": "^2.2.3",
+    "wow": "^1.1.2",
+    "animate.css": "^3.5.1"
+  }
+}
