@@ -43,7 +43,7 @@ body {
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
 	padding-top: 40px;
-	background: url("img/bg.jpg");
+	background: url("../img/bg.jpg");
 	background-size: cover;
 	padding-bottom: 180px;
 
@@ -103,7 +103,7 @@ body {
 	position: absolute;
 	top: -6px;
 	left:-4px;
-	background-image: url("img/sprite.png");
+	background-image: url("../img/sprite.png");
 	background-position: 0px 0px;
 	width: 102px;
 	height: 105px;
@@ -385,7 +385,7 @@ body {
 	position: absolute;
 	top: -20px;
 	left: 134px;
-	background-image: url("img/sprite.png");
+	background-image: url("../img/sprite.png");
 	 background-position: -102px 0px;
   	width: 104px;
   	height: 102px;
@@ -432,7 +432,7 @@ body {
 	color: #FFF;
 	text-align: center;
 	font-family: 'Raleway', sans-serif;
-	background: url("img/bg-skills.jpg");
+	background: url("../img/bg-skills.jpg");
 	background-size: cover;
 	padding-bottom: 80px;
 }
