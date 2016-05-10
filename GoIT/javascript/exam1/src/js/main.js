@@ -139,6 +139,10 @@
 				}
 
 			var request = $.ajax({
+				type: "GET",
+				dataType: "json",
+				cache: false,
+
 				url: requestStr
 			});
 
