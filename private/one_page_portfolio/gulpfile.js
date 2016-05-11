@@ -93,7 +93,7 @@ gulp.task('sprite:build', function() {
                 imgName: 'sprite.png',
                 cssName: '_sprites.css',
                 algorithm: 'binary-tree',
-                imgPath: '/img/sprite.png'
+                imgPath: '../img/sprite.png'
             }));
 
     spriteData.img.pipe(gulp.dest(path.build.img)); // путь, куда сохраняем картинку
