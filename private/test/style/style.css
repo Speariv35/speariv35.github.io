@@ -62,10 +62,11 @@ table {
 
 /* MAIN STYLE *************************************************************************************/
 
+
 body {
 	background: url(../img/bg-xs.jpg) no-repeat fixed center;
 	-webkit-background-size: cover;
-	
+	background-size:cover;
 
 }
 
@@ -83,12 +84,15 @@ body {
 .logo {
 	margin: 50px auto;
 	width: 20%;
+	transition: all 0.4s ease-out;
 }
 
-.col-centered {
-	 
-    margin: 200px auto;
+.logo:hover{
+	  -ms-transform: scale(1.1,1.1); /* IE 9 */
+    -webkit-transform: scale(1.1,1.1); /* Safari */
+    transform: scale(1.1,1.1);
 }
+
 
 .main-title {
 	margin: 30px auto;
@@ -106,17 +110,75 @@ body {
 .main-text {
 	margin: 0 auto;
 	width: 280px;
-	margin-bottom: 20px;
+	margin-bottom: 140px;
 	font-family: 'Open Sans', sans-serif;
+	position: relative;
+}
+
+.main-text:after {
+	content: '';
+	position: absolute;
+	top: 130%;
+	left: 50%;
+	margin-left: -90px;
+	width: 180px;
+	height: 50px;
+	background:url(../img/divider-optimized.svg);
+	-webkit-background-size: cover;
+	background-size: cover ;
+
+}
+
+.svg-button #button {
+	
+	transition: all 0.5s ease-in;
+}
+
+.button-wrapper:hover #button { 
+  fill: #1b9a57;
+}
+
+
+.button-wrapper {
+	position: relative;
+	width: 210px;
+	margin: 0px auto;
+
+}
+
+.button {
+	display: block;
+	width: 210px;
+	height: 68px;
+	margin: 0 auto;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 30px;
+	font-weight: 600;
+	text-decoration: none;
+	color: #fff;
+	line-height: 60px;
+	transition: all 0.3s ease-in;
+	position: relative;
+	z-index: 9;
+	
+
+}
+
+.svg-button {
+	width: 210px;
+	height: 70px;
+	top: -70px;
+	left: 0px;
+	position: relative;
 }
 
 
 @media only screen and (min-width: 480px) {
 
 	.white-bg {
-		padding: 10px 20px 50px 20px;
 		width: 80%;
 		margin: 10% auto;
+		padding-bottom: 150px;
 	}
 
 	.main-title {
@@ -133,10 +195,16 @@ body {
 @media only screen and (min-width: 768px) {
 
 	body {
+
 	background: url(../img/bg.jpg) no-repeat fixed center;
 	-webkit-background-size: cover;
-	
+	background-size:cover;
 }
+
+	.white-bg {
+	padding: 10px 20px 150px 20px;
+	}
+
 	.main-title {
 		font-size: 48px;
 	}
@@ -148,8 +216,10 @@ body {
 @media only screen and (min-width: 960px) {
 
 	.white-bg {
-		background-color: rgba(255,255,255,0.8);
-		padding: 10px 20px 50px 20px;
+		background:url(../img/svg-tile-optimized.svg);
+		-webkit-background-size: cover;
+		background-size: cover ;
+		
 		width: 80%;
 		margin: 10% auto;
 	}
@@ -168,12 +238,6 @@ body {
 
 @media only screen and (min-width: 1170px) {
 
-	.white-bg {
-	
-    	border-image-source: url(../img/svg-tile-black.svg);
-    	border-image-repeat: stretch;
-}
-	
 
 	.main-title {
 		font-size: 60px;
