@@ -8,6 +8,9 @@
 
 //= vendor/jquery.xdomainrequest.min.js
 
+new WOW().init();
+
+
 
 		$('.jcarousel').jcarousel({
 			animation: 'slow',
