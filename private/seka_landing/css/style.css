@@ -1,0 +1,396 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* CLEARFIX */
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: sans-serif;
+    color: #FFF;
+
+}
+
+/*HEADER*/
+.header__wrapper {
+    width: 100%;
+    background: url(../img/slider_1.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: top center;
+}
+
+.header {
+    padding-top: 350px;
+    height: 450px;
+}
+
+.header h1 {
+    margin-bottom: 20px;
+}
+
+.limiter {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.header__title-wrapper {
+    font-size: 90px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/*FEATURES*/
+
+.features {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    color: #000;
+}
+
+.features__title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    color: #444444;
+}
+
+.feature__item {
+    float: left;
+    width: 30%;
+    position: relative;
+    margin-right: 35px;
+}
+
+.feature__item-title {
+    text-transform: uppercase;
+    color: #444444;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 85px;
+    margin-top: 24px;
+    margin-bottom: 45px;
+}
+
+.feature__item-text {
+    font-size: 13px;
+    color: #666666;
+}
+
+.round {
+    margin: 5px;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: #ff6863;
+}
+
+.round img {
+    margin-top: 8px;
+    margin-left: 9px;
+    width: 31px;
+    height: 31px
+}
+
+.round-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    width: 57px;
+    height: 57px;
+    background-color: #ffd1d0;
+}
+
+.photo {
+    width: 100%;
+    height: 350px;
+    background: url(../img/photo_students.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+/*ABOUT*/
+
+.about {
+    margin-top: 50px;
+    color: #444444;
+    margin-bottom: 70px;
+}
+
+.about__title {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 70px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.about__title:after {
+    content: "";
+    top: 45px;
+    left: 57px;
+    width: 84px;
+    border-top: 2px solid #ff6863;
+    position: absolute;
+}
+
+.about-text {
+    position: relative;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    font-size: 30px;
+    margin-bottom: 35px;
+
+}
+
+.divider {
+    margin: 35px auto;
+    width: 84px;
+    border-top: 1px solid #e6e6e6;
+}
+
+.button-red {
+    width: 200px;
+    margin: 0 auto;
+    background-color: #ff6863;
+    transition: all 0.4s ease-in;
+}
+
+.button-red:hover {
+    background-color: #fe938f;
+    transition: all 0.4s ease-in;
+}
+
+.button-red p {
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    line-height: 50px;
+
+}
+
+/*TEACHER*/
+
+.teacher-wrapper {
+    width: 100%;
+    background: url(../img/teacher-bg.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    padding-top: 86px;
+
+}
+
+.teacher__img {
+    display: block;
+    float: left;
+    box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.25);
+    border: 5px solid #fff;
+    max-width: 100%;
+    margin: 0 86px 86px 0;
+}
+
+.teacher__text-block {
+    float: left;
+    max-width: 40%;
+    text-align: center;
+}
+
+.teacher__title {
+    padding-top: 35px;
+    margin-bottom: 70px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.teacher__text {
+    font-size: 35px;
+    margin-bottom: 70px;
+}
+
+.button-red--big {
+    width: 270px;
+    padding: 10px 50px;
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+/*DSICOUNT */
+
+.discount {
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+
+.discount__title {
+    margin-top: 50px;
+    text-align: center;
+    max-width: 70%;
+    display: block;
+    float: left;
+    color: #444444;
+    font-size: 50px;
+}
+
+.red {
+    text-transform: uppercase;
+    color: #ff6863;
+}
+
+.sprite-discount {
+    float: left;
+    margin-right: 70px;
+    width: 20%;
+}
+
+.discount-clearfix {
+    margin-bottom: 50px;
+}
+
+.button-red--discount {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+/* PHOTO-LINE  */
+
+.photo-line-wrapper {
+    background-color: #eaeaea;
+}
+
+.photo-line {
+    width: 100%;
+}
+
+.photo-line img {
+    max-width: 100%;
+}
+
+/*SIGN-OUT*/
+.sign-up {
+    height: 500px;
+}
+
+/*MAP*/
+
+#map {
+    width: 100%;
+    height: 400px;
+    background-color: grey;
+    border-top: 1px solid #c6c6c6;
+    border-bottom: 1px solid #c6c6c6;
+}
+
+/*  FOOTER*/
+.footer-wrapper {
+    background-color: #2a2a2a;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footer__contacts {
+    float: left;
+}
+
+.logo {
+    float: right;
+}
+
+.contacts__items {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.first {
+    font-size: 23px;
+    position: relative;
+    margin-bottom: 47px;
+}
+
+.first:after {
+    content: "";
+    top: 45px;
+    left: 0;
+    width: 33px;
+    border-top: 3px solid #ff6863;
+    position: absolute;
+}
+
+.copyright-line {
+    padding: 25px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #212121;
+}
+
+.social {
+    margin-top: 47px;
+}
+
+.social__items {
+    margin-right: 10px;
+    display: inline-block
+}
