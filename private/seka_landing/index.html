@@ -4,6 +4,7 @@
     <title>SEKA.COM>UA</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,700i" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 </head>
@@ -12,8 +13,10 @@
     <div class="limiter">
         <header class="header">
             <div class="header__title-wrapper">
-                <h1>Курсы</h1>
-                <h2>Польского Языка</h2>
+                <h1 class="bold wow bounceInUp" data-wow-delay="0.2s">Курсы</h1>
+                <h2 class="bold wow bounceInUp" data-wow-delay="0.5s">Польского Языка</h2>
+                <h2 class="bold wow bounceInUp" data-wow-delay="0.7s">Seka ua</h2>
+                <img class="wow fadeIn" src="img/seka-logo-transparent.png" alt="Seka logo">
             </div>
         </header>
     </div>
@@ -21,8 +24,11 @@
 <div class="features__wrapper">
     <div class="limiter">
         <section class="features">
-            <h2 class="features__title">УНИКАЛЬНАЯ АВТОРСКАЯ МЕТОДИКА</h2>
-            <div class="features-item__wrapper clearfix">
+            <p class="wow bounceInLeft"><span class="bold">Уровни изучения:</span> А1, А2, В1, В2.</p>
+            <p class="wow bounceInRight">Занятия дважды в неделю по <span class="bold">2</span> академических часа.</p>
+            <p class="wow bounceInLeft"><span class="bold">Пробное занятие:</span> 15 сентября 2016 г.</p>
+            <p class="wow bounceInRight"><span class="bold">Старт курсов:</span> 19 сентября 2016 г.</p>
+            <div class="features-item__wrapper clearfix wow fadeIn">
                 <div class="feature__item">
                     <div class="round-wrapper">
                         <div class="round">
@@ -30,9 +36,6 @@
                         </div>
                     </div>
                     <h3 class="feature__item-title ico-teacher">ЗАНЯТИЯ С НОСИТЕЛЕМ ЯЗЫКА</h3>
-                    <p class="feature__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium
-                        veritatis mollitia adipisci ducimus nesciunt quo est voluptatem possimus, incidunt inventore
-                        sequi dolores neque eius, earum nemo doloribus temporibus! Fuga, iste!</p>
                 </div>
                 <div class="feature__item">
                     <div class="round-wrapper">
@@ -41,9 +44,6 @@
                         </div>
                     </div>
                     <h3 class="feature__item-title ico-group">КЛУБНЫЕ ВСТРЕЧИ</h3>
-                    <p class="feature__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia
-                        fugit accusantium voluptate ducimus facere, tempora veritatis illum ut sapiente veniam
-                        doloremque tempore blanditiis corporis voluptatibus, debitis delectus, maiores rem quasi.</p>
                 </div>
                 <div class="feature__item">
                     <div class="round-wrapper">
@@ -52,37 +52,31 @@
                         </div>
                     </div>
                     <h3 class="feature__item-title ico-free">ПЕРВОЕ ЗАНЯТИЕ БЕСПЛАТНО</h3>
-                    <p class="feature__item-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nam
-                        modi fugit quos ab omnis accusantium numquam praesentium nobis, laudantium dolorum maiores
-                        nesciunt, voluptatibus quas error! Voluptas laboriosam quae veritatis.</p>
                 </div>
             </div>
+            <p class="semi-bold wow fadeIn">Подготовка к государственным сертификационным экзаменам.</p>
+            <p class="semi-bold wow fadeIn">Выдача сертификатов, подтверждающих уровень владения.</p>
         </section>
     </div>
 </div>
 <section>
-    <div class="photo"></div>
+    <div class="photo wow fadeIn"></div>
 </section>
 <div class="about-wrapper">
     <div class="limiter">
         <section class="about">
-            <h2 class="about__title">Описание</h2>
-            <p class="about-text">
-                Уже с 15 сентября стартуют наши курсы польского языка по авторской методике преподавания и современным
-                on-line инструментам.
+            <h2 class="about__title bold wow bounceInUp">УНИКАЛЬНАЯ МЕТОДИКА</h2>
+            <div class="divider divider--red"></div>
+            <p class="about-text wow bounceInUp">
+                Направленная на приобретение коммуникативных навыков с применением современных методов восприятия и
+                on-line технологий
             </p>
             <div class="divider"></div>
-            <p class="about-text">
-                Если хотите начать учить польский язык – предлагаем Вам пройти программу уровня <b>А0, А1</b>, если же
-                усовершенствовать – <b>А2, В1</b>.
-            </p>
-            <div class="divider"></div>
-            <p class="about-text">
-                Курсы с самого начала проводятся исключительно на польском языке! Стоимость курса включает учебник,
-                аудио-материалы и доступ в личный кабинет на интернет- портале.
+            <p class="about-text wow bounceInUp">
+                С самого начала занятия проходят исключительно на польском языке
             </p>
             <a href="#anchor">
-                <div class="button-red">
+                <div class="button-red wow bounceInUp">
                     <p>Записаться</p>
                 </div>
             </a>
@@ -92,15 +86,16 @@
 <div class="teacher-wrapper">
     <div class="limiter">
         <section class="teacher clearfix">
-            <img class="teacher__img" src="img/teacher.jpg" alt="teacher">
+            <img class="teacher__img wow fadeIn" data-wow-delay="0.7s" src="img/teacher.jpg" alt="teacher">
             <div class="teacher__text-block">
-                <h2 class="teacher__title">АВТОР МЕТОДИКИ</h2>
-                <p class="teacher__text">
+                <h2 class="teacher__title wow fadeIn" data-wow-delay="1s">АВТОР МЕТОДИКИ</h2>
+                <p class="teacher__text medium wow fadeIn" data-wow-delay="1.2s">
                     Преподаватель польского языка с многолетним опытом, польский филолог, магистр Лодзинского
-                    Университета Левицкая Дарья
+                    Университета
                 </p>
+                <p class="teacher__text semi-bold wow fadeIn" data-wow-delay="1.3s">Левицкая Дарья</p>
                 <a href="#anchor">
-                    <div class="button-red button-red--big">
+                    <div class="button-red button-red--big wow fadeIn" data-wow-delay="1.4s">
                         <p>УЗНАТЬ ПОДРОБНЕЕ</p>
                     </div>
                 </a>
@@ -113,17 +108,19 @@
         <section class="discount ">
             <div class="discount-clearfix clearfix">
                 <div class="sprite-discount">
-                    <img src="img/discount.png" alt="Discount">
+                    <img class="wow swing" data-wow-duration="4s" src="img/discount.png" alt="Discount">
                 </div>
-                <p class="discount__title">Запишитесь на курсы до 1 сентября и получите <span class="red">СКИДКУ!</span>
+                <p class="discount__title wow bounceInRight">Запишитесь на курсы до 1 сентября и получите <span
+                        class="red">СКИДКУ!</span>
                 </p>
             </div>
+            <p class="discount-text wow bounceInUp">При оплате за два полупериода экономия – столько-то миллионов
+                дол.</p>
             <a href="#anchor">
-                <div class="button-red button-red--discount">
+                <div class="button-red button-red--discount wow bounceInUp">
                     <p>ПОЛУЧИТЬ СКИДКУ</p>
                 </div>
             </a>
-
         </section>
     </div>
 </div>
@@ -137,16 +134,29 @@
 <div class="sign-up-wrapper">
     <div class="limiter">
         <section class="sign-up" id="anchor">
-            <a></a>
+            <h2 class="sign-up__title bold wow bounceInUp">Записаться</h2>
+            <div class="divider divider--red"></div>
+            <p class="sign-up__text wow bounceInUp">Чтобы получить больше информации, укажите, пожалуйста, ниже Ваши
+                данные:</p>
+            <form class="wow bounceInUp">
+                <input type="text" name="firstname" placeholder="ИМЯ">
+                <input type="text" name="lastname" placeholder="ФАМИЛИЯ">
+                <input type="email" name="email" placeholder="ЭЛЕКТРОННАЯ ПОЧТА">
+                <input type="text" name="mobile" placeholder="НОМЕР ТЕЛЕФОНУ">
+                <button class="button-red semi-bold wow bounceInUp">
+                    УЗНАТЬ БОЛЬШЕ
+                </button>
+            </form>
+
         </section>
     </div>
 </div>
-<section class="map-wrapper">
+<section class="map-wrapper wow fadeIn">
     <div id="map"></div>
 </section>
 <div class="footer-wrapper">
     <div class="limiter">
-        <footer class="clearfix">
+        <footer class="clearfix wow fadeIn">
             <div class="footer__contacts">
                 <ul>
                     <li class="contacts__items first">КОНТАКТЫ</li>
@@ -177,6 +187,7 @@
 
 
 <script>
+    new WOW().init();
     function initMap() {
         var myLatLng = {lat: 50.4645734, lng: 30.5133833};
         var mapDiv = document.getElementById('map');

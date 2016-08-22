@@ -59,9 +59,23 @@ a {
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Raleway', sans-serif;
     color: #FFF;
 
+}
+
+/*FONTS*/
+
+.bold {
+    font-weight: 700;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.medium {
+    font-weight: 500;
 }
 
 /*HEADER*/
@@ -75,11 +89,17 @@ body {
 
 .header {
     padding-top: 350px;
-    height: 450px;
+    padding-bottom: 200px;
 }
 
-.header h1 {
+.header h1,
+.header h2 {
     margin-bottom: 20px;
+}
+
+.header img {
+    float: right;
+    margin-right: 50px;
 }
 
 .limiter {
@@ -96,18 +116,26 @@ body {
 /*FEATURES*/
 
 .features {
+    text-align: center;
     margin-top: 70px;
     margin-bottom: 70px;
-    color: #000;
+    color: #444444;
 }
 
-.features__title {
-    text-align: center;
-    font-size: 50px;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 50px;
-    color: #444444;
+.features p {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.features p.bold {
+    line-height: 60px;
+    font-weight: 700;
+}
+
+.features-item__wrapper {
+    margin-bottom: 70px;
+    margin-top: 70px;
 }
 
 .feature__item {
@@ -120,8 +148,8 @@ body {
 .feature__item-title {
     text-transform: uppercase;
     color: #444444;
-    font-size: 14px;
-    font-weight: bold;
+    font-size: 16px;
+    font-weight: 700;
     margin-left: 85px;
     margin-top: 24px;
     margin-bottom: 45px;
@@ -142,7 +170,7 @@ body {
 
 .round img {
     margin-top: 8px;
-    margin-left: 9px;
+    margin-left: 3px;
     width: 31px;
     height: 31px
 }
@@ -175,22 +203,11 @@ body {
 }
 
 .about__title {
-    display: block;
-    width: 200px;
     margin: 0 auto;
     position: relative;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     text-align: center;
     font-size: 32px;
-}
-
-.about__title:after {
-    content: "";
-    top: 45px;
-    left: 57px;
-    width: 84px;
-    border-top: 2px solid #ff6863;
-    position: absolute;
 }
 
 .about-text {
@@ -209,11 +226,16 @@ body {
     border-top: 1px solid #e6e6e6;
 }
 
+.divider--red {
+    border-top: 3px solid #ff6863;
+}
+
 .button-red {
     width: 200px;
-    margin: 0 auto;
+    margin: 60px auto;
     background-color: #ff6863;
     transition: all 0.4s ease-in;
+
 }
 
 .button-red:hover {
@@ -266,7 +288,12 @@ body {
 }
 
 .teacher__text {
-    font-size: 35px;
+    line-height: 40px;
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.teacher__text:last-child {
     margin-bottom: 70px;
 }
 
@@ -280,6 +307,7 @@ body {
 /*DSICOUNT */
 
 .discount {
+    color: #444444;
     margin-top: 70px;
     margin-bottom: 70px;
 }
@@ -290,8 +318,14 @@ body {
     max-width: 70%;
     display: block;
     float: left;
-    color: #444444;
     font-size: 50px;
+}
+
+.discount-text {
+    font-size: 30px;
+    max-width: 70%;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .red {
@@ -330,7 +364,45 @@ body {
 
 /*SIGN-OUT*/
 .sign-up {
+    text-align: center;
+    color: #444444;
+    padding-top: 70px;
+    padding-bottom: 70px;
     height: 500px;
+}
+
+.sign-up__title {
+
+    font-size: 40px;
+
+}
+
+.sign-up__text {
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 32px;
+    color: #6d6d6d;
+}
+
+.sign-up form {
+    margin: 60px auto;
+}
+
+.sign-up form input {
+    width: 500px;
+    margin: 5px auto;
+    display: block;
+    text-align: center;
+    line-height: 30px;
+}
+
+.sign-up .button-red {
+    border: none;
+    line-height: 40px;
+    color: #FFF;
+    font-size: 15px;
+    width: 350px;
+
 }
 
 /*MAP*/
