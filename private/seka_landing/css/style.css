@@ -78,6 +78,48 @@ body {
     font-weight: 500;
 }
 
+/*HEADER CONTACTS*/
+
+.float-left {
+    float: left;
+}
+
+.header-contacts {
+    padding: 40px 0;
+}
+
+.header-contacts__items {
+    margin-top: 30px;;
+    color: #444444;
+    float: left;
+    width: 25%;
+}
+
+.header-contacts__items:hover img {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    transition-duration: 1.5s;
+}
+
+.header-contacts__items:first-child {
+    margin-top: 0;
+    width: 24%;
+}
+
+.items__title {
+    margin-left: 15px;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.items__text {
+    font-family: sans-serif;
+    margin-left: 15px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
 /*HEADER*/
 .header__wrapper {
     width: 100%;
@@ -88,8 +130,8 @@ body {
 }
 
 .header {
-    padding-top: 350px;
-    padding-bottom: 200px;
+    padding-top: 330px;
+    padding-bottom: 140px;
 }
 
 .header h1,
@@ -97,9 +139,12 @@ body {
     margin-bottom: 20px;
 }
 
-.header img {
+.header .button-red {
+    width: 300px;
     float: right;
     margin-right: 50px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .limiter {
@@ -123,7 +168,7 @@ body {
 }
 
 .features p {
-    font-size: 36px;
+    font-size: 25px;
     font-weight: 500;
     line-height: 50px;
 }
@@ -134,8 +179,11 @@ body {
 }
 
 .features-item__wrapper {
-    margin-bottom: 70px;
     margin-top: 70px;
+}
+
+.new-block {
+    margin-top: 30px;
 }
 
 .feature__item {
@@ -145,14 +193,24 @@ body {
     margin-right: 35px;
 }
 
+.feature__item:hover img {
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    transition-duration: 1.5s;
+}
+
 .feature__item-title {
     text-transform: uppercase;
+    text-align: left;
     color: #444444;
-    font-size: 16px;
+    font-size: 22px;
     font-weight: 700;
     margin-left: 85px;
-    margin-top: 24px;
     margin-bottom: 45px;
+}
+
+.feature__item-title.ico-group {
+    margin-top: 13px;
 }
 
 .feature__item-text {
@@ -213,10 +271,11 @@ body {
 .about-text {
     position: relative;
     text-align: center;
-    width: 70%;
+    width: 73%;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 25px;
     margin-bottom: 35px;
+    line-height: 33px;
 
 }
 
@@ -239,7 +298,7 @@ body {
 }
 
 .button-red:hover {
-    background-color: #fe938f;
+    background-color: #fe4251;
     transition: all 0.4s ease-in;
 }
 
@@ -313,18 +372,21 @@ body {
 }
 
 .discount__title {
-    margin-top: 50px;
+    margin-top: 35px;
     text-align: center;
     max-width: 70%;
     display: block;
     float: left;
-    font-size: 50px;
+    font-size: 45px;
+    line-height: 70px;
 }
 
 .discount-text {
+    font-family: sans-serif;
     font-size: 30px;
     max-width: 70%;
     text-align: center;
+    line-height: 40px;
     margin: 0 auto;
 }
 
@@ -335,7 +397,7 @@ body {
 
 .sprite-discount {
     float: left;
-    margin-right: 70px;
+    margin-right: 35px;
     width: 20%;
 }
 
@@ -431,6 +493,7 @@ body {
 }
 
 .contacts__items {
+    font-family: sans-serif;
     font-size: 20px;
     text-transform: uppercase;
     margin-top: 15px;
