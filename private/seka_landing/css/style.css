@@ -109,14 +109,14 @@ body {
 
 .items__title {
     margin-left: 15px;
-    font-size: 25px;
+    font-size: 23px;
     line-height: 40px;
 }
 
 .items__text {
     font-family: sans-serif;
     margin-left: 15px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 30px;
     font-weight: 500;
 }
@@ -531,16 +531,21 @@ body {
 
 /*MEDIA QUERIES*/
 
-/*>1170px*/
+/*1170px*/
 
 @media (max-width: 1170px) {
     .items__title {
+
         font-size: 20px;
         line-height: 30px;
     }
 
+    .ico {
+        width: 55px;
+    }
+
     .items__text {
-        font-size: 13px;
+        font-size: 12px;
         line-height: 25px;
     }
 
