@@ -8,13 +8,14 @@
     <script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
 <div class="header-contacts__wrapper">
     <div class="limiter">
         <div class="header-contacts clearfix">
-            <div class="header-contacts__items "><img class="wow fadeIn" src="img/seka-logo-transparent.png"
-                                                      alt="Seka logo"></div>
+            <div class="header-contacts__items "><a href="/"><img class="wow fadeIn" src="img/seka-logo-transparent.png"
+                                                      alt="Seka logo"></a></div>
             <div class="header-contacts__items clearfix wow fadeIn" data-wow-delay="0.2s">
                 <img class="float-left ico" src="img/ico-address.png" alt="address">
                 <div class="float-left">
@@ -179,6 +180,13 @@
                 <input type="text" name="lastname" placeholder="ФАМИЛИЯ">
                 <input type="email" name="email" placeholder="ЭЛЕКТРОННАЯ ПОЧТА">
                 <input type="text" name="mobile" placeholder="НОМЕР ТЕЛЕФОНA">
+                <div class="checkbox-wrapper">
+                    <p class="margin"><span>Позначки повинні бути проставлені в усіх трьох полях</span></p>
+                    <p class="margin"><span class="more">Анкетные данные обрабатывает SEKA S.A. с местонахождением в Варшаве (04-386), ул. Паца 37. Персональные данные собираются компанией SEKA S.A. и обрабатываются с целью налаживания сотрудничества в процессе набора кандидатов на обучение на территории Республики Польша. Лицо, которой эти данные касаются, имеет право доступа к их содержанию и возможность внесения изменений. Данные предоставляются добровольно, но их предоставления необходимо для участия в процессе набора.</span></p>
+                    <p class="margin"> <input type="checkbox" required> <span class="more">Я согласен на обработку моих персональных данных с целью участия в проекте набора, организатором которого является SEKA S.A. Понимаю, что свое согласие я могу отозвать в любое время.</span></p>
+                    <p class="margin"> <input type="checkbox" required> <span class="more">Я согласен на получение от SEKA S.A. по электронной почте коммерческой информации, касающейся продукции и услуг компании SEKA S.A. и ее партнеров в соответствии с законом от 18.07.2002 г.. о предоставлении услуг электронным путем (Dz.U.2013.1422)</span></p>
+                    <p class="margin"> <input type="checkbox" required> <span class="more">Я согласен на обработку моих персональных данных в SEKA S.A. с местонахождением в Варшаве (04-386), ул. Паца 37 (администратора персональных данных) для маркетинговых исследований рынка продукции и услуг компании.</span></p>
+                </div>
                 <button class="button-red semi-bold wow bounceInUp">
                     УЗНАТЬ БОЛЬШЕ
                 </button>
@@ -212,7 +220,7 @@
                             src="img/ico-inst.png" alt="Instagram"></div></a></li>
                 </ul>
             </div>
-            <img class="logo" src="img/seka-logo.png" alt="SEKA logo">
+            <a href="/"><img class="logo" src="img/seka-logo.png" alt="SEKA logo"></a>
         </footer>
 
     </div>
@@ -223,6 +231,42 @@
 
 
 <script>
+    $(document).ready(function() {
+        // Configure/customize these variables.
+        var showChar = 50;  // How many characters are shown by default
+        var ellipsestext = "...";
+        var moretext = "Детальнее..";
+        var lesstext = "Скрыть ..";
+
+
+        $('.more').each(function() {
+            var content = $(this).html();
+
+            if(content.length > showChar) {
+
+                var c = content.substr(0, showChar);
+                var h = content.substr(showChar, content.length - showChar);
+
+                var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
+
+                $(this).html(html);
+            }
+
+        });
+
+        $(".morelink").click(function(){
+            if($(this).hasClass("less")) {
+                $(this).removeClass("less");
+                $(this).html(moretext);
+            } else {
+                $(this).addClass("less");
+                $(this).html(lesstext);
+            }
+            $(this).parent().prev().toggle();
+            $(this).prev().toggle();
+            return false;
+        });
+    });
     new WOW().init();
     function initMap() {
         var myLatLng = {lat: 50.4645734, lng: 30.5133833};

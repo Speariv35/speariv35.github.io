@@ -428,8 +428,6 @@ body {
     text-align: center;
     color: #444444;
     padding-top: 70px;
-    padding-bottom: 70px;
-    height: 500px;
 }
 
 .sign-up__title {
@@ -444,7 +442,7 @@ body {
 }
 
 .sign-up form {
-    margin: 60px auto;
+    margin: 60px auto 0 auto;
 }
 
 .sign-up form input {
@@ -461,7 +459,25 @@ body {
     color: #FFF;
     font-size: 15px;
     width: 350px;
+}
+.checkbox-wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
 
+.morecontent span {
+    display: none;
+}
+.margin {
+    margin: 20px 0;
+}
+p.margin input {
+    display: inline;
+    width:30px;
+}
+.margin a {
+    color: #000;
+    font-weight: 500;
 }
 
 /*MAP*/
