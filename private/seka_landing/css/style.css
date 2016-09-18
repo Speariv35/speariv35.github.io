@@ -440,6 +440,22 @@ body {
     font-size: 32px;
     color: #6d6d6d;
 }
+.sign-up #ok {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #0b9c05;
+    color: #0b9c05;
+    line-height:30px;
+    margin-top: 15px;
+}
+.sign-up #note {
+    width: 500px;
+    margin: 0 auto;
+    border: 1px solid #ea0800;
+    color: #ea0800;
+    line-height:30px;
+    margin-top: 15px;
+}
 
 .sign-up form {
     margin: 60px auto 0 auto;
@@ -451,6 +467,11 @@ body {
     display: block;
     text-align: center;
     line-height: 30px;
+}
+
+.sign-up #note.display,
+.sign-up #ok.display {
+    display: block;
 }
 
 .sign-up .button-red {
@@ -476,7 +497,7 @@ p.margin input {
     width:30px;
 }
 .margin a {
-    color: #000;
+    color: #ff6863;
     font-weight: 500;
 }
 
@@ -823,10 +844,16 @@ footer .round-ico img {
         font-size: 18px;
     }
 
-    .sign-up form input {
+    .sign-up form input,
+    .sign-up #ok,
+    .sign-up #note {
         width: 90%;
     }
 
+    .sign-up p.margin input {
+        display: inline;
+        width:30px;
+    }
     .teacher .button-red--big {
         width: 170px;
         font-size: 16px;
