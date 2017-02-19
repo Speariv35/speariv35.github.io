@@ -50,7 +50,7 @@
 					<li><a class="smoothscroll"  href="#" title="">Услуги</a></li>
 					<li><a class="smoothscroll"  href="#features" title="">Преимущества</a></li>
 					<li><a class="smoothscroll"  href="#pricing" title="">Стоимость</a></li>
-					<li><a class="smoothscroll"  href="#order-form" title="">Заказать</a></li>
+					<li><a class="smoothscroll"  href="#order" title="">Заказать</a></li>
 					<li><a class="smoothscroll"  href="#testimonials" title="">Отзывы</a></li>
 					<li><a class="smoothscroll"  href="#faq" title="">Вопросы</a></li>
 				</ul>
@@ -411,14 +411,13 @@
 
 	<!-- Order form Section
     ================================================== -->
-	<section id="order-form">
+	<section id="order">
 		<div class="row section-intro">
 			<div class="col-twelve with-bottom-line">
 				<h1>ОСТАВЬТЕ ВАШУ ЗАЯВКУ</h1>
 			</div>
 		</div>
 		<div class="row">
-			<section class="sign-up">
 				<form class="">
 					<input class="name" type="text" name="name" placeholder="Ваше имя" required>
 					<div class="input-wrapper">
@@ -436,8 +435,6 @@
 						Оставить заявку
 					</button>
 				</form>
-
-			</section>
 		</div>
 
 
@@ -654,9 +651,9 @@
 
 	<!-- Map Section
 ================================================== -->
-	<section class="map-wrapper">
+	<div class="map-wrapper">
 		<div id="map"></div>
-	</section>
+	</div>
 
    <!-- footer
    ================================================== -->
@@ -781,21 +778,6 @@
 				position: myLatLng,
 				map: map,
 				title: 'УЛ. ХОРИВА 4, ОФ. 10, Г. КИЕВ,   М. КОНТРАКТОВАЯ ПЛОЩАДЬ (044) 461 17 19,  (093) 103 75 87 Ход Конем '
-			});
-
-			$(function () {
-				$('a[href*="#"]:not([href="#"])').click(function () {
-					if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-						var target = $(this.hash);
-						target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-						if (target.length) {
-							$('html, body').animate({
-								scrollTop: target.offset().top
-							}, 1000);
-							return false;
-						}
-					}
-				});
 			});
 		}
 	</script>
