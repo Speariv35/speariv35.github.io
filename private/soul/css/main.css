@@ -1516,6 +1516,25 @@ a.menu-toggle {
 	padding-bottom: 12rem;
 	color: white;
 }
+#features .section-intro {
+	max-width: 80%;
+}
+
+#features .about-us-text {
+	width: 65%;
+	margin-top: 60px;
+}
+
+
+#features ul li  {
+	margin-top: 20px;
+}
+
+#features .about-us-logo-wrapper img {
+	margin: 200px 20px 0px 20px;
+}
+
+
 #features .section-intro h1 {
 	color: white;
 }
@@ -1556,6 +1575,11 @@ a.menu-toggle {
  * -
  */
 
+@media only screen and (max-width:910px) {
+	#features .about-us-logo-wrapper img {
+		margin-top: 60px;
+	}
+}
 @media only screen and (max-width:768px) {
 	.features-content {
 		max-width: 600px;
