@@ -1533,6 +1533,7 @@ a.menu-toggle {
 
 #features ul li  {
 	margin-top: 20px;
+    font-family: raleway-bold, serif;
 }
 
 #features .about-us-logo-wrapper img {
@@ -1661,6 +1662,7 @@ a.menu-toggle {
 }
 .pricing-content .price-block .bottom-part p {
 	font-size: 12px;
+    line-height: 24px;
 }
 
 .pricing-content .price-block .plan-title {
