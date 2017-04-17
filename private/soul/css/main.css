@@ -843,9 +843,9 @@ header .logo a {
 		padding: 6px 0;
 	}
 	header .logo a {
-		width: 150px;
+		width: 170px;
 		height: 40px;
-		background-size: 150px 40px;
+		background-size: 170px 40px;
 	}
 }
 
@@ -1158,6 +1158,11 @@ a.menu-toggle {
 	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
+}
+
+.intro-content h1 span {
+    font-family: 'raleway-light';
+    font-weight:200;
 }
 .intro-content h5 {
 	color: rgba(255, 255, 255, 0.6);
