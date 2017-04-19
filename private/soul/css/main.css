@@ -1595,6 +1595,10 @@ a.menu-toggle {
 	}
 }
 @media only screen and (max-width:600px) {
+	#features .about-us-text {
+		width: 100%;
+
+	}
 	.features-list .feature {
 		padding: 0 10px;
 	}
@@ -1677,6 +1681,13 @@ a.menu-toggle {
 	overflow-y: auto;
 	height: 200px;
 }
+
+.pricing-content .price-block .plan-text span,
+.pricing-content .price-block .price-month span,
+.pricing-content .price-block .plan-price span {
+	color: #000;
+}
+
 .pricing-content .price-block .plan-title::after {
 	display: block;
 	background-color: #05bca9;
@@ -1834,6 +1845,14 @@ a.menu-toggle {
 
 #order h1 {
 	color: #FFF;
+}
+
+#order .success {
+	font-family: "raleway-bold", serif;
+	color: #FFF;
+}
+#order .err {
+	color: red;
 }
 
 #order form {

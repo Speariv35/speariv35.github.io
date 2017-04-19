@@ -127,7 +127,8 @@
   	$('.smoothscroll').on('click', function (e) {
 	 	
 	 	e.preventDefault();
-
+		console.log("text========================================");
+		console.log('e cur',$(e.currentTarget).find('.makeorder'));
    	var target = this.hash,
     	$target = $(target);
 
@@ -137,7 +138,14 @@
       	window.location.hash = target;
       });
 
-  	});  
+		var holder = $(e.currentTarget).find('.makeorder');
+		var text = 'Хочу заказать - ' + holder.parents('.bottom-part').find('.plan-title').text();
+		$('textarea').val(text);
+
+
+
+
+	});
   
 
    /*----------------------------------------------------*/
@@ -180,7 +188,7 @@
 	  3: '<i class="fa fa-warning"></i> E-mail address is not valid.',
 	  4: '<i class="fa fa-warning"></i> E-mail address is not valid.',
 	  5: '<i class="fa fa-warning"></i> E-mail address is not valid.'
-	}
+	};
 
 
 	/*---------------------------------------------------- */
@@ -190,23 +198,38 @@
 
 
  	/*---------------------------------------------------- */
-	/*	Modal Popup
+	/*	Send Form
 	------------------------------------------------------ */
 
-    $('.video-link a').magnificPopup({
 
-       type:'inline',
-       fixedContentPos: false,
-       removalDelay: 200,
-       showCloseBtn: false,
-       mainClass: 'mfp-fade'       
+	$('#contact-form').on('submit', function (e) {
+		var url = "php/mail.php";
+		$.ajax({
+			type: "POST",
+			url: url,
+			data: $("#contact-form").serialize()
+		}).done(function (msg) {
+			if (msg == "OK") {
+				document.getElementById("contact-form").reset();
+				var message = '<p class="success message">Заявка успешно отправлена!</p>';
+			} else {
+				var message = msg;
+			}
+			$("#contact-form").append(message);
+			setTimeout(function () {
+				$(".message").remove();
+			}, 10000);
 
-    });
+		}).fail(function () {
+			var message = '<p class="err message">Возникла ошибка! Попробуйте позже</p>';
+			$("#contact-form").append(message);
+			setTimeout(function () {
+				$(".message").remove();
+			}, 10000);
+		});
+		e.preventDefault();
 
-    $(document).on('click', '.close-popup', function (e) {
-    		e.preventDefault();
-    		$.magnificPopup.close();
-    });
+	});
 
 
  	/*----------------------------------------------------- */
