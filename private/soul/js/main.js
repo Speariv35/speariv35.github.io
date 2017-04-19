@@ -127,8 +127,6 @@
   	$('.smoothscroll').on('click', function (e) {
 	 	
 	 	e.preventDefault();
-		console.log("text========================================");
-		console.log('e cur',$(e.currentTarget).find('.makeorder'));
    	var target = this.hash,
     	$target = $(target);
 
