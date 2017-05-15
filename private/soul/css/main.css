@@ -9,6 +9,7 @@
 @import url("fonts.css");
 @import url("ionicons/css/ionicons.min.css");
 @import url("micons/micons.css");
+@import url("animate.css");
 
 /** 
  * ===================================================================
@@ -1164,6 +1165,10 @@ a.menu-toggle {
     font-family: 'raleway-light';
     font-weight:200;
 }
+.intro-content h1 span.bold {
+	font-family: 'raleway-bold';
+}
+
 .intro-content h5 {
 	color: rgba(255, 255, 255, 0.6);
 	font-family: "raleway-bold", sans-serif;
@@ -2340,6 +2345,68 @@ a.menu-toggle {
 
 /** 
  * ===================================================================
+ * Articles section
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+#articles {
+	padding-top: 9.2rem;
+	padding-bottom: 12rem;
+	text-align: center;
+	color: #FFF;
+	background-color: #fafafd;
+	border-bottom: 2px solid #dbdbde;
+}
+.articles-content {
+	font-family: raleway-bold, serif;
+	max-width: 80%;
+	margin: 0 auto;
+
+}
+
+.articles-wrapper {
+	overflow: hidden;
+}
+
+.articles-item {
+	width: 30%;
+	float: left;
+}
+.articles-item + .articles-item {
+	margin-left: 3%;
+}
+
+
+/**
+ * responsive:
+ * articles
+ * -
+ */
+
+@media only screen and (max-width:910px) {
+
+	.articles-item {
+		width: 45%;
+
+	}
+
+	.articles-content {
+		max-width: 95%;
+	}
+
+}
+
+@media only screen and (max-width:600px) {
+	.articles-item {
+		width: 100%;
+
+	}
+}
+
+
+/** 
+ * ===================================================================
  * footer
  *
  * ------------------------------------------------------------------- 
@@ -2565,3 +2632,43 @@ footer ul li {
 }
 
 /*# sourceMappingURL=main.css.map */
+
+#article {
+	background: #FFF;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	width: 100%;
+	height: 90%;
+	margin-top: 120px;
+	padding: 100px 50px;
+	min-height: 720px;
+	display: table;
+	position: relative;
+}
+
+#article .intro-content {
+	text-align: left;
+}
+
+.article-title-main {
+
+}
+
+.article-title {
+	font-family: raleway-bold;
+	text-align: center;
+	color: #000;
+	font-size: 30px;
+}
+
+.article-sub-title {
+	font-family: raleway-bold;
+	text-align: center;
+	color: #000;
+	font-size: 22px;
+}
+
+.article-img {
+	margin-bottom: 50px;
+}
