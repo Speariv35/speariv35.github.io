@@ -1,0 +1,28 @@
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 0 10%;
+}
+
+.battle	{
+	font-size: 30px;
+	color: #FFF;
+	background-color: #000;
+	padding: 10px 20px;
+	border-radius: 10px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+.battle:hover:enabled {
+	background: linear-gradient(#1a1a1a,#0a0a0a);
+	color: #fff;
+	text-decoration: none;
+}
+
+.battle:active {
+	transform: translateY(1px);
+}

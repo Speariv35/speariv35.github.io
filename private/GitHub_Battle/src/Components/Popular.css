@@ -1,0 +1,69 @@
+.lang-select-wrapper {
+	text-align: center;
+	list-style-type: none;
+}
+
+.lang-select-item {
+	color: #393939;
+	display: inline-block;
+	margin-left:20px;
+	margin-bottom:15px;
+	cursor: pointer;
+}
+
+.lang-select__item:hover {
+	color: #fd6767;
+}
+
+
+.popular-list li {
+	list-style-type: none;
+	padding-left: 0;
+	margin-top: 5px;
+
+}
+
+.space-list-items {
+	width: 250px;
+	padding-left: 0;
+}
+.popular-list {
+	padding-left: 0;
+	list-style-type: none;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.popular-name {
+	font-weight: 600;
+}
+
+.popular-item {
+	margin: 20px;
+	text-align: center;
+}
+
+.popular-item img {
+	border-radius: 50%;
+	width: 250px;
+	-webkit-box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow:    1px 1px 5px 0px rgba(50, 50, 50, 0.25);
+	box-shadow:         1px 1px 5px 0px rgba(50, 50, 50, 0.25);
+}
+
+.popular-rank {
+	font-size: 25px;
+	margin: 10px;
+	color: #fd6767;
+}
+
+.loading-more {
+	text-align: center;
+}
+
+.popular-item a,
+.popular-item a:visited {
+	 color: #3c64a6;
+ }
+

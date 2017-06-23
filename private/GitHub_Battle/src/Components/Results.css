@@ -1,0 +1,12 @@
+.score  {
+	font-size: 22px;
+}
+
+.score-title{
+	font-size: 27px;
+}
+
+.stats p {
+	margin: 10px 0 7px 0;
+	text-align: left;
+}
