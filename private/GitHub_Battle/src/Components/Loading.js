@@ -5,33 +5,33 @@ import './Loading.css';
 
 class Loading extends Component {
 
-	constructor(props) {
-		super(props);
-		this.state = {
-			text: 'Loading'
-		}
-	}
-	
-	render() {
+    constructor(props) {
+        super(props);
+        this.state = {
+            text: 'Loading'
+        }
+    }
 
-		return (
-			<div className="loading-wrapper">
-				<div className="loader"></div>
-				<p className="loading">
-					{this.state.text}
-				</p>
-			</div>
+    render() {
 
-		)
-	}
+        return (
+            <div className="loading-wrapper">
+                <div className="loader"></div>
+                <p className="loading">
+                    {this.state.text}
+                </p>
+            </div>
+
+        )
+    }
 }
 
 
 Loading.defaultProps = {
-	text: 'Loading'
+    text: 'Loading'
 };
 Loading.propTypes = {
-	text: PropTypes.string.isRequired
+    text: PropTypes.string.isRequired
 };
 
 export default Loading;

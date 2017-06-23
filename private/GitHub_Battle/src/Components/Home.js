@@ -1,24 +1,23 @@
-
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import './Home.css';
 import {
-	Link
+    Link
 } from 'react-router-dom'
 
 
 class Home extends Component {
-	
-	render() {
-		
-		return (
-		<div className="home-container">
-	<h1>Github Battle: Battle your friends ... and more.</h1>
-			<Link className="battle" to="/battle">
-				Battle
-			</Link>
-		</div>
-		)
-	}
+
+    render() {
+
+        return (
+            <div className="home-container">
+                <h1>Github Battle: Battle your friends ... and more.</h1>
+                <Link className="battle" to="/battle">
+                    Battle
+                </Link>
+            </div>
+        )
+    }
 }
 
 
